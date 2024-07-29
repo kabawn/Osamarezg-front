@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Osamarezg-front/static/css/main.25b22d80.css",
-    "main.js": "/Osamarezg-front/static/js/main.b7f258fe.js",
+    "main.js": "/Osamarezg-front/static/js/main.1f403864.js",
     "static/media/herovideo_1.mp4": "/Osamarezg-front/static/media/herovideo_1.ba06c9dd736df1065657.mp4",
     "static/media/el saraya final option 3 V1.jpg": "/Osamarezg-front/static/media/el saraya final option 3 V1.2cfb7c2c3ad263352eaf.jpg",
     "static/media/Poster ALsraya Part 1.png": "/Osamarezg-front/static/media/Poster ALsraya Part 1.964764f34a2617c330d2.png",
@@ -47,10 +47,10 @@
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
     "main.25b22d80.css.map": "/Osamarezg-front/static/css/main.25b22d80.css.map",
-    "main.b7f258fe.js.map": "/Osamarezg-front/static/js/main.b7f258fe.js.map"
+    "main.1f403864.js.map": "/Osamarezg-front/static/js/main.1f403864.js.map"
   },
   "entrypoints": [
     "static/css/main.25b22d80.css",
-    "static/js/main.b7f258fe.js"
+    "static/js/main.1f403864.js"
   ]
 }
