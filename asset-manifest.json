@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Osamarezg-front/static/css/main.478b58fe.css",
-    "main.js": "/Osamarezg-front/static/js/main.a754f2cd.js",
+    "main.css": "/Osamarezg-front/static/css/main.58c17296.css",
+    "main.js": "/Osamarezg-front/static/js/main.c65ee1f2.js",
     "static/media/herovideo_1.mp4": "/Osamarezg-front/static/media/herovideo_1.ba06c9dd736df1065657.mp4",
     "static/media/el saraya final option 3 V1.jpg": "/Osamarezg-front/static/media/el saraya final option 3 V1.2cfb7c2c3ad263352eaf.jpg",
     "static/media/Poster ALsraya Part 1.png": "/Osamarezg-front/static/media/Poster ALsraya Part 1.964764f34a2617c330d2.png",
@@ -20,7 +20,6 @@
     "static/media/Poster Zaeman.jpg": "/Osamarezg-front/static/media/Poster Zaeman.5f20b7193201cfb67075.jpg",
     "static/media/zangat alreh.jpg": "/Osamarezg-front/static/media/zangat alreh.016620f9bea4d439789e.jpg",
     "static/media/shokran.png": "/Osamarezg-front/static/media/shokran.bea272bb3ed840f7be30.png",
-    "static/media/osama.png": "/Osamarezg-front/static/media/osama.90163c22634ed0eba662.png",
     "static/media/zangt1.jpg": "/Osamarezg-front/static/media/zangt1.b182cc12e5a10a197ba0.jpg",
     "static/media/albarony.jpg": "/Osamarezg-front/static/media/albarony.1f051dadf847a444a1b5.jpg",
     "static/media/alzaeman.jpg": "/Osamarezg-front/static/media/alzaeman.741317d1c2fa9495743b.jpg",
@@ -47,11 +46,11 @@
     "static/media/slick.ttf": "/Osamarezg-front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
-    "main.478b58fe.css.map": "/Osamarezg-front/static/css/main.478b58fe.css.map",
-    "main.a754f2cd.js.map": "/Osamarezg-front/static/js/main.a754f2cd.js.map"
+    "main.58c17296.css.map": "/Osamarezg-front/static/css/main.58c17296.css.map",
+    "main.c65ee1f2.js.map": "/Osamarezg-front/static/js/main.c65ee1f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.478b58fe.css",
-    "static/js/main.a754f2cd.js"
+    "static/css/main.58c17296.css",
+    "static/js/main.c65ee1f2.js"
   ]
 }
