@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Osamarezg-front/static/css/main.25b22d80.css",
-    "main.js": "/Osamarezg-front/static/js/main.1f403864.js",
+    "main.css": "/Osamarezg-front/static/css/main.e29878dc.css",
+    "main.js": "/Osamarezg-front/static/js/main.88df0695.js",
     "static/media/herovideo_1.mp4": "/Osamarezg-front/static/media/herovideo_1.ba06c9dd736df1065657.mp4",
     "static/media/el saraya final option 3 V1.jpg": "/Osamarezg-front/static/media/el saraya final option 3 V1.2cfb7c2c3ad263352eaf.jpg",
     "static/media/Poster ALsraya Part 1.png": "/Osamarezg-front/static/media/Poster ALsraya Part 1.964764f34a2617c330d2.png",
@@ -25,20 +25,25 @@
     "static/media/alzaeman.jpg": "/Osamarezg-front/static/media/alzaeman.741317d1c2fa9495743b.jpg",
     "static/media/alsraya1.jpg": "/Osamarezg-front/static/media/alsraya1.5cac4e2ef60b1a5d1258.jpg",
     "static/media/award.png": "/Osamarezg-front/static/media/award.2ac46a0fe628f55469ff.png",
+    "static/media/maghrebi_film_festival.jpeg": "/Osamarezg-front/static/media/maghrebi_film_festival.b0bb4367b06fe379451f.jpeg",
     "static/media/osamaoknoback.png": "/Osamarezg-front/static/media/osamaoknoback.11cbe0aff73193122172.png",
     "static/media/blog1.png": "/Osamarezg-front/static/media/blog1.b698c4f659b3d5794f2f.png",
     "static/media/Raleway-Regular.ttf": "/Osamarezg-front/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
     "static/media/Raleway-Bold.ttf": "/Osamarezg-front/static/media/Raleway-Bold.8e546283422c830c02dc.ttf",
     "static/media/usa_flag.png": "/Osamarezg-front/static/media/usa_flag.5992304bd003674fac82.png",
     "static/media/blog2.png": "/Osamarezg-front/static/media/blog2.83463bb23f98c71d238a.png",
+    "static/media/International Cinema.jpg": "/Osamarezg-front/static/media/International Cinema.cde7662666c2be4a391c.jpg",
     "static/media/blog3.png": "/Osamarezg-front/static/media/blog3.2fd763c1a7638d6657e0.png",
     "static/media/fobya.webp": "/Osamarezg-front/static/media/fobya.39764566a1bc6b088952.webp",
     "static/media/Motassim Alnahar.jpg": "/Osamarezg-front/static/media/Motassim Alnahar.df8b3cc8a35286a46853.jpg",
     "static/media/byar.jpg": "/Osamarezg-front/static/media/byar.3f126be859d3eddc30d1.jpg",
     "static/media/The Random.jpeg": "/Osamarezg-front/static/media/The Random.126e94ff944abd934a93.jpeg",
+    "static/media/arab_film_festival.jpg": "/Osamarezg-front/static/media/arab_film_festival.3fb86101b55a6db1438d.jpg",
     "static/media/zangat alreh 2.jpg": "/Osamarezg-front/static/media/zangat alreh 2.474d330b8105e14b4dbc.jpg",
     "static/media/writer.jpeg": "/Osamarezg-front/static/media/writer.c8c4e296aeafb604a357.jpeg",
     "static/media/castinghero.jpg": "/Osamarezg-front/static/media/castinghero.3a67293292d67d7beee5.jpg",
+    "static/media/septymos.jpg": "/Osamarezg-front/static/media/septymos.d5bdb800760e55166f7c.jpg",
+    "static/media/asbu.png": "/Osamarezg-front/static/media/asbu.45aa441b0e8f30130334.png",
     "static/media/herodirector.jpg": "/Osamarezg-front/static/media/herodirector.6870a1d814a7c63df776.jpg",
     "static/media/libya_flag.png": "/Osamarezg-front/static/media/libya_flag.6a6fb89498e097ae8c99.png",
     "static/media/slick.svg": "/Osamarezg-front/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -46,11 +51,11 @@
     "static/media/slick.ttf": "/Osamarezg-front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
-    "main.25b22d80.css.map": "/Osamarezg-front/static/css/main.25b22d80.css.map",
-    "main.1f403864.js.map": "/Osamarezg-front/static/js/main.1f403864.js.map"
+    "main.e29878dc.css.map": "/Osamarezg-front/static/css/main.e29878dc.css.map",
+    "main.88df0695.js.map": "/Osamarezg-front/static/js/main.88df0695.js.map"
   },
   "entrypoints": [
-    "static/css/main.25b22d80.css",
-    "static/js/main.1f403864.js"
+    "static/css/main.e29878dc.css",
+    "static/js/main.88df0695.js"
   ]
 }
