@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Osamarezg-front/static/css/main.e29878dc.css",
-    "main.js": "/Osamarezg-front/static/js/main.88df0695.js",
+    "main.css": "/Osamarezg-front/static/css/main.1433fdf2.css",
+    "main.js": "/Osamarezg-front/static/js/main.eefc699a.js",
     "static/media/herovideo_1.mp4": "/Osamarezg-front/static/media/herovideo_1.ba06c9dd736df1065657.mp4",
     "static/media/el saraya final option 3 V1.jpg": "/Osamarezg-front/static/media/el saraya final option 3 V1.2cfb7c2c3ad263352eaf.jpg",
     "static/media/Poster ALsraya Part 1.png": "/Osamarezg-front/static/media/Poster ALsraya Part 1.964764f34a2617c330d2.png",
@@ -51,11 +51,11 @@
     "static/media/slick.ttf": "/Osamarezg-front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
-    "main.e29878dc.css.map": "/Osamarezg-front/static/css/main.e29878dc.css.map",
-    "main.88df0695.js.map": "/Osamarezg-front/static/js/main.88df0695.js.map"
+    "main.1433fdf2.css.map": "/Osamarezg-front/static/css/main.1433fdf2.css.map",
+    "main.eefc699a.js.map": "/Osamarezg-front/static/js/main.eefc699a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e29878dc.css",
-    "static/js/main.88df0695.js"
+    "static/css/main.1433fdf2.css",
+    "static/js/main.eefc699a.js"
   ]
 }
