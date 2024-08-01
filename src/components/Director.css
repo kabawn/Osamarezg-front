@@ -1,0 +1,251 @@
+/* src/components/Director.css */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tajawal:wght@400;700&display=swap");
+
+.director-container {
+  background-color: #000; /* Cinematic black background */
+  color: #fff;
+  overflow: hidden;
+}
+
+.director-container.ltr {
+  font-family: "Raleway", sans-serif;
+  direction: ltr;
+  text-align: left;
+}
+
+.director-container.rtl {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.director-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.director-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  animation: zoomIn 2s ease-in-out;
+}
+
+.director-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.director-title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.director-subtitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.director-content {
+  padding: 80px;
+  background-color: #111;
+}
+
+.director-section {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; /* Initial opacity for fade-in effect */
+  transform: translateY(20px); /* Initial position for slide-up effect */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.director-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.director-section h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 100px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+.bio-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 2s ease-in-out;
+  width: 100%;
+}
+
+.bio-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.bio-image {
+  width: 750px;
+  height: 550px;
+  margin-top: 10px;
+
+}
+
+.awards {
+  margin-bottom: 40px;
+}
+
+
+
+.filmography {
+  margin-bottom: 50px;
+}
+
+.biography {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.bio-card p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.grid-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.poster-info,
+.award-info {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.poster-info h3,
+.award-info h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bio-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bio-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .bio-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .director-title {
+    font-size: 2.5rem;
+  }
+
+  .director-subtitle {
+    font-size: 1rem;
+  }
+
+  .director-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .bio-card {
+    padding: 10px;
+  }
+
+  .bio-text p {
+    font-size: 0.875rem;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
+  .poster-info h3,
+  .award-info h3 {
+    font-size: 1rem;
+  }
+
+  .poster-info p,
+  .award-info p {
+    font-size: 0.875rem;
+  }
+}

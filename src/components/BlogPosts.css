@@ -1,0 +1,71 @@
+/* src/components/BlogPosts.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
+.container {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.intro h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.card-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+.btn-primary {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  color: #fff;
+}

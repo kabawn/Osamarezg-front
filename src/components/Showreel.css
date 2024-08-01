@@ -1,0 +1,73 @@
+/* src/components/Showreel.css */
+.showreel-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #fffefe; /* Background color for the container */
+  padding: 20px; /* Padding to prevent the video from touching the edges on small screens */
+  box-sizing: border-box;
+}
+
+.showreel-text {
+  text-align: center;
+  color: rgb(0, 0, 0); /* Text color */
+  margin-bottom: 20px; /* Space between text and video */
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.showreel-video {
+  width: 100%;
+  max-width: 1200px; /* Maximum width for larger screens */
+  height: 800px;
+  border: 2px solid #fff; /* Optional border styling */
+  border-radius: 10px; /* Optional border radius for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+/* Additional media query for small screens */
+@media (max-width: 768px) {
+  .showreel-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+      height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .showreel-text {
+      font-size: 24px; /* Adjust font size for small screens */
+      margin-bottom: 15px; /* Adjust space between text and video */
+  }
+
+  .title {
+      font-size: 28px;
+  }
+
+  .showreel-video {
+      border: 1px solid #fff; /* Slightly smaller border */
+  }
+}
+
+/* Additional media query for extra small screens */
+@media (max-width: 480px) {
+  .showreel-container {
+      padding: 10px; /* Reduce padding for very small screens */
+      height: 400px; /* Adjust height for very small screens */
+  }
+
+  .showreel-text {
+      font-size: 20px; /* Adjust font size for extra small screens */
+      margin-bottom: 20px; /* Adjust space between text and video */
+  }
+
+  .title {
+      font-size: 24px;
+  }
+
+  .showreel-video {
+      border: 1px solid #fff; /* Slightly smaller border */
+  }
+}

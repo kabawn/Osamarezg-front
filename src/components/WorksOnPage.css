@@ -1,0 +1,95 @@
+/* src/components/WorksOnPage.css */
+.works-section {
+    padding: 80px 0;
+    background-color: #040404;
+    text-align: center;
+}
+
+.works-section.english {
+    font-family: 'Raleway', sans-serif;
+}
+
+.works-section.arabic {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.works-section h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    color: #fff;
+    margin-top: 120px;
+}
+
+.works-section.english h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.works-section.arabic h2 {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.poster-col {
+    margin-bottom: 20px;
+}
+
+.poster-container {
+    position: relative;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.show-more {
+    margin-top: 20px;
+}
+
+.show-more button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: rgb(255, 251, 251);
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.show-more button:hover {
+    background-color: #ffffff;
+    color: #110000;
+}
+
+.video-modal {
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .poster {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .poster {
+        margin-bottom: 15px;
+    }
+
+    .works-section h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 80px;
+        color: #fff;
+    }
+}

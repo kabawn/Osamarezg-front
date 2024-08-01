@@ -1,0 +1,262 @@
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import "./Director.css";
+import directorImage from "../assets/herodirector.jpg";
+
+import awardImageSeptymos from "../assets/awards/septymos.jpg";
+import awardImageAsbu from "../assets/awards/asbu.png"; // Example image paths
+import awardImageYouthMagazine from "../assets/award.png";
+import awardImageArabFilmFestival from "../assets/awards/arab_film_festival.jpg";
+import awardImageMaghrebiFilmFestival from "../assets/awards/maghrebi_film_festival.jpeg";
+import awardImageArtCityFestival from "../assets/award.png";
+import awardMondal from "../assets/awards/mondal cario.jpg"
+import awardInternational from "../assets/awards/International Cinema.jpg"
+
+
+
+import directorImageosama from "../assets/osamaoknoback.png";
+import fobyaPoter from "../assets/posters/fobya.webp";
+import theRandomPoster from "../assets/posters/The Random.jpeg";
+import dragunovPoster from "../assets/posters/Poster dragnof.jpg";
+import rubikPoster from "../assets/posters/Rubik.png";
+import zankaAlReehPoster from "../assets/posters/zangat alreh.jpg";
+import azzaimanPoster from "../assets/posters/Poster Zaeman.jpg";
+import albaronyPoster from "../assets/posters/albarony.jpg";
+import ghasakPoster from "../assets/posters/Poster Ghasaq.jpg";
+import zankatArreehPartTwoPoster from "../assets/posters/zangat alreh.jpg";
+import alsarayaPoster from "../assets/posters/el saraya final option 3 V1.jpg";
+import alsarayaPartTwoPoster from "../assets/posters/Poster ALsraya Part 1.png";
+import banatAlamPoster from "../assets/posters/bnat.jpg";
+
+const Director = () => {
+   const { t, i18n } = useTranslation();
+
+   const filmography = [
+      { title: "Fobya", year: 2012, poster: fobyaPoter },
+      { title: "The Random", year: 2013, poster: theRandomPoster },
+      { title: "Dragunov", year: 2014, poster: dragunovPoster },
+      { title: "Rubik", year: 2017, poster: rubikPoster },
+      { title: "Zanka Al-Reeh", year: 2019, poster: zankaAlReehPoster },
+      { title: "Azza’iman", year: 2020, poster: azzaimanPoster },
+      { title: "Albarony", year: 2020, poster: albaronyPoster },
+      { title: "Ghasak", year: 2021, poster: ghasakPoster },
+      { title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
+      { title: "Alsaraya", year: 2022, poster: alsarayaPoster },
+      { title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
+      { title: "Banat Alam", year: 2024, poster: banatAlamPoster },
+   ];
+
+   const awards = [
+      {
+         title: "Second best drama series for Zankat Arreeh",
+         titleAr: "جائزة افضل مسلسل درامي عن مسلسل السرايا – الجزء الثاني في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2023",
+         event: "ASBU Festival in Tunisia 2021",
+         eventAr: "مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2021",
+         image: awardImageAsbu
+      },
+      {
+         title: "Best drama series for Asaraya",
+         titleAr: "جائزة افضل مسلسل درامي عن مسلسل السرايا في مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
+         event: "ASBU Festival in Jeddah 2022",
+         eventAr: "مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
+         image: awardImageAsbu
+      },
+      {
+         title: "Best documentary film director award",
+         titleAr: "جائزة افضل مخرج لفيلم وثائقي 2009",
+         event: "2009",
+         eventAr: "2009",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best program director award",
+         titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2010",
+         event: "Youth magazine 2010",
+         eventAr: "مجلة الشبابية 2010",
+         image: awardImageYouthMagazine
+      },
+      {
+         title: "Best program director award",
+         titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2013",
+         event: "Youth magazine 2013",
+         eventAr: "مجلة الشبابية 2013",
+         image: awardImageYouthMagazine
+      },
+      {
+         title: "Best drama director award",
+         titleAr: "جائزة سيبتيموس جائزة افضل مخرج درامي 2014",
+         event: "Septimius Award 2014",
+         eventAr: "سيبتيموس 2014",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best program director award for Alamat Estifham",
+         titleAr: "جائزة أفضل مخرج برامج 2013 (علامة استفهام)",
+         event: "Alamat Estifham 2013",
+         eventAr: "علامة استفهام 2013",
+         image: awardImageYouthMagazine
+      },
+      {
+         title: "Best drama director award for Phobia",
+         titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج درامي 2014 (فوبيا)",
+         event: "Septimius Award 2014",
+         eventAr: "سيبتيموس 2014",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best drama director award for Dragunov",
+         titleAr: " جائزة سيبتيموس.جائزة أفضل مخرج دراما 2015 (دراجنوف)",
+         event: "Septimius Award 2015",
+         eventAr: "سيبتيموس 2015",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best drama director award for Zankat Arreeh",
+         titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج دراما 2019 ( زنقة الريح )",
+         event: "Septimius Award 2019",
+         eventAr: "سيبتيموس 2019",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best drama director award for The Two Leaders",
+         titleAr: "جائزة سبتيموس افضل مخرج دراما عن مسلسل 2020 ( الزعيمان )",
+         event: "Septimius Award 2020",
+         eventAr: "سيبتيموس 2020",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best drama director award for Ghasaq",
+         titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( السرايا )",
+         event: "Septimius Award 2021",
+         eventAr: "سيبتيموس 2021",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Best drama director award for Alsaraya – Part One",
+         titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( السرايا )",
+         event: "Septimius Award 2023",
+         eventAr: "سيبتيموس 2023",
+         image: awardImageSeptymos
+      },
+      {
+         title: "Bronze award for The Random",
+         titleAr: "الجائزة البرونزية لفيلم (العشوائي) عن فئة الأفلام القصيرة بمهرجان الفيلم العربي بمدينة قابس في تونس 2016.",
+         event: "Arab Film Festival in Gabes, Tunisia 2016",
+         eventAr: "مهرجان الفيلم العربي بمدينة قابس في تونس 2016",
+         image: awardImageArabFilmFestival
+      },
+      {
+         title: "Special mention for The Random",
+         titleAr: "تنويه خاص لفيلم (العشوائي) من لجنة التحكيم بمهرجان الفيلم المغاربي بوجدة في المغرب 2016.",
+         event: "Maghrebi Film Festival in Oujda, Morocco, 2016",
+         eventAr: "مهرجان الفيلم المغاربي بوجدة في المغرب 2016",
+         image: awardImageMaghrebiFilmFestival
+      },
+      {
+         title: "Best African film award for Random",
+         titleAr: "جائزة أفضل فيلم إفريقي لفيلم (العشوائي) من مهرجان ART City بالكاميرون 2016.",
+         event: "ART City Festival in Cameroon 2016",
+         eventAr: "مهرجان ART City بالكاميرون 2016",
+         image: awardImageArtCityFestival
+      },
+      {
+         title: "Special Jury Award for Phobia",
+         titleAr: "جائزة لجنة التحكيم الخاصة (فوبيا) مونديال القاهرة للإذاعة والتلفزيون2014.",
+         event: "Cairo Radio and Television Festival 2014",
+         eventAr: "مونديال القاهرة للإذاعة والتلفزيون 2014",
+         image: awardMondal 
+      },
+      {
+         title: "Best Film and Best Director Award for Al-Barony",
+         titleAr: "جائزة افضل فيلم و افضل اخراج في مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب عن فيلم الباروني 2023",
+         event: "International Cinema and Migration Festival in Oujda, Morocco 2023",
+         eventAr: "مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب 2023",
+         image: awardInternational
+      },
+   ];
+
+   useEffect(() => {
+      const sections = document.querySelectorAll(".director-section");
+
+      const observer = new IntersectionObserver(
+         (entries) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                  entry.target.classList.add("fade-in");
+                  observer.unobserve(entry.target);
+               }
+            });
+         },
+         {
+            threshold: 0.1,
+         }
+      );
+
+      sections.forEach((section) => {
+         observer.observe(section);
+      });
+
+      return () => {
+         if (sections.length) {
+            sections.forEach((section) => observer.unobserve(section));
+         }
+      };
+   }, []);
+
+   return (
+      <div className={`director-container ${i18n.language === "ar" ? "rtl" : "ltr"}`}>
+         <div className="director-hero">
+            <img src={directorImage} alt="Director" className="director-image" />
+            <div className="director-info">
+               <h1 className="director-title">Osama Rezg</h1>
+               <p className="director-subtitle">{t("journey")}</p>
+            </div>
+         </div>
+         <div className="director-content">
+            <section className="director-section biography">
+               <h2>{t("biography")}</h2>
+               <div className="bio-card">
+                  <div className="bio-text">
+                     <p>{t("bioText")}</p>
+                  </div>
+                  <img src={directorImageosama} alt="Osama Rezg" className="bio-image" />
+               </div>
+            </section>
+            <section className="director-section filmography">
+               <h2>{t("filmography")}</h2>
+               <div className="grid-container">
+                  {filmography.map((item, index) => (
+                     <div key={index} className="grid-item">
+                        <div className="poster">
+                           <img src={item.poster} alt={item.title} />
+                        </div>
+                        <div className="poster-info">
+                           <h3>{item.title}</h3>
+                           <p>{item.year}</p>
+                        </div>
+                     </div>
+                  ))}
+               </div>
+            </section>
+            <section className="director-section awards">
+               <h2>{t("awards")}</h2>
+               <div className="grid-container">
+                  {awards.map((item, index) => (
+                     <div key={index} className="grid-item">
+                        <div className="award">
+                           <img src={item.image} alt="Award" />
+                        </div>
+                        <div className="award-info">
+                           <h3>{i18n.language === "ar" ? item.titleAr : item.title}</h3>
+                           <p>{i18n.language === "ar" ? item.eventAr : item.event}</p>
+                        </div>
+                     </div>
+                  ))}
+               </div>
+            </section>
+         </div>
+      </div>
+   );
+};
+
+export default Director;

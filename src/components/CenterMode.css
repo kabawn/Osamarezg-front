@@ -1,0 +1,196 @@
+/* src/components/CenterMode.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
+body {
+  background-color: #F5F5FF;
+  font-family: 'Raleway', sans-serif; /* Default font family */
+}
+
+.wrapper {
+  padding: 10px 0;
+  text-align: center; /* Center the contents */
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+  padding: 0 460px;
+}
+
+.center-slider .slick-slide {
+  color: #FFF;
+  height: 700px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.center-slider .slick-slide img {
+  max-width: 100%;
+  max-height: 600px;
+  margin-bottom: 10px;
+}
+
+.center-slider .carousel-content {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.center-slider .carousel-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold; /* Make the title bold */
+}
+
+.center-slider .carousel-content p {
+  font-size: 16px;
+}
+
+.center-slider .carousel-content span {
+  font-size: 14px;
+  color: gray;
+}
+
+.center-slider .slick-center {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.slick-slide {
+  opacity: 1;
+  transition: transform 0.3s;
+}
+
+.custom-dots-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px; /* Adjust this to move the entire navigation block up or down */
+}
+
+.custom-arrow {
+  border-radius: 50%;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-prev {
+  margin-right: 90px; /* Adjust this to change the space between the prev arrow and the dots */
+}
+
+.custom-next {
+  margin-left: 90px; /* Adjust this to change the space between the next arrow and the dots */
+}
+
+.custom-arrow i {
+  font-size: 20px; /* Control the size of the arrow */
+  color: #000;
+}
+
+.slick-dots.custom-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+.slick-dots.custom-dots li {
+  display: inline-block !important;
+  margin: 0 5px !important;
+}
+
+.slick-dots.custom-dots li button {
+  width: 20px !important; /* Adjust the size as needed */
+  height: 20px !important; /* Adjust the size as needed */
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  position: relative;
+}
+
+.slick-dots.custom-dots li button::before {
+  display: none !important; /* Hide the small dot */
+}
+
+.slick-dots.custom-dots li.slick-active button {
+  border-color: #000000 !important;
+  background-color: #000000 !important;
+}
+
+/* RTL (Right-to-Left) text */
+.carousel-content.rtl {
+  text-align: right;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif; /* Use Tajawal for Arabic text */
+}
+
+/* LTR (Left-to-Right) text */
+.carousel-content.ltr {
+  text-align: left;
+  direction: ltr;
+  font-family: 'Raleway', sans-serif; /* Use Raleway for English text */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .center-slider .slick-slide {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .center-slider .slick-slide {
+    height: 500px;
+  }
+
+  .custom-prev {
+    margin-right: 90px;
+    margin-top: 20px;
+  }
+
+  .custom-next {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+
+  .slick-dots.custom-dots li button {
+    width: 20px !important; /* Adjust the size as needed */
+    height: 20px !important; /* Adjust the size as needed */
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .section-header p {
+    font-size: 18px;
+    color: #555;
+    padding: 0 10px;
+  }
+}

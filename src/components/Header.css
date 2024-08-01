@@ -1,0 +1,93 @@
+/* src/components/Header.css */
+.header {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
+
+.nav-ar {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+}
+
+.nav-en {
+  direction: ltr;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 5px;
+  transition: color 0.3s;
+  text-align: center; /* Center text */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.language-switcher button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.language-switcher button:hover {
+  color: #ddd;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.language-switcher-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with some opacity */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    margin: 10px 0; /* Add space between links */
+    width: 100%;
+    text-align: center;
+  }
+
+  .language-switcher-wrapper {
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0; /* Add vertical margin for spacing */
+  }
+
+  .language-switcher {
+    margin-left: 0; /* Reset margin */
+  }
+}

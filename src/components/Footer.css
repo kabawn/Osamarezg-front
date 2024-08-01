@@ -1,0 +1,138 @@
+/* src/components/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&family=Tajawal:wght@400;700;800&display=swap');
+
+.footer {
+  background-color: #000000; /* Set background to black */
+  padding: 40px 0;
+}
+
+.footer.ltr {
+  font-family: 'Raleway', sans-serif;
+  direction: ltr;
+  text-align: left;
+}
+
+.footer.rtl {
+  font-family: 'Tajawal', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.footer h5 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.footer p {
+  font-size: 24px;
+}
+
+.footer .social-icons i {
+  font-size: 2.5rem;
+  color: white; /* Ensure icons are white */
+  padding: 10px;
+}
+
+.footer .social-icons i:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.footer .form-control {
+  background-color: #495057;
+  color: white;
+  border: none;
+}
+
+.footer .form-control::placeholder {
+  color: #ced4da;
+}
+
+.footer .btn-primary {
+  background-color: #000000; /* Black background */
+  color: white; /* White text */
+  border: 2px solid white; /* White border */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .btn-primary:hover {
+  background-color: #0056b3; /* Blue background on hover */
+  color: white; /* Ensure text stays white on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .footer h5 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+
+  .footer .social-icons i {
+    font-size: 2rem;
+  }
+
+  .footer .btn-primary {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer h5 {
+    font-size: 26px;
+    margin-top: 80px;
+  }
+
+  .footer p {
+    font-size: 18px;
+  }
+
+  .footer .social-icons i {
+    font-size: 1.8rem;
+  }
+
+  .footer .btn-primary {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer h5 {
+    font-size: 22px;
+    margin-top: 60px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+
+  .footer .social-icons i {
+    font-size: 1.5rem;
+  }
+
+  .footer .btn-primary {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer h5 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer .social-icons i {
+    font-size: 1.2rem;
+  }
+
+  .footer .btn-primary {
+    font-size: 12px;
+  }
+}
