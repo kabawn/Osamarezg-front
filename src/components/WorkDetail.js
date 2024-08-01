@@ -149,7 +149,7 @@ const works = [
          ar: 'ملخص المسلسل: يؤرخ الجزء الأول من "السرايا" لإحدى أهم الفترات في التاريخ الليبي، مركّزًا على الصراع على السلطة خلال حكم الأسرة القرمانلية لإيالة طرابلس. تدور الأحداث بين عامي 1784 و1795، كاشفةً عن الصراعات الخفية داخل العائلة الحاكمة والمؤامرات الداخلية والخارجية ضد الدولة.',
       },
       trailer: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview",
-      fullShowLink: "https://example.com/fullshow4",
+      fullShowLink: "https://www.toog.ly/ar/detail/alsaraya/174735?section-first=174738&section-second=174741",
       btsImages: [
          btsAlsaraya1,
          btsAlsaraya2,
