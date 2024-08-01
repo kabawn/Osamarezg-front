@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Osamarezg-front/static/css/main.1433fdf2.css",
-    "main.js": "/Osamarezg-front/static/js/main.eefc699a.js",
+    "main.css": "/Osamarezg-front/static/css/main.d2a0eef9.css",
+    "main.js": "/Osamarezg-front/static/js/main.5ad354b6.js",
     "static/media/herovideo_1.mp4": "/Osamarezg-front/static/media/herovideo_1.ba06c9dd736df1065657.mp4",
     "static/media/el saraya final option 3 V1.jpg": "/Osamarezg-front/static/media/el saraya final option 3 V1.2cfb7c2c3ad263352eaf.jpg",
     "static/media/Poster ALsraya Part 1.png": "/Osamarezg-front/static/media/Poster ALsraya Part 1.964764f34a2617c330d2.png",
@@ -14,6 +14,7 @@
     "static/media/3.jpg": "/Osamarezg-front/static/media/3.acd763d91fe7dfcbd26f.jpg",
     "static/media/4.jpg": "/Osamarezg-front/static/media/4.79828319103aee78be7c.jpg",
     "static/media/Rubik.png": "/Osamarezg-front/static/media/Rubik.838aa4571cb6883a2d7d.png",
+    "static/media/albarony.jpg": "/Osamarezg-front/static/media/albarony.304f8e06cdd4802ee9c2.jpg",
     "static/media/bnat.jpg": "/Osamarezg-front/static/media/bnat.c955d6eeabea9111fa40.jpg",
     "static/media/background.png": "/Osamarezg-front/static/media/background.5e02933b8ad9b401cc61.png",
     "static/media/gaseq.jpg": "/Osamarezg-front/static/media/gaseq.461a667a06dc4c61b94b.jpg",
@@ -21,7 +22,6 @@
     "static/media/zangat alreh.jpg": "/Osamarezg-front/static/media/zangat alreh.016620f9bea4d439789e.jpg",
     "static/media/shokran.png": "/Osamarezg-front/static/media/shokran.bea272bb3ed840f7be30.png",
     "static/media/zangt1.jpg": "/Osamarezg-front/static/media/zangt1.b182cc12e5a10a197ba0.jpg",
-    "static/media/albarony.jpg": "/Osamarezg-front/static/media/albarony.1f051dadf847a444a1b5.jpg",
     "static/media/alzaeman.jpg": "/Osamarezg-front/static/media/alzaeman.741317d1c2fa9495743b.jpg",
     "static/media/alsraya1.jpg": "/Osamarezg-front/static/media/alsraya1.5cac4e2ef60b1a5d1258.jpg",
     "static/media/award.png": "/Osamarezg-front/static/media/award.2ac46a0fe628f55469ff.png",
@@ -51,11 +51,11 @@
     "static/media/slick.ttf": "/Osamarezg-front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
-    "main.1433fdf2.css.map": "/Osamarezg-front/static/css/main.1433fdf2.css.map",
-    "main.eefc699a.js.map": "/Osamarezg-front/static/js/main.eefc699a.js.map"
+    "main.d2a0eef9.css.map": "/Osamarezg-front/static/css/main.d2a0eef9.css.map",
+    "main.5ad354b6.js.map": "/Osamarezg-front/static/js/main.5ad354b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1433fdf2.css",
-    "static/js/main.eefc699a.js"
+    "static/css/main.d2a0eef9.css",
+    "static/js/main.5ad354b6.js"
   ]
 }
