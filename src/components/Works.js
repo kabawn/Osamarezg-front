@@ -1,21 +1,22 @@
 // src/components/Works.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./Works.css";
 
-import poster1 from "../assets/posters/bnat.jpg";
-import poster2 from "../assets/posters/el saraya final option 3 V1.jpg";
-import poster3 from "../assets/posters/Poster ALsraya Part 1.png";
-import poster4 from "../assets/posters/zangat alreh 2.jpg";
-import poster5 from "../assets/posters/Poster Ghasaq.jpg";
-import poster11 from "../assets/posters/albarony.jpg";
-import poster6 from "../assets/posters/Poster Zaeman.jpg";
-import poster7 from "../assets/posters/zangat alreh.jpg";
-import poster8 from "../assets/posters/Poster dragnof.jpg";
-import poster9 from "../assets/posters/Rubik.png";
-import poster10 from "../assets/posters/The Random.jpeg";
+import poster1 from "../assets/posters/bnat.webp";
+import poster2 from "../assets/posters/el saraya final option 3 V1.webp";
+import poster3 from "../assets/posters/Poster ALsraya Part 1.webp";
+import poster4 from "../assets/posters/zangat alreh 2.webp";
+import poster5 from "../assets/posters/Poster Ghasaq.webp";
+import poster11 from "../assets/posters/albarony.webp";
+import poster6 from "../assets/posters/Poster Zaeman.webp";
+import poster7 from "../assets/posters/zangat alreh.webp";
+import poster8 from "../assets/posters/Poster dragnof.webp";
+import poster9 from "../assets/posters/Rubik.webp";
+import poster10 from "../assets/posters/The Random.webp";
 import poster12 from "../assets/posters/fobya.webp";
+import poster13 from "../assets/posters/ayad.webp";
 
 const works = [
    { poster: poster1, videoUrl: "https://drive.google.com/file/d/1eylvo1WyWEYjr_ev6EAjKMGDmoEkFKQE/preview" },
@@ -27,9 +28,10 @@ const works = [
    { poster: poster6, videoUrl: "https://drive.google.com/file/d/1C6wxji6XQZt2Xj_rpw_quWASzmgbMSLZ/preview" },
    { poster: poster7, videoUrl: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview" },
    { poster: poster8, videoUrl: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview" },
-   { poster: poster9, videoUrl: "https://www.youtube.com/embed/427jDNBQFWg" },
-   { poster: poster10, videoUrl: "https://www.youtube.com/embed/427jDNBQFWg" },
-   { poster: poster12, videoUrl: "https://www.youtube.com/embed/427jDNBQFWg" },
+   { poster: poster9, videoUrl: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview" },
+   { poster: poster10, videoUrl: "https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview" },
+   { poster: poster12, videoUrl: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview" },
+   { poster: poster13, videoUrl: "https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview" },
 ];
 
 const Works = () => {
@@ -54,6 +56,35 @@ const Works = () => {
       setSelectedVideo(null);
    };
 
+   useEffect(() => {
+      const lazyLoadImages = () => {
+         const images = document.querySelectorAll("img[data-src]");
+         const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1
+         };
+
+         const handleIntersection = (entries, observer) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                  const img = entry.target;
+                  img.src = img.getAttribute("data-src");
+                  img.removeAttribute("data-src");
+                  observer.unobserve(img);
+               }
+            });
+         };
+
+         const observer = new IntersectionObserver(handleIntersection, options);
+         images.forEach(img => {
+            observer.observe(img);
+         });
+      };
+
+      lazyLoadImages();
+   }, [displayedWorks]);
+
    return (
       <section id="works" className="works-section">
          <Container>
@@ -65,9 +96,9 @@ const Works = () => {
                   <Col md={4} sm={6} xs={12} key={index} className="poster-col">
                      <div className="poster-container">
                         <img
-                           src={work.poster}
+                           data-src={work.poster}
                            alt={`Work ${index + 1}`}
-                           className="poster"
+                           className="poster lazy-load"
                            onClick={() => handlePosterClick(work.videoUrl)}
                         />
                         <div className="play-icon" onClick={() => handlePosterClick(work.videoUrl)}>

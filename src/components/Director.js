@@ -16,17 +16,18 @@ import awardInternational from "../assets/awards/International Cinema.jpg"
 
 import directorImageosama from "../assets/osamaoknoback.png";
 import fobyaPoter from "../assets/posters/fobya.webp";
-import theRandomPoster from "../assets/posters/The Random.jpeg";
-import dragunovPoster from "../assets/posters/Poster dragnof.jpg";
-import rubikPoster from "../assets/posters/Rubik.png";
-import zankaAlReehPoster from "../assets/posters/zangat alreh.jpg";
-import azzaimanPoster from "../assets/posters/Poster Zaeman.jpg";
-import albaronyPoster from "../assets/posters/albarony.jpg";
-import ghasakPoster from "../assets/posters/Poster Ghasaq.jpg";
-import zankatArreehPartTwoPoster from "../assets/posters/zangat alreh.jpg";
-import alsarayaPoster from "../assets/posters/el saraya final option 3 V1.jpg";
-import alsarayaPartTwoPoster from "../assets/posters/Poster ALsraya Part 1.png";
-import banatAlamPoster from "../assets/posters/bnat.jpg";
+import ayad from "../assets/posters/ayad.webp"
+import theRandomPoster from "../assets/posters/The Random.webp";
+import dragunovPoster from "../assets/posters/Poster dragnof.webp";
+import rubikPoster from "../assets/posters/Rubik.webp";
+import zankaAlReehPoster from "../assets/posters/zangat alreh.webp";
+import azzaimanPoster from "../assets/posters/Poster Zaeman.webp";
+import albaronyPoster from "../assets/posters/albarony.webp";
+import ghasakPoster from "../assets/posters/Poster Ghasaq.webp";
+import zankatArreehPartTwoPoster from "../assets/posters/zangat alreh 2.webp";
+import alsarayaPoster from "../assets/posters/el saraya final option 3 V1.webp";
+import alsarayaPartTwoPoster from "../assets/posters/Poster ALsraya Part 1.webp";
+import banatAlamPoster from "../assets/posters/bnat.webp";
 
 const Director = () => {
    const { t, i18n } = useTranslation();
@@ -35,6 +36,7 @@ const Director = () => {
       { title: "Fobya", year: 2012, poster: fobyaPoter },
       { title: "The Random", year: 2013, poster: theRandomPoster },
       { title: "Dragunov", year: 2014, poster: dragunovPoster },
+      { title: "Ayad", year: 2015, poster: ayad },
       { title: "Rubik", year: 2017, poster: rubikPoster },
       { title: "Zanka Al-Reeh", year: 2019, poster: zankaAlReehPoster },
       { title: "Azza’iman", year: 2020, poster: azzaimanPoster },
@@ -196,10 +198,31 @@ const Director = () => {
          observer.observe(section);
       });
 
-      return () => {
-         if (sections.length) {
-            sections.forEach((section) => observer.unobserve(section));
+      const images = document.querySelectorAll("img[data-src]");
+
+      const imageObserver = new IntersectionObserver(
+         (entries, observer) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                  const img = entry.target;
+                  img.src = img.getAttribute("data-src");
+                  img.removeAttribute("data-src");
+                  observer.unobserve(img);
+               }
+            });
+         },
+         {
+            threshold: 0.1,
          }
+      );
+
+      images.forEach((img) => {
+         imageObserver.observe(img);
+      });
+
+      return () => {
+         sections.forEach((section) => observer.unobserve(section));
+         images.forEach((img) => imageObserver.unobserve(img));
       };
    }, []);
 
@@ -228,7 +251,7 @@ const Director = () => {
                   {filmography.map((item, index) => (
                      <div key={index} className="grid-item">
                         <div className="poster">
-                           <img src={item.poster} alt={item.title} />
+                           <img data-src={item.poster} alt={item.title} className="lazy-load" />
                         </div>
                         <div className="poster-info">
                            <h3>{item.title}</h3>
@@ -244,7 +267,7 @@ const Director = () => {
                   {awards.map((item, index) => (
                      <div key={index} className="grid-item">
                         <div className="award">
-                           <img src={item.image} alt="Award" />
+                           <img data-src={item.image} alt="Award" className="lazy-load" />
                         </div>
                         <div className="award-info">
                            <h3>{i18n.language === "ar" ? item.titleAr : item.title}</h3>

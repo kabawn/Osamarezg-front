@@ -15,15 +15,18 @@ const Footer = () => {
             <h5>{t('keepInTouch')}</h5>
             <p>{t('email')}</p>
             <div className="social-icons">
-              <a href="https://facebook.com" className="text-white ">
+              <a href="https://www.facebook.com/osama.rezg" className="text-white ">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="https://twitter.com" className="text-white ">
+              <a href="https://x.com/OsamaRezg" className="text-white ">
                 <i className="bi bi-twitter"></i>
               </a>
-              <a href="https://instagram.com" className="text-white">
+              <a href="https://www.instagram.com/osamarezg/" className="text-white">
                 <i className="bi bi-instagram"></i>
               </a>
+              <a href="https://www.linkedin.com/in/osama-rezg-62a61743/" className="text-white">
+              <i class="bi bi-linkedin"></i>
+                            </a>
             </div>
           </div>
           <div className="col-md-6">

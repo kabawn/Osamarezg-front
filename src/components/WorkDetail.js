@@ -4,18 +4,19 @@ import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./WorkDetail.css";
 
-import poster1 from "../assets/posters/bnat.jpg";
-import poster2 from "../assets/posters/el saraya final option 3 V1.jpg";
-import poster3 from "../assets/posters/Poster ALsraya Part 1.png";
-import poster4 from "../assets/posters/zangat alreh 2.jpg";
-import poster5 from "../assets/posters/Poster Ghasaq.jpg";
-import poster11 from "../assets/posters/albarony.jpg";
-import poster6 from "../assets/posters/Poster Zaeman.jpg";
-import poster7 from "../assets/posters/zangat alreh.jpg";
-import poster8 from "../assets/posters/Poster dragnof.jpg";
-// import poster9 from "../assets/posters/Rubik.png";
-// import poster10 from "../assets/posters/The Random.jpeg";
-// import poster12 from "../assets/posters/fobya.webp";
+import poster1 from "../assets/posters/bnat.webp";
+import poster2 from "../assets/posters/el saraya final option 3 V1.webp";
+import poster3 from "../assets/posters/Poster ALsraya Part 1.webp";
+import poster4 from "../assets/posters/zangat alreh 2.webp";
+import poster5 from "../assets/posters/Poster Ghasaq.webp";
+import poster11 from "../assets/posters/albarony.webp";
+import poster6 from "../assets/posters/Poster Zaeman.webp";
+import poster7 from "../assets/posters/zangat alreh.webp";
+import poster8 from "../assets/posters/Poster dragnof.webp";
+import poster9 from "../assets/posters/Rubik.webp";
+import poster10 from "../assets/posters/The Random.webp";
+import poster12 from "../assets/posters/fobya.webp";
+import poster13 from "../assets/posters/ayad.webp";
 
 
 
@@ -40,6 +41,21 @@ import btsAlsaraya4 from "../assets/bts/alsraya/4.jpg";
 import btsAlsaraya5 from "../assets/bts/alsraya/5.jpg";
 import btsAlsaraya6 from "../assets/bts/alsraya/6.jpg";
 
+import btsAlsaraya21 from "../assets/bts/alsraya2/1.jpg";
+import btsAlsaraya22 from "../assets/bts/alsraya2/2.jpg";
+import btsAlsaraya23 from "../assets/bts/alsraya2/3.jpg";
+import btsAlsaraya24 from "../assets/bts/alsraya2/4.jpg";
+import btsAlsaraya25 from "../assets/bts/alsraya2/5.jpg";
+import btsAlsaraya26 from "../assets/bts/alsraya2/6.jpg";
+import btsAlsaraya27 from "../assets/bts/alsraya2/7.jpg";
+import btsAlsaraya28 from "../assets/bts/alsraya2/8.jpg";
+import btsAlsaraya29 from "../assets/bts/alsraya2/9.jpg";
+import btsAlsaraya210 from "../assets/bts/alsraya2/10.jpg";
+import btsAlsaraya211 from "../assets/bts/alsraya2/11.jpg";
+import btsAlsaraya212 from "../assets/bts/alsraya2/12.jpg";
+
+
+
 import btsBanatAlam1 from "../assets/bts/bnat/1.jpg";
 import btsBanatAlam2 from "../assets/bts/bnat/2.jpg";
 import btsBanatAlam3 from "../assets/bts/bnat/3.jpg";
@@ -60,6 +76,73 @@ import btsalzaeman3 from "../assets/bts/alzaeman/3.jpg";
 import btsalzaeman4 from "../assets/bts/alzaeman/4.jpg";
 import btsalzaeman5 from "../assets/bts/alzaeman/5.jpg";
 import btsalzaeman6 from "../assets/bts/alzaeman/6.jpg";
+
+import btselbarony1 from "../assets/bts/elbarony/1.png";
+import btselbarony2 from "../assets/bts/elbarony/2.png";
+import btselbarony3 from "../assets/bts/elbarony/3.png";
+import btselbarony4 from "../assets/bts/elbarony/4.png";
+import btselbarony5 from "../assets/bts/elbarony/5.png";
+import btselbarony6 from "../assets/bts/elbarony/6.png";
+import btselbarony7 from "../assets/bts/elbarony/7.png";
+
+import btsrubik1 from "../assets/bts/rubik/1.jpg";
+import btsrubik2 from "../assets/bts/rubik/2.jpg";
+import btsrubik3 from "../assets/bts/rubik/3.jpg";
+import btsrubik4 from "../assets/bts/rubik/4.jpg";
+import btsrubik5 from "../assets/bts/rubik/5.jpg";
+import btsrubik6 from "../assets/bts/rubik/6.jpg";
+import btsrubik7 from "../assets/bts/rubik/7.jpg";
+import btsrubik8 from "../assets/bts/rubik/8.jpg";
+import btsrubik9 from "../assets/bts/rubik/9.jpg";
+import btsrubik10 from "../assets/bts/rubik/10.jpg";
+import btsrubik11 from "../assets/bts/rubik/11.jpg";
+import btsrubik12 from "../assets/bts/rubik/12.jpg";
+
+
+import btsdragnuf1 from "../assets/bts/dragnof/1.jpg";
+import btsdragnuf2 from "../assets/bts/dragnof/2.jpg";
+import btsdragnuf3 from "../assets/bts/dragnof/3.jpg";
+import btsdragnuf4 from "../assets/bts/dragnof/4.jpg";
+import btsdragnuf5 from "../assets/bts/dragnof/5.jpg";
+import btsdragnuf6 from "../assets/bts/dragnof/6.jpg";
+
+
+import btstherandom1 from "../assets/bts/therandom/1.jpg";
+import btstherandom2 from "../assets/bts/therandom/2.jpg";
+import btstherandom3 from "../assets/bts/therandom/3.jpg";
+import btstherandom4 from "../assets/bts/therandom/4.jpg";
+import btstherandom5 from "../assets/bts/therandom/5.jpg";
+import btstherandom6 from "../assets/bts/therandom/6.jpg";
+import btstherandom7 from "../assets/bts/therandom/7.jpg";
+import btstherandom8 from "../assets/bts/therandom/8.jpg";
+import btstherandom9 from "../assets/bts/therandom/9.jpg";
+
+import btsfobya1 from "../assets/bts/fobya/1.jpg";
+import btsfobya2 from "../assets/bts/fobya/2.jpg";
+import btsfobya3 from "../assets/bts/fobya/3.jpg";
+import btsfobya4 from "../assets/bts/fobya/4.jpg";
+import btsfobya5 from "../assets/bts/fobya/5.jpg";
+import btsfobya6 from "../assets/bts/fobya/6.jpg";
+import btsfobya7 from "../assets/bts/fobya/7.jpg";
+import btsfobya8 from "../assets/bts/fobya/8.jpg";
+import btsfobya9 from "../assets/bts/fobya/9.jpg";
+
+
+import btsayad1 from "../assets/bts/ayad/1.jpg";
+import btsayad2 from "../assets/bts/ayad/2.jpg";
+import btsayad3 from "../assets/bts/ayad/3.jpg";
+import btsayad4 from "../assets/bts/ayad/4.jpg";
+import btsayad5 from "../assets/bts/ayad/5.jpg";
+import btsayad6 from "../assets/bts/ayad/6.jpg";
+import btsayad7 from "../assets/bts/ayad/7.jpg";
+import btsayad8 from "../assets/bts/ayad/8.jpg";
+import btsayad9 from "../assets/bts/ayad/9.jpg";
+import btsayad10 from "../assets/bts/ayad/10.jpg";
+import btsayad11 from "../assets/bts/ayad/11.jpg";
+import btsayad12 from "../assets/bts/ayad/12.jpg";
+
+
+
 
 const works = [
    {
@@ -112,12 +195,18 @@ const works = [
       trailer: "https://drive.google.com/file/d/13XMRlIacqdeG2vOWvWIR4MyFR-4goBBs/preview",
       fullShowLink: "https://www.toog.ly/ar/detail/alsaraya/174735",
       btsImages: [
-         btsAlsaraya1,
-         btsAlsaraya2,
-         btsAlsaraya3,
-         btsAlsaraya4,
-         btsAlsaraya5,
-         btsAlsaraya6,
+         btsAlsaraya21,
+         btsAlsaraya22,
+         btsAlsaraya23,
+         btsAlsaraya24,
+         btsAlsaraya25,
+         btsAlsaraya26,
+         btsAlsaraya27,
+         btsAlsaraya28,
+         btsAlsaraya29,
+         btsAlsaraya210,
+         btsAlsaraya211,
+         btsAlsaraya212,
       ],
       awards: {
          en: [
@@ -324,14 +413,8 @@ const works = [
       },
       trailer: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview",
       fullShowLink: "https://www.toog.ly/ar/detail/zaget-alreeh/172116?section-first=172119&section-second=172128",
-      btsImages: [
-         btsBanatAlam1,
-         btsBanatAlam2,
-         btsBanatAlam3,
-         btsBanatAlam4,
-         btsBanatAlam5,
-         btsBanatAlam6,
-      ],
+      btsImages: [btszanget1, btszanget2, btszanget3, btszanget4, btszanget5, btszanget6],
+
       awards: {
          en: ["Second Best Social Series - ASBU Festival, Tunisia 2021"],
          ar: ["الترتيب الثاني أفضل مسلسل اجتماعي من مهرجان اتحاد إذاعات الدول العربية - تونس 2021"],
@@ -363,12 +446,12 @@ const works = [
       trailer: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview",
       fullShowLink: "https://www.toog.ly/ar/detail/draganof/172272",
       btsImages: [
-         btsBanatAlam1,
-         btsBanatAlam2,
-         btsBanatAlam3,
-         btsBanatAlam4,
-         btsBanatAlam5,
-         btsBanatAlam6,
+         btsdragnuf1,
+         btsdragnuf2,
+         btsdragnuf3,
+         btsdragnuf4,
+         btsdragnuf5,
+         btsdragnuf6,
       ],
       awards: {
          en: ["Best Director", "Best Action Sequence"],
@@ -390,6 +473,103 @@ const works = [
    },
 
    {
+      id: 9,
+      poster: poster9, // Make sure to replace 'poster9' with the correct import or path
+      title: { en: 'Rubik', ar: 'روبيك' },
+      year: 2017,
+      description: { 
+        en: 'The series follows the story of Marwan, an orphaned young man whose parents died in the Libyan Airlines plane crash in 1992. Raised in his aunt\'s house, he was mistreated by her husband and forced to work in a car repair shop. He eventually becomes a criminal and a murderer after experiencing a love story.',
+        ar: 'يستعرض المسلسل قصة الشاب اليتيم (مروان) الذي توفي والداه في حادث سقوط طائرة الخطوط الليبية في عام 1992، ونشأ في بيت عمته حيث تعرض لمعاملة سيئة من زوجها واضطر للعمل في ورشة لتصليح السيارات، ثم تحول إلى مجرم وسفاح بعد مروره بقصة حب.'
+      },
+      trailer: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview", 
+      fullShowLink: 'https://www.youtube.com/@imagecomly/videos',
+      btsImages: [
+         btsrubik1,
+         btsrubik2,
+         btsrubik3,
+         btsrubik4,
+         btsrubik5,
+         btsrubik6,
+         btsrubik7,
+         btsrubik8,
+         btsrubik9,
+         btsrubik10,
+         btsrubik11,
+         btsrubik12,
+
+      ], // Add behind-the-scenes images if available
+      awards: { 
+        en: [], // Add awards if any
+        ar: []
+      },
+      details: {
+        episodes: { en: '', ar: '' }, // Not applicable for movies
+        duration: { en: '', ar: '' }, // Not applicable for movies
+        productionCompany: { en: 'ART Production', ar: 'ART Productıon' },
+        productionYear: { en: '2017', ar: '2017' },
+        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
+        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
+        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
+        cast: { 
+          en: 'Wasif Al-Khuwailidi, Mohamed Osman, Munira Al-Balrouin, Mohamed Osman, Lubna Abdel Hamid, Fathi Kahlool', 
+          ar: 'واصف الخويلدي، محمد عثمان، منيرة بالروين، محمد عثمان، لبنى عبد الحميد، فتحي كحلول'
+        }
+      }
+    },
+    
+    {
+      id: 10,
+      poster: poster10, // Make sure to replace 'poster10' with the correct import or path
+      title: { en: 'The Random', ar: 'العشوائي' },
+      year: 2016,
+      description: { 
+        en: 'The Random is a short film that lasts 20 minutes and addresses an issue that has become very important in Libya and the Libyan society after the revolution: the issue of excluding and marginalizing others. Each Libyan tries to impose their opinion and reject different thoughts by force of arms. The film presents this issue in a satirical manner imbued with pain.',
+        ar: 'العشوائي ... فيلم قصير مدته 20 دقيقة يتناول القضية التي أصبحت مهمة للغاية في ليبيا والمجتمع الليبي بعد الثورة، قضية إقصاء وتهميش الآخر ومحاولة كل ليبي فرض رأيه ورفض الفكر الذي يختلف معه بقوة السلاح. الفيلم يطرح القضية بأسلوب ساخر مبطن بالألم.'
+      },
+      trailer: 'https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview', 
+      fullShowLink: 'https://www.toog.ly/ar/detail/ashwaiee/175062',
+      btsImages: [
+         btstherandom1,
+         btstherandom2,
+         btstherandom3,
+         btstherandom4,
+         btstherandom5,
+         btstherandom6,
+         btstherandom7,
+         btstherandom8,
+         btstherandom9,
+
+      ], 
+      awards: { 
+        en: [
+          'Oasis Award for Short Film from the Gabes Arab Film Festival 2016',
+          'Special Mention from the Jury at the Oujda Maghreb Film Festival in Morocco 2017',
+          'Best African Film Award at the ART CITY Festival in Cameroon 2016'
+        ], 
+        ar: [
+          'جائزة الواحة للفيلم القصير من مهرجان الفيلم العربي بقابس 2016',
+          'تنويه خاص من لجنة التحكيم في مهرجان وجدة بالمغرب للفيلم المغاربي 2017',
+          'جائزة افضل فيلم افريقي بمهرجان ART CITY بالكاميرون 2016'
+        ]
+      },
+      details: {
+        episodes: { en: '', ar: '' }, // Not applicable for movies
+        duration: { en: '20 minutes', ar: '20 دقيقة' }, 
+        productionCompany: { en: 'ART Production', ar: 'ART Production' },
+        productionYear: { en: '2016', ar: '2016' },
+        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
+        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
+        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
+        cast: { 
+          en: 'Nader Al-Loulabi, Mohamed Osman, Wasif Al-Khuwailidi, Muhannad Kalash, Ramadan Al-Mazdawi', 
+          ar: 'نادر اللولبي، محمد عثمان، واصف الخويلدي، مهند كلاش، رمضان المزداوي'
+        }
+      }
+    }
+,    
+
+
+   {
       id: 11,
       poster: poster11, // Make sure to replace 'poster8' with the correct import or path
       title: { en: 'Al-Barouni', ar: 'فيلم الباروني' },
@@ -400,7 +580,15 @@ const works = [
       },
       trailer: "https://drive.google.com/file/d/1Ff53Gvqz6kAHysdEu8seMcniCqFFo2uZ/preview",
       fullShowLink: 'https://www.toog.ly/ar/detail/barony/175074',
-      btsImages: [], // Add behind-the-scenes images if available
+      btsImages: [
+         btselbarony1,
+         btselbarony2,
+         btselbarony3,
+         btselbarony4,
+         btselbarony5,
+         btselbarony6,
+         btselbarony7,
+      ], // Add behind-the-scenes images if available
       awards: { 
         en: [], // Add awards if any
         ar: []
@@ -418,7 +606,90 @@ const works = [
           ar: 'ربيع القاطي، عبد الحميد التائب، نضال كحلول'
         }
       }
+    },
+
+    {
+      id: 12,
+      poster: poster12, // Make sure to replace 'poster11' with the correct import or path
+      title: { en: 'Phobia', ar: 'فوبيا' },
+      year: 2013,
+      description: { 
+        en: 'The series "Phobia" is a black comedy that addresses the fears experienced by Libyans after the Arab Spring revolution, and what happened to them during those difficult times.',
+        ar: 'يتناول مسلسل «فوبيا» في إطار الكوميديا السوداء، المخاوف التي يعيشها الليبيون بعد ثورة الربيع العربي، وما حدث لهم على مدار تلك اﻷوقات العصيبة التي جرت لهم.'
+      },
+      trailer: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview", // Add the trailer link if available
+      fullShowLink: 'https://www.toog.ly/ar/detail/fobia/175191',
+      btsImages: [
+         btsfobya1,
+         btsfobya2,
+         btsfobya3,
+         btsfobya4,
+         btsfobya5,
+         btsfobya6,
+         btsfobya7,
+         btsfobya8,
+         btsfobya9,
+
+      ], // Add behind-the-scenes images if available
+      awards: { en: [], ar: [] }, // Add awards if available
+      details: {
+        episodes: { en: '', ar: '' }, // Not applicable for movies
+        duration: { en: '', ar: '' }, // Add episode duration if available
+        productionCompany: { en: 'ART Production', ar: 'ART Production' },
+        productionYear: { en: '2013', ar: '2013' },
+        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
+        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
+        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
+        cast: { 
+          en: 'Mohamed Osman, Wasif Al-Khuwailidi, Jamal Zayed, Ramadan Al-Mazdawi, Wafaa Nabil, Muhannad Kalash', 
+          ar: 'محمد عثمان، واصف الخويلدي، جمال زايد، رمضان المزداوي، وفاء نبيل، مهند كلش'
+        }
+      }
+    },
+
+    {
+      id: 13,
+      poster: poster13, // Make sure to replace 'poster12' with the correct import or path
+      title: { en: 'Ayad', ar: 'عياد' },
+      year: 2015,
+      description: { 
+        en: 'The series "Ayad" tells the story of a young man named Ayad, whom people describe as unlucky and nicknamed "Ayad the Misfortunate". He has failed at everything in his life. In contrast, his cousin Walid lives next door and is always lucky. In each episode, we watch the funny stories that happen to them.',
+        ar: 'يتناول المسلسل قصة شاب اسمه عياد يصفه الناس بأنه منحوس و اسم الشهرة ( عياد المتشحط ) لم يستطع ان ينجح في اي شيئ في حياته و على طرف النقيض يعيش بجانبه ابن عمه وليد المحظوظ دائما نشاهد مايحدث معهم في كل حلقة من قصص طريفة.'
+      },
+      trailer: 'https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview',
+      fullShowLink: 'https://www.youtube.com/@3yadmetshhet616/videos',
+      btsImages: [
+         btsayad1,
+         btsayad2,
+         btsayad3,
+         btsayad4,
+         btsayad5,
+         btsayad6,
+         btsayad7,
+         btsayad8,
+         btsayad9,
+         btsayad10,
+         btsayad11,
+         btsayad12,
+
+      ], // Add behind-the-scenes images if available
+      awards: { en: [], ar: [] }, // Add awards if available
+      details: {
+        episodes: { en: '', ar: '' }, // Not applicable for movies
+        duration: { en: '', ar: '' }, // Add episode duration if available
+        productionCompany: { en: 'Libya Al-Ahrar Channel', ar: 'قناة ليبيا الاحرار' },
+        productionYear: { en: '2015', ar: '2015' },
+        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
+        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
+        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
+        cast: { 
+          en: 'Mohamed Osman, Mohamed Kara, Osama Al-Bahi, Munira Al-Barouni', 
+          ar: 'محمد عثمان، محمد كارة، أسامة الباهي، منيرة بالروين'
+        }
+      }
     }
+    
+    
     
 
    // Add similar objects for other works

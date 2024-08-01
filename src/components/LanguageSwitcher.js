@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import usaFlag from '../assets/flags/usa_flag.png';
+import usaFlag from '../assets/flags/eng.jpg';
 import arFlag from '../assets/flags/libya_flag.png';
 
 const SwitcherContainer = styled.div`
