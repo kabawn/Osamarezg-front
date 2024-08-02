@@ -54,6 +54,7 @@ const Header = () => {
             <NavLink to="/blog">{t('blog')}</NavLink>
             <NavLink to="/casting">{t('casting')}</NavLink>
             <NavLink to="/submit-script">{t('sendScript')}</NavLink>
+            <NavLink to="/exclusive">{t('exclusive')}</NavLink>
             <NavLink to="/contact">{t('contact')}</NavLink>
           </Nav>
           <div className="language-switcher-wrapper">

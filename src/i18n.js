@@ -80,7 +80,8 @@ const resources = {
          submitButton: "Submit",
          showreelTitle: "Welcome to My Director's Showreel",
          showreelDescription: "Experience the best works and creativity of our director.",
-         directorsWord: "DIRECTOR'S WORKS"
+         directorsWord: "DIRECTOR'S WORKS",
+         exclusive:"Exclusive"
       },
    },
    ar: {
@@ -159,7 +160,9 @@ const resources = {
          submitButton: "إرسال",
          showreelTitle: "مرحبًا بكم في عرض أعمال المخرج",
          showreelDescription: "اكتشف أفضل أعمال وإبداعات مخرجنا.",
-         directorsWord: "اعمال المخرج"
+         directorsWord: "اعمال المخرج",
+         exclusive:"حصري"
+
 
       },
    },

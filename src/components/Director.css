@@ -83,7 +83,7 @@
   margin-top: 100px;
   text-transform: uppercase;
   border-bottom: 2px solid #fff;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   width: fit-content;
 }
 
@@ -101,6 +101,8 @@
 .bio-text {
   flex: 1;
   margin-right: 20px;
+  padding: 60px;
+
 }
 
 .bio-image {

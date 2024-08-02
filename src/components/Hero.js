@@ -2,7 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Hero.css';
-import heroVideo from '../assets/herovideo_1.mp4'; // Ensure you have this video
+import heroVideo from '../assets/introhero.mp4'; // Ensure you have this video
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
