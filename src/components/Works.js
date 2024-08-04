@@ -1,5 +1,5 @@
 // src/components/Works.js
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./Works.css";
@@ -56,35 +56,6 @@ const Works = () => {
       setSelectedVideo(null);
    };
 
-   useEffect(() => {
-      const lazyLoadImages = () => {
-         const images = document.querySelectorAll("img[data-src]");
-         const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.1
-         };
-
-         const handleIntersection = (entries, observer) => {
-            entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                  const img = entry.target;
-                  img.src = img.getAttribute("data-src");
-                  img.removeAttribute("data-src");
-                  observer.unobserve(img);
-               }
-            });
-         };
-
-         const observer = new IntersectionObserver(handleIntersection, options);
-         images.forEach(img => {
-            observer.observe(img);
-         });
-      };
-
-      lazyLoadImages();
-   }, [displayedWorks]);
-
    return (
       <section id="works" className="works-section">
          <Container>
@@ -96,9 +67,9 @@ const Works = () => {
                   <Col md={4} sm={6} xs={12} key={index} className="poster-col">
                      <div className="poster-container">
                         <img
-                           data-src={work.poster}
+                           src={work.poster}
                            alt={`Work ${index + 1}`}
-                           className="poster lazy-load"
+                           className="poster"
                            onClick={() => handlePosterClick(work.videoUrl)}
                         />
                         <div className="play-icon" onClick={() => handlePosterClick(work.videoUrl)}>

@@ -1,0 +1,161 @@
+/* AdminPage.css */
+.casting-page {
+    font-family: 'Tajawal', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+.casting-page.ltr {
+    text-align: left;
+}
+
+.casting-page.rtl {
+    text-align: right;
+}
+
+
+.herotext{
+    margin-top: 150px;
+}
+.photo-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.preview-container {
+    position: relative;
+}
+
+.preview-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.preview-container button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.casting-page .hero-image {
+    background-image: url('../assets/casting/castinghero.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.casting-page .hero-image h1,
+.casting-page .hero-image p {
+    font-family: 'Raleway', sans-serif !important; /* Apply Raleway font */
+}
+
+/* src/pages/CastingPage.css */
+.casting-page {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.casting-page.ltr {
+    text-align: left;
+}
+
+.casting-page.rtl {
+    text-align: right;
+}
+
+.casting-page .hero-image {
+    background-image: url('../assets/casting/castinghero.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px 0;
+}
+
+.casting-page .hero-image h1,
+.casting-page .hero-image p {
+    font-family: 'Raleway', sans-serif !important; /* Apply Raleway font */
+}
+
+.casting-page.rtl .hero-image h1,
+.casting-page.rtl .hero-image p {
+    font-family: 'Tajawal', sans-serif !important; /* Apply Tajawal font for RTL */
+}
+
+/* Additional styles for form fields to support RTL */
+.casting-page.rtl .form-control {
+    text-align: right;
+}
+
+.casting-page.rtl .form-label {
+    text-align: right;
+}
+
+/* Additional styles for form fields to support RTL */
+.casting-page.rtl .form-control {
+    text-align: right;
+}
+
+.casting-page.rtl .form-label {
+    text-align: right;
+}
+
+.button {
+    background-color: aliceblue;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body p {
+    margin-bottom: 10px;
+}
+
+.modal-body h5 {
+    margin-top: 20px;
+}
+
+.modal-body a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Image */
+.profile-img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Video */
+.modal-body video {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}

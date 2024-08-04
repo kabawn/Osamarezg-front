@@ -25,7 +25,7 @@ const Footer = () => {
                 <i className="bi bi-instagram"></i>
               </a>
               <a href="https://www.linkedin.com/in/osama-rezg-62a61743/" className="text-white">
-              <i class="bi bi-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
                             </a>
             </div>
           </div>

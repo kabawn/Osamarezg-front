@@ -1,4 +1,3 @@
-// src/components/LanguageSwitcher.js
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
@@ -46,7 +45,7 @@ const DropdownMenu = styled.div`
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: ${(props) => (props.show ? 'block' : 'none')};
+  display: ${(props) => (props.$show ? 'block' : 'none')}; /* Use $show here */
   z-index: 1000;
 `;
 
@@ -95,7 +94,7 @@ const LanguageSwitcher = () => {
         <img src={i18n.language === 'en' ? usaFlag : arFlag} alt="Selected Language" />
         {i18n.language === 'en' ? 'English' : 'العربية'}
       </LanguageButton>
-      <DropdownMenu show={showDropdown}>
+      <DropdownMenu $show={showDropdown}> {/* Use $show here */}
         <DropdownItem onClick={() => changeLanguage('en')}>
           <img src={usaFlag} alt="English" />
           English

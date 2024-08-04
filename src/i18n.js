@@ -81,7 +81,12 @@ const resources = {
          showreelTitle: "Welcome to My Director's Showreel",
          showreelDescription: "Experience the best works and creativity of our director.",
          directorsWord: "DIRECTOR'S WORKS",
-         exclusive:"Exclusive"
+         exclusive: "Exclusive",
+         errorUploadPhotos: "You can upload up to 3 images only.",
+         errorUploadVideoSize: "Video file size should not exceed 100 MB.",
+         successCasting: "Thanks for submitting for the casting. We will contact you soon.",
+         errorCasting: "Failed to submit casting data.",
+         errorCastingTryAgain: "Error submitting casting data. Please try again later.",
       },
    },
    ar: {
@@ -161,9 +166,14 @@ const resources = {
          showreelTitle: "مرحبًا بكم في عرض أعمال المخرج",
          showreelDescription: "اكتشف أفضل أعمال وإبداعات مخرجنا.",
          directorsWord: "اعمال المخرج",
-         exclusive:"حصري"
-
-
+         exclusive: "حصري",
+         errorUploadPhotos: "يمكنك تحميل 3 صور فقط.",
+         errorUploadVideoSize: "يجب ألا يتجاوز حجم ملف الفيديو 100 ميجابايت.",
+         successCasting: "شكرًا لتقديم طلب التمثيل. سنتواصل معك قريبًا.",
+         errorCasting: "فشل في تقديم بيانات التمثيل.",
+         errorCastingTryAgain: "حدث خطأ أثناء تقديم بيانات التمثيل. يرجى المحاولة مرة أخرى لاحقًا.",
+         login:"تسجيل الدخول",
+         signout:"تسجيل الخروج",
       },
    },
 };

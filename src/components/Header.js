@@ -1,8 +1,8 @@
 // src/components/Header.js
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
@@ -16,7 +16,7 @@ const StyledNavbar = styled(Navbar)`
 `;
 
 const NavLink = styled(Link).attrs({
-  className: 'nav-link', // Add this line
+  className: 'nav-link',
 })`
   color: white;
   text-transform: uppercase;
@@ -40,6 +40,21 @@ const BrandLink = styled(Link)`
 const Header = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+    navigate('/');
+  };
 
   return (
     <StyledNavbar expand="lg" className="header" lang={currentLang}>
@@ -56,6 +71,13 @@ const Header = () => {
             <NavLink to="/submit-script">{t('sendScript')}</NavLink>
             <NavLink to="/exclusive">{t('exclusive')}</NavLink>
             <NavLink to="/contact">{t('contact')}</NavLink>
+            {isLoggedIn ? (
+              <Button variant="outline-light" onClick={handleLogout}>
+                {t('signout')}
+              </Button>
+            ) : (
+              <NavLink to="/login">{t('login')}</NavLink>
+            )}
           </Nav>
           <div className="language-switcher-wrapper">
             <LanguageSwitcher className="language-switcher" />

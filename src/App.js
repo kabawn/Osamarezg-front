@@ -12,11 +12,13 @@ import Casting from './components/Casting';
 import BlogPosts from './components/BlogPosts';
 import Footer from './components/Footer';
 import Director from './components/Director';
-import WorksOnPage from './components/WorksOnPage'; // Import the WorksOnPage component
-import WorkDetail from './components/WorkDetail'; // Import the WorkDetail component
+import WorksOnPage from './components/WorksOnPage';
+import WorkDetail from './components/WorkDetail';
 import Blog from './components/Blog';
 import CastingPage from './components/CastingPage';
-import ScriptSubmission from './components/ScriptSubmission'; // Import the ScriptSubmission component
+import ScriptSubmission from './components/ScriptSubmission';
+import LoginPage from './components/LoginPage';
+import AdminPage from './components/AdminPage';
 import './index.css';
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
         <Route path="/blog" element={<Blog />} /> 
         <Route path="/casting" element={<CastingPage />} /> 
         <Route path="/submit-script" element={<ScriptSubmission />} /> 
+        <Route path="/login" element={<LoginPage />} /> 
+        <Route path="/admin" element={<AdminPage />} /> 
       </Routes>
       <Footer />
     </Router>

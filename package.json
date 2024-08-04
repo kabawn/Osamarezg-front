@@ -6,10 +6,12 @@
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.5.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
     "i18next": "^23.12.2",
     "react": "^18.3.1",
+    "react-app-polyfill": "^3.0.0",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.0",
@@ -21,7 +23,7 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.12",
-    "web-vitals": "^4.2.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
