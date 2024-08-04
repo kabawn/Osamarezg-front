@@ -1,6 +1,6 @@
 /* src/components/Hero.css */
 .hero-container {
-   height: 70vh;
+   height: 90vh;
    position: relative;
    display: flex;
    justify-content: center;
@@ -42,7 +42,7 @@ margin-bottom: 10px;
 /* Responsive styling */
 @media (max-width: 768px) {
    .hero-container {
-      height: 60vh;
+      height: 100vh;
    }
 
    .hero-text h1 {
