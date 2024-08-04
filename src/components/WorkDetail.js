@@ -142,6 +142,20 @@ import btsayad11 from "../assets/bts/ayad/11.jpg";
 import btsayad12 from "../assets/bts/ayad/12.jpg";
 
 
+import btsqaseq1 from "../assets/bts/gaseq/1.jpg";
+import btsqaseq2 from "../assets/bts/gaseq/2.jpg";
+import btsqaseq3 from "../assets/bts/gaseq/3.jpg";
+import btsqaseq4 from "../assets/bts/gaseq/4.jpg";
+import btsqaseq5 from "../assets/bts/gaseq/5.jpg";
+import btsqaseq6 from "../assets/bts/gaseq/6.jpg";
+import btsqaseq7 from "../assets/bts/gaseq/7.jpg";
+import btsqaseq8 from "../assets/bts/gaseq/8.jpg";
+import btsqaseq9 from "../assets/bts/gaseq/9.jpg";
+import btsqaseq10 from "../assets/bts/gaseq/10.jpg";
+import btsqaseq11 from "../assets/bts/gaseq/11.jpg";
+import btsqaseq12 from "../assets/bts/gaseq/12.jpg";
+
+
 
 
 const works = [
@@ -326,13 +340,18 @@ const works = [
       trailer: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview",
       fullShowLink: "https://www.toog.ly/ar/detail/ghasaq/174516",
       btsImages: [
-         btsBanatAlam1,
-         btsBanatAlam2,
-         btsBanatAlam3,
-         btsBanatAlam4,
-         btsBanatAlam5,
-         btsBanatAlam6,
-      ],
+         btsqaseq1,
+         btsqaseq2,
+         btsqaseq3,
+         btsqaseq4,
+         btsqaseq5,
+         btsqaseq6,
+         btsqaseq7,
+         btsqaseq8,
+         btsqaseq9,
+         btsqaseq10,
+         btsqaseq11,
+         btsqaseq12,      ],
       awards: {
          en: [
             "Septimius Award for Best Series - Libya",

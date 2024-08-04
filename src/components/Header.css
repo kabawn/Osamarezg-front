@@ -64,6 +64,10 @@
   align-items: center;
 }
 
+.auth-button {
+  margin-left: 10px;
+}
+
 @media (max-width: 768px) {
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.8); /* Black background with some opacity */
@@ -89,5 +93,9 @@
 
   .language-switcher {
     margin-left: 0; /* Reset margin */
+  }
+
+  .auth-button {
+    margin: 10px 0; /* Add vertical margin for spacing */
   }
 }

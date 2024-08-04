@@ -72,11 +72,13 @@ const Header = () => {
             <NavLink to="/exclusive">{t('exclusive')}</NavLink>
             <NavLink to="/contact">{t('contact')}</NavLink>
             {isLoggedIn ? (
-              <Button variant="outline-light" onClick={handleLogout}>
+              <Button variant="outline-light" onClick={handleLogout} className="auth-button">
                 {t('signout')}
               </Button>
             ) : (
-              <NavLink to="/login">{t('login')}</NavLink>
+              <NavLink to="/login" className="auth-button">
+                <Button variant="outline-light">{t('login')}</Button>
+              </NavLink>
             )}
           </Nav>
           <div className="language-switcher-wrapper">

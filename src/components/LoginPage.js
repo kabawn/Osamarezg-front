@@ -19,6 +19,7 @@ const LoginPage = () => {
       const response = await axios.post("/login", { username, password });
       localStorage.setItem("token", response.data.token);
       navigate("/admin"); // Redirect to admin page
+      window.location.reload(); // Reload to update the Header component
     } catch (error) {
       setErrorMessage("Invalid username or password.");
     }
