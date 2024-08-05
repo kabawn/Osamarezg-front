@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tajawal:wght@400;700&display=swap");
 
 .director-container {
-  background-color: #000; /* Cinematic black background */
+  background-color: #000;
   color: #fff;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .director-container.ltr {

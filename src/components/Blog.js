@@ -52,7 +52,7 @@ const Blog = () => {
               <Card.Body>
                 <Card.Title>{article.title}</Card.Title>
                 <Card.Text>{article.excerpt}</Card.Text>
-                <Button variant="primary" href={article.link}>
+                <Button variant="primar" href={article.link}>
                   {t("Read More")}
                 </Button>
               </Card.Body>

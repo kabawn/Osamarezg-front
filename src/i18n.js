@@ -87,6 +87,13 @@ const resources = {
          successCasting: "Thanks for submitting for the casting. We will contact you soon.",
          errorCasting: "Failed to submit casting data.",
          errorCastingTryAgain: "Error submitting casting data. Please try again later.",
+         signout:"Sign out",
+         login:"Login",
+         sex:"Gender",
+         selectSex:"Select Sex",
+
+
+
       },
    },
    ar: {
@@ -157,7 +164,7 @@ const resources = {
          journey: "رحلة عبر السينما",
          bioText: `أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا. أسس شركتي الصورة للإنتاج الإعلامي و ART Production. أخرج أعمالًا درامية مميزة منها (فوبيا) و(زنقة الريح) و(الزعيمان). وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) الذي عُرض على منصة (شاهد) وحقق نجاحًا كبيرًا. في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.`,
          keepInTouch: "ابقى على تواصل",
-         email: "email@example.com",
+         email: "البريد الالكتروني",
          haveQuestions: "هل لديك أي أسئلة؟",
          namePlaceholder: "الاسم",
          emailPlaceholder: "البريد الإلكتروني",
@@ -174,6 +181,10 @@ const resources = {
          errorCastingTryAgain: "حدث خطأ أثناء تقديم بيانات التمثيل. يرجى المحاولة مرة أخرى لاحقًا.",
          login:"تسجيل الدخول",
          signout:"تسجيل الخروج",
+         nationality:"الجنسية اختار البلد",
+         country:"البلد",
+         sex:"الجنس",
+         selectSex:"اختر الجنس",
       },
    },
 };

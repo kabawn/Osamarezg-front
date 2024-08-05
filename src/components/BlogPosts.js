@@ -65,7 +65,7 @@ const BlogPosts = () => {
         ))}
       </div>
       <div className="text-center mt-4">
-        <a href="/blog" className="btn btn-primary" style={{ fontFamily: isRtl ? 'Tajawal, sans-serif' : 'Raleway, sans-serif' }}>{t('seeMore')}</a>
+        <a href="/blog" className="btn button" style={{ fontFamily: isRtl ? 'Tajawal, sans-serif' : 'Raleway, sans-serif' }}>{t('seeMore')}</a>
       </div>
     </div>
   );

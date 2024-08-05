@@ -5,6 +5,31 @@ import { Container, Form, Button, Row, Col, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CastingPage.css";
 
+const countries = [
+  "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia",
+  "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin",
+  "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi",
+  "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia",
+  "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Croatia", "Cuba", "Cyprus",
+  "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador",
+  "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia",
+  "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti",
+  "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan",
+  "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos",
+  "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi",
+  "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia",
+  "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal",
+  "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan",
+  "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar",
+  "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa",
+  "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore",
+  "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan",
+  "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor-Leste", "Togo",
+  "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates",
+  "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam",
+  "Yemen", "Zambia", "Zimbabwe"
+];
+
 const CastingPage = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
@@ -14,7 +39,7 @@ const CastingPage = () => {
     age: "",
     gender: "",
     phoneNumber: "",
-    nationality: "", // Add nationality
+    nationality: "",
     photos: [],
     video: null,
   });
@@ -42,7 +67,7 @@ const CastingPage = () => {
       const updatedPhotos = [...formData.photos, ...newPhotos];
       setFormData({ ...formData, photos: updatedPhotos });
 
-      const newPreviews = newPhotos.map(file => URL.createObjectURL(file));
+      const newPreviews = newPhotos.map((file) => URL.createObjectURL(file));
       setPhotoPreviews([...photoPreviews, ...newPreviews]);
     } else if (id === "video") {
       if (files[0].size > 100 * 1024 * 1024) {
@@ -72,7 +97,7 @@ const CastingPage = () => {
     data.append("age", formData.age);
     data.append("gender", formData.gender);
     data.append("phoneNumber", formData.phoneNumber);
-    data.append("nationality", formData.nationality); // Add nationality
+    data.append("nationality", formData.nationality);
 
     for (let i = 0; i < formData.photos.length; i++) {
       data.append("photos", formData.photos[i]);
@@ -90,7 +115,7 @@ const CastingPage = () => {
           age: "",
           gender: "",
           phoneNumber: "",
-          nationality: "", // Reset nationality
+          nationality: "",
           photos: [],
           video: null,
         });
@@ -145,7 +170,12 @@ const CastingPage = () => {
 
             <Form.Group controlId="gender" className="mt-3">
               <Form.Label>{t("gender")}</Form.Label>
-              <Form.Control as="select" value={formData.gender} onChange={handleInputChange} required>
+              <Form.Control
+                as="select"
+                value={formData.gender}
+                onChange={handleInputChange}
+                required
+              >
                 <option value="">{t("gender")}...</option>
                 <option value="male">{t("male")}</option>
                 <option value="female">{t("female")}</option>
@@ -163,25 +193,46 @@ const CastingPage = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="nationality" className="mt-3"> {/* Add nationality */}
+            <Form.Group controlId="nationality" className="mt-3">
               <Form.Label>{t("nationality")}</Form.Label>
               <Form.Control
-                type="text"
-                placeholder={t("nationality")}
+                as="select"
                 value={formData.nationality}
                 onChange={handleInputChange}
                 required
-              />
+              >
+                <option value="">{t("nationality")}...</option>
+                {countries.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </Form.Control>
             </Form.Group>
 
             <Form.Group controlId="photos" className="mt-3">
               <Form.Label>{t("uploadPhotos")}</Form.Label>
-              <Form.Control type="file" multiple accept="image/*" onChange={handleFileChange} />
+              <Form.Control
+                type="file"
+                multiple
+                accept="image/*"
+                onChange={handleFileChange}
+              />
               <div className="photo-previews mt-2">
                 {photoPreviews.map((src, index) => (
                   <div key={index} className="preview-container">
-                    <img src={src} alt={`Preview ${index + 1}`} className="preview-image" />
-                    <Button variant="danger" size="sm" onClick={() => handleRemovePhoto(index)}>Remove</Button>
+                    <img
+                      src={src}
+                      alt={`Preview ${index + 1}`}
+                      className="preview-image"
+                    />
+                    <Button
+                      variant="danger"
+                      size="sm"
+                      onClick={() => handleRemovePhoto(index)}
+                    >
+                      Remove
+                    </Button>
                   </div>
                 ))}
               </div>
@@ -189,7 +240,11 @@ const CastingPage = () => {
 
             <Form.Group controlId="video" className="mt-3">
               <Form.Label>{t("uploadVideo")}</Form.Label>
-              <Form.Control type="file" accept="video/*" onChange={handleFileChange} />
+              <Form.Control
+                type="file"
+                accept="video/*"
+                onChange={handleFileChange}
+              />
             </Form.Group>
 
             <Button variant="primary" type="submit" className="mt-4 button">

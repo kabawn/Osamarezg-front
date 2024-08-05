@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "../axios"; // Adjust the path as necessary
-import { Container, Table, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button } from "react-bootstrap";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import heroImage from "../assets/herodirector.jpg"; // Ensure you have this image in the correct path
@@ -33,13 +33,16 @@ const HeroContent = styled.div`
 
 const AdminPage = () => {
   const [castings, setCastings] = useState([]);
+  const [scripts, setScripts] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedActor, setSelectedActor] = useState(null);
+  const [selectedScript, setSelectedScript] = useState(null);
   const [filterGender, setFilterGender] = useState("");
   const [filterNationality, setFilterNationality] = useState("");
   const [filterMinAge, setFilterMinAge] = useState("");
   const [filterMaxAge, setFilterMaxAge] = useState("");
+  const [lightboxImage, setLightboxImage] = useState(null);
 
   useEffect(() => {
     const fetchCastings = async () => {
@@ -61,7 +64,27 @@ const AdminPage = () => {
       }
     };
 
+    const fetchScripts = async () => {
+      const token = localStorage.getItem("token"); // Assume the token is stored in localStorage
+      if (!token) {
+        setErrorMessage("You are not authorized to view this page.");
+        return;
+      }
+
+      try {
+        const response = await axios.get("/scripts", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        setScripts(response.data);
+      } catch (error) {
+        setErrorMessage("Error fetching script data.");
+      }
+    };
+
     fetchCastings();
+    fetchScripts();
   }, []);
 
   const handleSearch = (e) => {
@@ -72,8 +95,21 @@ const AdminPage = () => {
     setSelectedActor(actor);
   };
 
+  const handleScriptClick = (script) => {
+    setSelectedScript(script);
+  };
+
   const handleClose = () => {
     setSelectedActor(null);
+    setSelectedScript(null);
+  };
+
+  const handleLightboxClose = () => {
+    setLightboxImage(null);
+  };
+
+  const getMediaUrl = (path) => {
+    return `${axios.defaults.baseURL.replace('/api', '')}/${path}`;
   };
 
   const filteredCastings = castings.filter((casting) => {
@@ -154,7 +190,7 @@ const AdminPage = () => {
                     <Card className="mb-4" onClick={() => handleActorClick(casting)}>
                       <Card.Img
                         variant="top"
-                        src={casting.photos.length > 0 ? `http://192.168.128.1:5000/${casting.photos[0]}` : 'default-profile.png'}
+                        src={casting.photos.length > 0 ? getMediaUrl(casting.photos[0]) : 'default-profile.png'}
                         alt={`${casting.fullName}'s profile`}
                         className="profile-img"
                       />
@@ -177,7 +213,31 @@ const AdminPage = () => {
           </Tab>
           <Tab eventKey="scripts" title="Scripts">
             <h2 className="mt-4">Scripts</h2>
-            <p className="mt-4">No scripts submitted yet.</p>
+            <Row>
+              {scripts.length > 0 ? (
+                scripts.map((script) => (
+                  <Col key={script._id} md={4}>
+                    <Card className="mb-4" onClick={() => handleScriptClick(script)}>
+                      <Card.Body>
+                        <Card.Title>{script.fullName}</Card.Title>
+                        <Card.Text>Country: {script.country}</Card.Text>
+                        <Card.Text>Gender: {script.sex}</Card.Text>
+                        <Card.Text>Phone: {script.phone}</Card.Text>
+                        <Card.Text>Email: {script.email}</Card.Text>
+                        <Card.Text>Submitted on: {new Date(script.submissionDate).toLocaleDateString()}</Card.Text>
+                        <Button href={getMediaUrl(script.scriptFile)} target="_blank" variant="primary">
+                          Download Script
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))
+              ) : (
+                <Col>
+                  <p className="text-center">No scripts submitted yet.</p>
+                </Col>
+              )}
+            </Row>
           </Tab>
         </Tabs>
       </Container>
@@ -204,7 +264,12 @@ const AdminPage = () => {
               <div className="photo-previews">
                 {selectedActor.photos.map((photo, index) => (
                   <div key={index} className="preview-container">
-                    <img src={`http://192.168.128.1:5000/${photo}`} alt={`Photo ${index + 1}`} className="preview-image" />
+                    <img 
+                      src={getMediaUrl(photo)} 
+                      alt={`Photo ${index + 1}`} 
+                      className="preview-image" 
+                      onClick={() => setLightboxImage(getMediaUrl(photo))}
+                    />
                   </div>
                 ))}
               </div>
@@ -214,12 +279,44 @@ const AdminPage = () => {
             <h5 className="mt-4">Video</h5>
             {selectedActor.video ? (
               <video controls className="w-100">
-                <source src={`http://192.168.128.1:5000/${selectedActor.video}`} type="video/mp4" />
+                <source src={getMediaUrl(selectedActor.video)} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
               <p>No video available</p>
             )}
+          </Modal.Body>
+        </Modal>
+      )}
+
+      {selectedScript && (
+        <Modal show={true} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedScript.fullName}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Row>
+              <Col><strong>Country:</strong> {selectedScript.country || "N/A"}</Col>
+              <Col><strong>Gender:</strong> {selectedScript.sex || "N/A"}</Col>
+            </Row>
+            <Row>
+              <Col><strong>Phone:</strong> {selectedScript.phone || "N/A"}</Col>
+              <Col><strong>Email:</strong> {selectedScript.email || "N/A"}</Col>
+            </Row>
+            <Row>
+              <Col><strong>Submitted on:</strong> {new Date(selectedScript.submissionDate).toLocaleDateString()}</Col>
+            </Row>
+            <Button href={getMediaUrl(selectedScript.scriptFile)} target="_blank" variant="primary" className="mt-4">
+              Download Script
+            </Button>
+          </Modal.Body>
+        </Modal>
+      )}
+
+      {lightboxImage && (
+        <Modal show={true} onHide={handleLightboxClose} centered size="lg">
+          <Modal.Body>
+            <img src={lightboxImage} alt="Enlarged view" className="w-100" />
           </Modal.Body>
         </Modal>
       )}
