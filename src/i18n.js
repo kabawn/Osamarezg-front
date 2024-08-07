@@ -21,7 +21,7 @@ const resources = {
          close: "Close",
          home: "Home",
          about: "About",
-         works: "Works",
+         credits: "Credits",
          contact: "Contact",
          trailer: "Trailer",
          fullName: "Full Name",

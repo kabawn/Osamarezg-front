@@ -179,8 +179,8 @@ const works = [
          btsBanatAlam6,
       ],
       awards: {
-         en: ["Best Director", "Best Picture"],
-         ar: ["أفضل مخرج", "أفضل صورة"],
+         en: ["", ""],
+         ar: [" ", " "],
       },
       details: {
          episodes: { en: "14 episodes", ar: "14 حلقة" },
