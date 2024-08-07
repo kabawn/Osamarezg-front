@@ -87,12 +87,13 @@ const resources = {
          successCasting: "Thanks for submitting for the casting. We will contact you soon.",
          errorCasting: "Failed to submit casting data.",
          errorCastingTryAgain: "Error submitting casting data. Please try again later.",
-         signout:"Sign out",
-         login:"Login",
-         sex:"Gender",
-         selectSex:"Select Sex",
-
-
+         signout: "Sign out",
+         login: "Login",
+         sex: "Gender",
+         selectSex: "Select Sex",
+         DirectorBlog: "Director's Blog",
+         Latest: "Latest insights and articles from the director.",
+         readmore:"Read More"
 
       },
    },
@@ -179,12 +180,15 @@ const resources = {
          successCasting: "شكرًا لتقديم طلب التمثيل. سنتواصل معك قريبًا.",
          errorCasting: "فشل في تقديم بيانات التمثيل.",
          errorCastingTryAgain: "حدث خطأ أثناء تقديم بيانات التمثيل. يرجى المحاولة مرة أخرى لاحقًا.",
-         login:"تسجيل الدخول",
-         signout:"تسجيل الخروج",
-         nationality:"الجنسية اختار البلد",
-         country:"البلد",
-         sex:"الجنس",
-         selectSex:"اختر الجنس",
+         login: "تسجيل الدخول",
+         signout: "تسجيل الخروج",
+         nationality: "الجنسية اختار البلد",
+         country: "البلد",
+         sex: "الجنس",
+         selectSex: "اختر الجنس",
+         DirectorBlog: "مدونة المخرج",
+         Latest: "مقالات من المخرج",
+         readmore:"اقرا المزيد"
       },
    },
 };

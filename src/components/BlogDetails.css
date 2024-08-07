@@ -1,0 +1,49 @@
+.blog-details-section {
+    padding: 60px 15px;
+    background-color: #060000;
+    color: #ffffff;
+  }
+  
+  .rtl {
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .ltr {
+    direction: ltr;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .section-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-subheader {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+  
+  .blog-details-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .blog-details-content {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .section-header {
+      font-size: 2rem;
+    }
+  
+    .section-subheader {
+      font-size: 1rem;
+    }
+  }
+  

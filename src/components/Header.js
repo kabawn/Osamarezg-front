@@ -42,6 +42,7 @@ const Header = () => {
   const currentLang = i18n.language;
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -56,27 +57,31 @@ const Header = () => {
     navigate('/');
   };
 
+  const handleNavLinkClick = () => {
+    setExpanded(false);
+  };
+
   return (
-    <StyledNavbar expand="lg" className="header" lang={currentLang}>
+    <StyledNavbar expand="lg" className="header" lang={currentLang} expanded={expanded}>
       <Container>
         <BrandLink to="/">OSAMA REZEG</BrandLink>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`ms-auto ${currentLang === 'ar' ? 'nav-ar' : 'nav-en'}`}>
-            <NavLink to="/">{t('home')}</NavLink>
-            <NavLink to="/director">{t('about')}</NavLink>
-            <NavLink to="/works">{t('works')}</NavLink>
-            <NavLink to="/blog">{t('blog')}</NavLink>
-            <NavLink to="/casting">{t('casting')}</NavLink>
-            <NavLink to="/submit-script">{t('sendScript')}</NavLink>
-            <NavLink to="/exclusive">{t('exclusive')}</NavLink>
-            <NavLink to="/contact">{t('contact')}</NavLink>
+            <NavLink to="/" onClick={handleNavLinkClick}>{t('home')}</NavLink>
+            <NavLink to="/director" onClick={handleNavLinkClick}>{t('about')}</NavLink>
+            <NavLink to="/works" onClick={handleNavLinkClick}>{t('works')}</NavLink>
+            <NavLink to="/blog" onClick={handleNavLinkClick}>{t('blog')}</NavLink>
+            <NavLink to="/casting" onClick={handleNavLinkClick}>{t('casting')}</NavLink>
+            <NavLink to="/submit-script" onClick={handleNavLinkClick}>{t('sendScript')}</NavLink>
+            <NavLink to="/exclusive" onClick={handleNavLinkClick}>{t('exclusive')}</NavLink>
+            <NavLink to="/contact" onClick={handleNavLinkClick}>{t('contact')}</NavLink>
             {isLoggedIn ? (
-              <Button variant="outline-light" onClick={handleLogout} className="auth-button">
+              <Button variant="outline-light" onClick={() => { handleLogout(); handleNavLinkClick(); }} className="auth-button">
                 {t('signout')}
               </Button>
             ) : (
-              <NavLink to="/login" className="auth-button">
+              <NavLink to="/login" onClick={handleNavLinkClick} className="auth-button">
                 <Button variant="outline-light">{t('login')}</Button>
               </NavLink>
             )}

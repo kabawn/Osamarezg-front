@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "../axios"; // Adjust the path as necessary
-import { Container, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button,  } from "react-bootstrap";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import heroImage from "../assets/herodirector.jpg"; // Ensure you have this image in the correct path
@@ -34,15 +34,20 @@ const HeroContent = styled.div`
 const AdminPage = () => {
   const [castings, setCastings] = useState([]);
   const [scripts, setScripts] = useState([]);
+  const [blogs, setBlogs] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedActor, setSelectedActor] = useState(null);
   const [selectedScript, setSelectedScript] = useState(null);
+  const [selectedBlog, setSelectedBlog] = useState(null);
   const [filterGender, setFilterGender] = useState("");
   const [filterNationality, setFilterNationality] = useState("");
   const [filterMinAge, setFilterMinAge] = useState("");
   const [filterMaxAge, setFilterMaxAge] = useState("");
   const [lightboxImage, setLightboxImage] = useState(null);
+  const [blogForm, setBlogForm] = useState({ title: "", content: "", author: "", images: [] });
+  const [showBlogModal, setShowBlogModal] = useState(false);
+  const [isEditingBlog, setIsEditingBlog] = useState(false);
 
   useEffect(() => {
     const fetchCastings = async () => {
@@ -83,8 +88,28 @@ const AdminPage = () => {
       }
     };
 
+    const fetchBlogs = async () => {
+      const token = localStorage.getItem("token"); // Assume the token is stored in localStorage
+      if (!token) {
+        setErrorMessage("You are not authorized to view this page.");
+        return;
+      }
+
+      try {
+        const response = await axios.get("/blogs", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        setBlogs(response.data);
+      } catch (error) {
+        setErrorMessage("Error fetching blog data.");
+      }
+    };
+
     fetchCastings();
     fetchScripts();
+    fetchBlogs();
   }, []);
 
   const handleSearch = (e) => {
@@ -99,9 +124,14 @@ const AdminPage = () => {
     setSelectedScript(script);
   };
 
+  
+
   const handleClose = () => {
     setSelectedActor(null);
     setSelectedScript(null);
+    setSelectedBlog(null);
+    setShowBlogModal(false);
+    setIsEditingBlog(false);
   };
 
   const handleLightboxClose = () => {
@@ -121,6 +151,71 @@ const AdminPage = () => {
 
     return matchesName && matchesGender && matchesNationality && matchesMinAge && matchesMaxAge;
   });
+
+  const handleBlogFormChange = (e) => {
+    const { name, value, files } = e.target;
+    if (name === "images") {
+      setBlogForm({ ...blogForm, images: Array.from(files) });
+    } else {
+      setBlogForm({ ...blogForm, [name]: value });
+    }
+  };
+
+  const handleBlogSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append("title", blogForm.title);
+    formData.append("content", blogForm.content);
+    formData.append("author", blogForm.author);
+    blogForm.images.forEach((image, index) => {
+      formData.append(`images`, image);
+    });
+
+    try {
+      const token = localStorage.getItem("token");
+      const config = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "multipart/form-data",
+        },
+      };
+
+      if (isEditingBlog) {
+        await axios.put(`/blogs/${selectedBlog._id}`, formData, config);
+      } else {
+        await axios.post("/blogs", formData, config);
+      }
+
+      setBlogForm({ title: "", content: "", author: "", images: [] });
+      handleClose();
+      // Refresh blogs list
+      const response = await axios.get("/blogs", config);
+      setBlogs(response.data);
+    } catch (error) {
+      setErrorMessage("Error submitting blog post.");
+    }
+  };
+
+  const handleBlogDelete = async (blogId) => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.delete(`/blogs/${blogId}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      // Refresh blogs list
+      const response = await axios.get("/blogs", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setBlogs(response.data);
+    } catch (error) {
+      setErrorMessage("Error deleting blog post.");
+    }
+  };
 
   return (
     <>
@@ -239,6 +334,39 @@ const AdminPage = () => {
               )}
             </Row>
           </Tab>
+          <Tab eventKey="blogs" title="Blogs">
+            <h2 className="mt-4">Manage Blog Posts</h2>
+            <Button variant="primary" className="mb-4" onClick={() => setShowBlogModal(true)}>
+              Add New Blog Post
+            </Button>
+            <Row>
+              {blogs.length > 0 ? (
+                blogs.map((blog) => (
+                  <Col key={blog._id} md={4}>
+                    <Card className="mb-4">
+                      {blog.images.length > 0 && (
+                        <Card.Img variant="top" src={getMediaUrl(blog.images[0])} alt={blog.title} />
+                      )}
+                      <Card.Body>
+                        <Card.Title>{blog.title}</Card.Title>
+                        <Card.Text>{blog.content.substring(0, 100)}...</Card.Text>
+                        <Button variant="secondary" onClick={() => { setSelectedBlog(blog); setIsEditingBlog(true); setShowBlogModal(true); }}>
+                          Edit
+                        </Button>
+                        <Button variant="danger" className="ml-2" onClick={() => handleBlogDelete(blog._id)}>
+                          Delete
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))
+              ) : (
+                <Col>
+                  <p className="text-center">No blogs available.</p>
+                </Col>
+              )}
+            </Row>
+          </Tab>
         </Tabs>
       </Container>
 
@@ -264,13 +392,13 @@ const AdminPage = () => {
               <div className="photo-previews">
                 {selectedActor.photos.map((photo, index) => (
                   <div key={index} className="preview-container">
-                    <img 
-                      src={getMediaUrl(photo)} 
-                      alt={`Photo ${index + 1}`} 
-                      className="preview-image" 
-                      onClick={() => setLightboxImage(getMediaUrl(photo))}
-                    />
-                  </div>
+                  <img 
+                    src={getMediaUrl(photo)} 
+                    alt={`Casting submission ${index + 1}`} 
+                    className="preview-image" 
+                    onClick={() => setLightboxImage(getMediaUrl(photo))}
+                  />
+                </div>
                 ))}
               </div>
             ) : (
@@ -320,6 +448,60 @@ const AdminPage = () => {
           </Modal.Body>
         </Modal>
       )}
+
+      <Modal show={showBlogModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{isEditingBlog ? "Edit Blog Post" : "Add Blog Post"}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleBlogSubmit}>
+            <Form.Group controlId="title">
+              <Form.Label>Title</Form.Label>
+              <Form.Control
+                type="text"
+                name="title"
+                value={blogForm.title}
+                onChange={handleBlogFormChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group controlId="content" className="mt-3">
+              <Form.Label>Content</Form.Label>
+              <Form.Control
+                as="textarea"
+                name="content"
+                value={blogForm.content}
+                onChange={handleBlogFormChange}
+                rows={5}
+                required
+              />
+            </Form.Group>
+            <Form.Group controlId="author" className="mt-3">
+              <Form.Label>Author</Form.Label>
+              <Form.Control
+                type="text"
+                name="author"
+                value={blogForm.author}
+                onChange={handleBlogFormChange}
+                required
+              />
+            </Form.Group>
+            <Form.Group controlId="images" className="mt-3">
+              <Form.Label>Images</Form.Label>
+              <Form.Control
+                type="file"
+                name="images"
+                onChange={handleBlogFormChange}
+                multiple
+                accept="image/*"
+              />
+            </Form.Group>
+            <Button variant="primary" type="submit" className="mt-4">
+              {isEditingBlog ? "Update" : "Submit"}
+            </Button>
+          </Form>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };
