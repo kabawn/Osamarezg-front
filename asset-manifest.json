@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Osamarezg-front/static/css/main.a7355aa2.css",
-    "main.js": "/Osamarezg-front/static/js/main.b8063178.js",
+    "main.css": "/Osamarezg-front/static/css/main.0a9ee4f7.css",
+    "main.js": "/Osamarezg-front/static/js/main.33035474.js",
     "static/media/introhero.mp4": "/Osamarezg-front/static/media/introhero.0a3448b4577ad05cd1f0.mp4",
     "static/media/2.jpg": "/Osamarezg-front/static/media/2.dd4f111f60aea281bdb3.jpg",
     "static/media/6.jpg": "/Osamarezg-front/static/media/6.8f46943169bf6b0d6538.jpg",
@@ -46,12 +46,9 @@
     "static/media/award.png": "/Osamarezg-front/static/media/award.2ac46a0fe628f55469ff.png",
     "static/media/maghrebi_film_festival.jpeg": "/Osamarezg-front/static/media/maghrebi_film_festival.b0bb4367b06fe379451f.jpeg",
     "static/media/osamaoknoback.png": "/Osamarezg-front/static/media/osamaoknoback.11cbe0aff73193122172.png",
-    "static/media/blog1.png": "/Osamarezg-front/static/media/blog1.b698c4f659b3d5794f2f.png",
     "static/media/Raleway-Regular.ttf": "/Osamarezg-front/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
     "static/media/Raleway-Bold.ttf": "/Osamarezg-front/static/media/Raleway-Bold.8e546283422c830c02dc.ttf",
-    "static/media/blog2.png": "/Osamarezg-front/static/media/blog2.83463bb23f98c71d238a.png",
     "static/media/International Cinema.jpg": "/Osamarezg-front/static/media/International Cinema.cde7662666c2be4a391c.jpg",
-    "static/media/blog3.png": "/Osamarezg-front/static/media/blog3.2fd763c1a7638d6657e0.png",
     "static/media/Motassim Alnahar.jpg": "/Osamarezg-front/static/media/Motassim Alnahar.df8b3cc8a35286a46853.jpg",
     "static/media/byar.jpg": "/Osamarezg-front/static/media/byar.3f126be859d3eddc30d1.jpg",
     "static/media/arab_film_festival.jpg": "/Osamarezg-front/static/media/arab_film_festival.3fb86101b55a6db1438d.jpg",
@@ -66,11 +63,11 @@
     "static/media/slick.ttf": "/Osamarezg-front/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Osamarezg-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Osamarezg-front/index.html",
-    "main.a7355aa2.css.map": "/Osamarezg-front/static/css/main.a7355aa2.css.map",
-    "main.b8063178.js.map": "/Osamarezg-front/static/js/main.b8063178.js.map"
+    "main.0a9ee4f7.css.map": "/Osamarezg-front/static/css/main.0a9ee4f7.css.map",
+    "main.33035474.js.map": "/Osamarezg-front/static/js/main.33035474.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7355aa2.css",
-    "static/js/main.b8063178.js"
+    "static/css/main.0a9ee4f7.css",
+    "static/js/main.33035474.js"
   ]
 }
