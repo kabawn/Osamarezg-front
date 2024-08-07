@@ -70,7 +70,7 @@ const Header = () => {
           <Nav className={`ms-auto ${currentLang === 'ar' ? 'nav-ar' : 'nav-en'}`}>
             <NavLink to="/" onClick={handleNavLinkClick}>{t('home')}</NavLink>
             <NavLink to="/director" onClick={handleNavLinkClick}>{t('about')}</NavLink>
-            <NavLink to="/works" onClick={handleNavLinkClick}>{t('Credits')}</NavLink>
+            <NavLink to="/works" onClick={handleNavLinkClick}>{t('credits')}</NavLink>
             <NavLink to="/blog" onClick={handleNavLinkClick}>{t('blog')}</NavLink>
             <NavLink to="/casting" onClick={handleNavLinkClick}>{t('casting')}</NavLink>
             <NavLink to="/submit-script" onClick={handleNavLinkClick}>{t('sendScript')}</NavLink>

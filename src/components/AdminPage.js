@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "../axios"; // Adjust the path as necessary
-import { Container, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button,  } from "react-bootstrap";
+import { Container, Alert, Tabs, Tab, Form, Card, Row, Col, Modal, Button } from "react-bootstrap";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import heroImage from "../assets/herodirector.jpg"; // Ensure you have this image in the correct path
 import "./AdminPage.css"; // Import the CSS file for custom styling
@@ -32,6 +33,10 @@ const HeroContent = styled.div`
 `;
 
 const AdminPage = () => {
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
+  const isRtl = currentLang === 'ar';
+
   const [castings, setCastings] = useState([]);
   const [scripts, setScripts] = useState([]);
   const [blogs, setBlogs] = useState([]);
@@ -124,7 +129,12 @@ const AdminPage = () => {
     setSelectedScript(script);
   };
 
-  
+  const handleBlogClick = (blog) => {
+    setSelectedBlog(blog);
+    setBlogForm({ title: blog.title, content: blog.content, author: blog.author, images: [] });
+    setIsEditingBlog(true);
+    setShowBlogModal(true);
+  };
 
   const handleClose = () => {
     setSelectedActor(null);
@@ -226,7 +236,7 @@ const AdminPage = () => {
           <p>Manage casting requests and scripts</p>
         </HeroContent>
       </HeroSection>
-      <Container>
+      <Container className={isRtl ? "rtl" : "ltr"}>
         {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
         <Form className="mb-4">
           <Row>
@@ -286,7 +296,7 @@ const AdminPage = () => {
                       <Card.Img
                         variant="top"
                         src={casting.photos.length > 0 ? getMediaUrl(casting.photos[0]) : 'default-profile.png'}
-                        alt={`${casting.fullName}'s profile`}
+                        alt={`${casting.fullName}`}
                         className="profile-img"
                       />
                       <Card.Body>
@@ -350,7 +360,7 @@ const AdminPage = () => {
                       <Card.Body>
                         <Card.Title>{blog.title}</Card.Title>
                         <Card.Text>{blog.content.substring(0, 100)}...</Card.Text>
-                        <Button variant="secondary" onClick={() => { setSelectedBlog(blog); setIsEditingBlog(true); setShowBlogModal(true); }}>
+                        <Button variant="secondary" onClick={() => handleBlogClick(blog)}>
                           Edit
                         </Button>
                         <Button variant="danger" className="ml-2" onClick={() => handleBlogDelete(blog._id)}>
@@ -392,13 +402,13 @@ const AdminPage = () => {
               <div className="photo-previews">
                 {selectedActor.photos.map((photo, index) => (
                   <div key={index} className="preview-container">
-                  <img 
-                    src={getMediaUrl(photo)} 
-                    alt={`Casting submission ${index + 1}`} 
-                    className="preview-image" 
-                    onClick={() => setLightboxImage(getMediaUrl(photo))}
-                  />
-                </div>
+                    <img 
+                      src={getMediaUrl(photo)} 
+                      alt={`Casting submission ${index + 1}`} 
+                      className="preview-image" 
+                      onClick={() => setLightboxImage(getMediaUrl(photo))}
+                    />
+                  </div>
                 ))}
               </div>
             ) : (
@@ -449,14 +459,14 @@ const AdminPage = () => {
         </Modal>
       )}
 
-      <Modal show={showBlogModal} onHide={handleClose}>
+      <Modal show={showBlogModal} onHide={handleClose} className={isRtl ? "rtl" : "ltr"}>
         <Modal.Header closeButton>
-          <Modal.Title>{isEditingBlog ? "Edit Blog Post" : "Add Blog Post"}</Modal.Title>
+          <Modal.Title>{isEditingBlog ? t("Edit Blog Post") : t("Add Blog Post")}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleBlogSubmit}>
             <Form.Group controlId="title">
-              <Form.Label>Title</Form.Label>
+              <Form.Label>{t("Title")}</Form.Label>
               <Form.Control
                 type="text"
                 name="title"
@@ -466,7 +476,7 @@ const AdminPage = () => {
               />
             </Form.Group>
             <Form.Group controlId="content" className="mt-3">
-              <Form.Label>Content</Form.Label>
+              <Form.Label>{t("Content")}</Form.Label>
               <Form.Control
                 as="textarea"
                 name="content"
@@ -477,7 +487,7 @@ const AdminPage = () => {
               />
             </Form.Group>
             <Form.Group controlId="author" className="mt-3">
-              <Form.Label>Author</Form.Label>
+              <Form.Label>{t("Author")}</Form.Label>
               <Form.Control
                 type="text"
                 name="author"
@@ -487,7 +497,7 @@ const AdminPage = () => {
               />
             </Form.Group>
             <Form.Group controlId="images" className="mt-3">
-              <Form.Label>Images</Form.Label>
+              <Form.Label>{t("Images")}</Form.Label>
               <Form.Control
                 type="file"
                 name="images"
@@ -497,7 +507,7 @@ const AdminPage = () => {
               />
             </Form.Group>
             <Button variant="primary" type="submit" className="mt-4">
-              {isEditingBlog ? "Update" : "Submit"}
+              {isEditingBlog ? t("Update") : t("Submit")}
             </Button>
           </Form>
         </Modal.Body>

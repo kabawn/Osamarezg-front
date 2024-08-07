@@ -115,7 +115,7 @@ const resources = {
          close: "إغلاق",
          home: "الرئيسية",
          about: "عن المخرج",
-         works: "الأعمال",
+         credits: "الأعمال",
          blog: "مدونة", // Removed duplicate key
          contact: "تواصل",
          trailer: "فيديو الاعلان ",
