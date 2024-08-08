@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 140vh;
+  min-height: 150vh;
   position: relative;
   overflow: hidden;
 }
@@ -74,7 +74,7 @@
 
 /* New section styles */
 .script-submission {
-  margin-top: 120px; /* Space between existing content and new section */
+  margin-top: 50px; /* Space between existing content and new section */
 }
 
 .script-submission h3 {
