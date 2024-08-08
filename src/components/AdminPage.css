@@ -51,6 +51,13 @@
     color: white;
     padding: 100px 0;
   }
+
+/* Custom CSS */
+.btn-primary.button-black-text {
+  color: black;
+  background-color: aliceblue; /* Ensure the background color is aliceblue */
+  border-color: aliceblue; /* Ensure the border color matches the background */
+}
   
   .casting-page .hero-image h1,
   .casting-page .hero-image p {

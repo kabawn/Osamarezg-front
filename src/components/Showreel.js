@@ -14,7 +14,7 @@ const Showreel = () => {
     <div className="showreel-container" dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="showreel-text" style={{ fontFamily: isRtl ? 'Tajawal, sans-serif' : 'Raleway, sans-serif' }}>
         <h1 className='title'>{t('showreelTitle')}</h1>
-        <p>{t('showreelDescription')}</p>
+        <h4 className='smalltex'>{t('showreelDescription')}</h4>
       </div>
       <iframe
         className="showreel-video"

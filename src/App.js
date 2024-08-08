@@ -20,12 +20,14 @@ import ScriptSubmission from './components/ScriptSubmission';
 import LoginPage from './components/LoginPage';
 import AdminPage from './components/AdminPage';
 import BlogDetails from './components/BlogDetails'; // Import the BlogDetails component
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
 import './index.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Include the ScrollToTop component inside Router */}
       <Header />
       <Routes>
         <Route path="/" element={
@@ -49,7 +51,6 @@ function App() {
         <Route path="/login" element={<LoginPage />} /> 
         <Route path="/admin" element={<AdminPage />} /> 
         <Route path="/blogs/:id" element={<BlogDetails />} /> {/* Add route for blog details */}
-
       </Routes>
       <Footer />
     </Router>

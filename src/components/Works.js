@@ -1,4 +1,3 @@
-// src/components/Works.js
 import React, { useState } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -89,12 +88,12 @@ const Works = () => {
             </div>
          </Container>
 
-         <Modal show={selectedVideo !== null} onHide={handleClose} centered>
+         <Modal show={selectedVideo !== null} onHide={handleClose} centered dialogClassName="video-modal-dialog">
             <Modal.Body className="video-modal">
                {selectedVideo && (
                   <iframe
                      width="100%"
-                     height="400px"
+                     height="70vh"
                      src={selectedVideo}
                      frameBorder="0"
                      allow="autoplay; encrypted-media"
@@ -102,6 +101,7 @@ const Works = () => {
                      title="Selected Video"
                   ></iframe>
                )}
+               <button className="close-button" onClick={handleClose}>×</button>
             </Modal.Body>
          </Modal>
       </section>

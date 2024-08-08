@@ -18,10 +18,6 @@ import poster10 from "../assets/posters/The Random.webp";
 import poster12 from "../assets/posters/fobya.webp";
 import poster13 from "../assets/posters/ayad.webp";
 
-
-
-
-
 //  import video1 from '../assets/videos/bnat.mp4';
 // import video2 from "../assets/videos/SarayaS2.mp4";
 // import video3 from "../assets/videos/SarayaS1.mp4";
@@ -31,8 +27,6 @@ import poster13 from "../assets/posters/ayad.webp";
 // import video7 from "../assets/videos/zanghatS1.mp4";
 // import video8 from '../assets/videos/Dragunov.mp4';
 // import video9 from '../assets/videos/el barouni.mp4'
-
-
 
 import btsAlsaraya1 from "../assets/bts/alsraya/1.jpg";
 import btsAlsaraya2 from "../assets/bts/alsraya/2.jpg";
@@ -53,8 +47,6 @@ import btsAlsaraya29 from "../assets/bts/alsraya2/9.jpg";
 import btsAlsaraya210 from "../assets/bts/alsraya2/10.jpg";
 import btsAlsaraya211 from "../assets/bts/alsraya2/11.jpg";
 import btsAlsaraya212 from "../assets/bts/alsraya2/12.jpg";
-
-
 
 import btsBanatAlam1 from "../assets/bts/bnat/1.jpg";
 import btsBanatAlam2 from "../assets/bts/bnat/2.jpg";
@@ -98,14 +90,12 @@ import btsrubik10 from "../assets/bts/rubik/10.jpg";
 import btsrubik11 from "../assets/bts/rubik/11.jpg";
 import btsrubik12 from "../assets/bts/rubik/12.jpg";
 
-
 import btsdragnuf1 from "../assets/bts/dragnof/1.jpg";
 import btsdragnuf2 from "../assets/bts/dragnof/2.jpg";
 import btsdragnuf3 from "../assets/bts/dragnof/3.jpg";
 import btsdragnuf4 from "../assets/bts/dragnof/4.jpg";
 import btsdragnuf5 from "../assets/bts/dragnof/5.jpg";
 import btsdragnuf6 from "../assets/bts/dragnof/6.jpg";
-
 
 import btstherandom1 from "../assets/bts/therandom/1.jpg";
 import btstherandom2 from "../assets/bts/therandom/2.jpg";
@@ -127,7 +117,6 @@ import btsfobya7 from "../assets/bts/fobya/7.jpg";
 import btsfobya8 from "../assets/bts/fobya/8.jpg";
 import btsfobya9 from "../assets/bts/fobya/9.jpg";
 
-
 import btsayad1 from "../assets/bts/ayad/1.jpg";
 import btsayad2 from "../assets/bts/ayad/2.jpg";
 import btsayad3 from "../assets/bts/ayad/3.jpg";
@@ -140,7 +129,6 @@ import btsayad9 from "../assets/bts/ayad/9.jpg";
 import btsayad10 from "../assets/bts/ayad/10.jpg";
 import btsayad11 from "../assets/bts/ayad/11.jpg";
 import btsayad12 from "../assets/bts/ayad/12.jpg";
-
 
 import btsqaseq1 from "../assets/bts/gaseq/1.jpg";
 import btsqaseq2 from "../assets/bts/gaseq/2.jpg";
@@ -155,9 +143,6 @@ import btsqaseq10 from "../assets/bts/gaseq/10.jpg";
 import btsqaseq11 from "../assets/bts/gaseq/11.jpg";
 import btsqaseq12 from "../assets/bts/gaseq/12.jpg";
 
-
-
-
 const works = [
    {
       id: 1,
@@ -165,7 +150,7 @@ const works = [
       title: { en: "Banat Alam", ar: "بنات العم" },
       year: 2024,
       description: {
-         en: "Banat Alam takes place in the present day, following the life of Khulood who lives with her uncle Nouri after the death of her father and her mother's remarriage and move abroad. Khulood grows up with her cousin Afaf in the same household. Despite being cousins, the two girls are as close as sisters, studying in the same college. Their dreams and aspirations diverge, with Khulood seeking a luxurious life through marrying a wealthy and powerful man, while Afaf believes in personal success through hard work and self-reliance.",
+         en: "Banat Alam takes place in the present day, following the life of Khulood who lives with her uncle Nouri after the death of her father and her mother's remarriage and move abroad. Khulood grows up with her cousin Afaf in the same household. Despite being cousins, the two girls are as close as sisters, studying in the same college. Their dreARTand aspirations diverge, with Khulood seeking a luxurious life through marrying a wealthy and powerful man, while Afaf believes in personal success through hard work and self-reliance.",
          ar: "تدور أحداث مسلسل بنات العم في وقتنا الحالي حيث تعيش خلود في منزل عمها نوري بعد وفاة والدها وزواج والدتها وسفرها إلى الخارج. تتربى خلود وتكبر في كنف عمها الحاج نوري بصحبة ابنة عمها عفاف التي تماثلها في العمر وتدرس معها في نفس الكلية وتبدوان في قمة الانسجام كأختين وليس بنات عم. تتقاطع أحلام الفتاتين وتختلف بين جرأة خلود وطبيعتها المادية وسعيها للارتقاء في الحياة والارتباط بشخص قوي وغني يضمن لها الحياة الرغيدة التي تتمناها وبين نظرة عفاف المختلفة للحياة وإيمانها بأن قيمة الشخص الحقيقية تكمن في نجاحه الناتج عن اجتهاده الشخصي وليس الناتج عن اعتماده على الغير.",
       },
       trailer: "https://drive.google.com/file/d/1eylvo1WyWEYjr_ev6EAjKMGDmoEkFKQE/preview",
@@ -185,7 +170,7 @@ const works = [
       details: {
          episodes: { en: "14 episodes", ar: "14 حلقة" },
          duration: { en: "55 to 60 minutes", ar: "55 إلى 60 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2024", ar: "2024" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -231,7 +216,7 @@ const works = [
       details: {
          episodes: { en: "13 episodes", ar: " 13 حلقة" },
          duration: { en: "55 to 60 minutes", ar: " 55 الى 60 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2023", ar: "2023" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -252,7 +237,8 @@ const works = [
          ar: 'ملخص المسلسل: يؤرخ الجزء الأول من "السرايا" لإحدى أهم الفترات في التاريخ الليبي، مركّزًا على الصراع على السلطة خلال حكم الأسرة القرمانلية لإيالة طرابلس. تدور الأحداث بين عامي 1784 و1795، كاشفةً عن الصراعات الخفية داخل العائلة الحاكمة والمؤامرات الداخلية والخارجية ضد الدولة.',
       },
       trailer: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/alsaraya/174735?section-first=174738&section-second=174741",
+      fullShowLink:
+         "https://www.toog.ly/ar/detail/alsaraya/174735?section-first=174738&section-second=174741",
       btsImages: [
          btsAlsaraya1,
          btsAlsaraya2,
@@ -270,7 +256,7 @@ const works = [
       details: {
          episodes: { en: "14 episodes", ar: " 14 حلقة" },
          duration: { en: "55 to 60 minutes", ar: " 55 الى 60 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2022", ar: "2022" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -315,7 +301,7 @@ const works = [
       details: {
          episodes: { en: "15 episodes", ar: "15 حلقة" },
          duration: { en: "45 to 60 minutes", ar: "45 الى 60 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2021", ar: "2021" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Abdulrahman Haqiq", ar: "عبد الرحمان حقيق" },
@@ -351,7 +337,8 @@ const works = [
          btsqaseq9,
          btsqaseq10,
          btsqaseq11,
-         btsqaseq12,      ],
+         btsqaseq12,
+      ],
       awards: {
          en: [
             "Septimius Award for Best Series - Libya",
@@ -373,7 +360,7 @@ const works = [
       details: {
          episodes: { en: "10 episodes", ar: "10 حلقات" },
          duration: { en: "60 minutes", ar: "60 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2021", ar: "2021" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -410,7 +397,7 @@ const works = [
       details: {
          episodes: { en: "18 episodes", ar: "18 حلقة" },
          duration: { en: "40 to 50 minutes", ar: "40 إلى 50 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2020", ar: "2020" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Ezzat Shalabi, Ahmed Nabil", ar: "عزة شلبي، أحمد نبيل" },
@@ -431,7 +418,8 @@ const works = [
          ar: "ملخص المسلسل: مسلسل (زنقة الريح) دراما تاريخية اجتماعية، تدور أحداثها سنة 1945 في مدينة طرابلس في ليبيا، يُبرز معاناة الشعب الليبي في ظل حكم الإدارة البريطانية التي نصّبت حاكم على ليبيا بعد الحرب العالمية الثانية وهزيمة إيطاليا. في غياب أي اهتمام إعلامي أو حقوقي قامت الإدارة العسكرية البريطانية بتسهيل الإجراءات للجاليات الأجنبية على حساب أبناء الوطن، كما يبرز المسلسل الحياة الاجتماعية، والعادات والتقاليد التي كانت سائدة بين سكان طرابلس من جميع الأديان والأعراق، تجمعهم مدينة واحدة ووطن واحد، يتشاركون فيه أفراحهم وأحزانهم.",
       },
       trailer: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/zaget-alreeh/172116?section-first=172119&section-second=172128",
+      fullShowLink:
+         "https://www.toog.ly/ar/detail/zaget-alreeh/172116?section-first=172119&section-second=172128",
       btsImages: [btszanget1, btszanget2, btszanget3, btszanget4, btszanget5, btszanget6],
 
       awards: {
@@ -441,7 +429,7 @@ const works = [
       details: {
          episodes: { en: "20 episodes", ar: "20 حلقة" },
          duration: { en: "45 to 55 minutes", ar: "45 إلى 55 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2019", ar: "2019" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Abdul Rahman Haqiq", ar: "عبد الرحمان حقيق" },
@@ -464,14 +452,7 @@ const works = [
       },
       trailer: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview",
       fullShowLink: "https://www.toog.ly/ar/detail/draganof/172272",
-      btsImages: [
-         btsdragnuf1,
-         btsdragnuf2,
-         btsdragnuf3,
-         btsdragnuf4,
-         btsdragnuf5,
-         btsdragnuf6,
-      ],
+      btsImages: [btsdragnuf1, btsdragnuf2, btsdragnuf3, btsdragnuf4, btsdragnuf5, btsdragnuf6],
       awards: {
          en: ["Best Director", "Best Action Sequence"],
          ar: ["أفضل مخرج", "أفضل تسلسل حركة"],
@@ -479,7 +460,7 @@ const works = [
       details: {
          episodes: { en: "15 episodes", ar: "15 حلقة" },
          duration: { en: "45 minutes", ar: "45 دقيقة" },
-         productionCompany: { en: "AMS Company", ar: "شركة AMS" },
+         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
          productionYear: { en: "2014", ar: "2014" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -494,14 +475,14 @@ const works = [
    {
       id: 9,
       poster: poster9, // Make sure to replace 'poster9' with the correct import or path
-      title: { en: 'Rubik', ar: 'روبيك' },
+      title: { en: "Rubik", ar: "روبيك" },
       year: 2017,
-      description: { 
-        en: 'The series follows the story of Marwan, an orphaned young man whose parents died in the Libyan Airlines plane crash in 1992. Raised in his aunt\'s house, he was mistreated by her husband and forced to work in a car repair shop. He eventually becomes a criminal and a murderer after experiencing a love story.',
-        ar: 'يستعرض المسلسل قصة الشاب اليتيم (مروان) الذي توفي والداه في حادث سقوط طائرة الخطوط الليبية في عام 1992، ونشأ في بيت عمته حيث تعرض لمعاملة سيئة من زوجها واضطر للعمل في ورشة لتصليح السيارات، ثم تحول إلى مجرم وسفاح بعد مروره بقصة حب.'
+      description: {
+         en: "The series follows the story of Marwan, an orphaned young man whose parents died in the Libyan Airlines plane crash in 1992. Raised in his aunt's house, he was mistreated by her husband and forced to work in a car repair shop. He eventually becomes a criminal and a murderer after experiencing a love story.",
+         ar: "يستعرض المسلسل قصة الشاب اليتيم (مروان) الذي توفي والداه في حادث سقوط طائرة الخطوط الليبية في عام 1992، ونشأ في بيت عمته حيث تعرض لمعاملة سيئة من زوجها واضطر للعمل في ورشة لتصليح السيارات، ثم تحول إلى مجرم وسفاح بعد مروره بقصة حب.",
       },
-      trailer: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview", 
-      fullShowLink: 'https://www.youtube.com/@imagecomly/videos',
+      trailer: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview",
+      fullShowLink: "https://www.youtube.com/@imagecomly/videos",
       btsImages: [
          btsrubik1,
          btsrubik2,
@@ -515,38 +496,37 @@ const works = [
          btsrubik10,
          btsrubik11,
          btsrubik12,
-
       ], // Add behind-the-scenes images if available
-      awards: { 
-        en: [], // Add awards if any
-        ar: []
+      awards: {
+         en: [], // Add awards if any
+         ar: [],
       },
       details: {
-        episodes: { en: '', ar: '' }, // Not applicable for movies
-        duration: { en: '', ar: '' }, // Not applicable for movies
-        productionCompany: { en: 'ART Production', ar: 'ART Productıon' },
-        productionYear: { en: '2017', ar: '2017' },
-        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
-        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
-        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
-        cast: { 
-          en: 'Wasif Al-Khuwailidi, Mohamed Osman, Munira Al-Balrouin, Mohamed Osman, Lubna Abdel Hamid, Fathi Kahlool', 
-          ar: 'واصف الخويلدي، محمد عثمان، منيرة بالروين، محمد عثمان، لبنى عبد الحميد، فتحي كحلول'
-        }
-      }
-    },
-    
-    {
+         episodes: { en: "", ar: "" }, // Not applicable for movies
+         duration: { en: "", ar: "" }, // Not applicable for movies
+         productionCompany: { en: "ART Production", ar: "ART Productıon" },
+         productionYear: { en: "2017", ar: "2017" },
+         producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
+         director: { en: "Osama Rezg", ar: "أسامة رزق" },
+         cast: {
+            en: "Wasif Al-Khuwailidi, Mohamed Osman, Munira Al-Balrouin, Mohamed Osman, Lubna Abdel Hamid, Fathi Kahlool",
+            ar: "واصف الخويلدي، محمد عثمان، منيرة بالروين، محمد عثمان، لبنى عبد الحميد، فتحي كحلول",
+         },
+      },
+   },
+
+   {
       id: 10,
       poster: poster10, // Make sure to replace 'poster10' with the correct import or path
-      title: { en: 'The Random', ar: 'العشوائي' },
+      title: { en: "The Random", ar: "العشوائي" },
       year: 2016,
-      description: { 
-        en: 'The Random is a short film that lasts 20 minutes and addresses an issue that has become very important in Libya and the Libyan society after the revolution: the issue of excluding and marginalizing others. Each Libyan tries to impose their opinion and reject different thoughts by force of arms. The film presents this issue in a satirical manner imbued with pain.',
-        ar: 'العشوائي ... فيلم قصير مدته 20 دقيقة يتناول القضية التي أصبحت مهمة للغاية في ليبيا والمجتمع الليبي بعد الثورة، قضية إقصاء وتهميش الآخر ومحاولة كل ليبي فرض رأيه ورفض الفكر الذي يختلف معه بقوة السلاح. الفيلم يطرح القضية بأسلوب ساخر مبطن بالألم.'
+      description: {
+         en: "The Random is a short film that lasts 20 minutes and addresses an issue that has become very important in Libya and the Libyan society after the revolution: the issue of excluding and marginalizing others. Each Libyan tries to impose their opinion and reject different thoughts by force of arms. The film presents this issue in a satirical manner imbued with pain.",
+         ar: "العشوائي ... فيلم قصير مدته 20 دقيقة يتناول القضية التي أصبحت مهمة للغاية في ليبيا والمجتمع الليبي بعد الثورة، قضية إقصاء وتهميش الآخر ومحاولة كل ليبي فرض رأيه ورفض الفكر الذي يختلف معه بقوة السلاح. الفيلم يطرح القضية بأسلوب ساخر مبطن بالألم.",
       },
-      trailer: 'https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview', 
-      fullShowLink: 'https://www.toog.ly/ar/detail/ashwaiee/175062',
+      trailer: "https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview",
+      fullShowLink: "https://www.toog.ly/ar/detail/ashwaiee/175062",
       btsImages: [
          btstherandom1,
          btstherandom2,
@@ -557,48 +537,44 @@ const works = [
          btstherandom7,
          btstherandom8,
          btstherandom9,
-
-      ], 
-      awards: { 
-        en: [
-          'Oasis Award for Short Film from the Gabes Arab Film Festival 2016',
-          'Special Mention from the Jury at the Oujda Maghreb Film Festival in Morocco 2017',
-          'Best African Film Award at the ART CITY Festival in Cameroon 2016'
-        ], 
-        ar: [
-          'جائزة الواحة للفيلم القصير من مهرجان الفيلم العربي بقابس 2016',
-          'تنويه خاص من لجنة التحكيم في مهرجان وجدة بالمغرب للفيلم المغاربي 2017',
-          'جائزة افضل فيلم افريقي بمهرجان ART CITY بالكاميرون 2016'
-        ]
+      ],
+      awards: {
+         en: [
+            "Oasis Award for Short Film from the Gabes Arab Film Festival 2016",
+            "Special Mention from the Jury at the Oujda Maghreb Film Festival in Morocco 2017",
+            "Best African Film Award at the ART CITY Festival in Cameroon 2016",
+         ],
+         ar: [
+            "جائزة الواحة للفيلم القصير من مهرجان الفيلم العربي بقابس 2016",
+            "تنويه خاص من لجنة التحكيم في مهرجان وجدة بالمغرب للفيلم المغاربي 2017",
+            "جائزة افضل فيلم افريقي بمهرجان ART CITY بالكاميرون 2016",
+         ],
       },
       details: {
-        episodes: { en: '', ar: '' }, // Not applicable for movies
-        duration: { en: '20 minutes', ar: '20 دقيقة' }, 
-        productionCompany: { en: 'ART Production', ar: 'ART Production' },
-        productionYear: { en: '2016', ar: '2016' },
-        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
-        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
-        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
-        cast: { 
-          en: 'Nader Al-Loulabi, Mohamed Osman, Wasif Al-Khuwailidi, Muhannad Kalash, Ramadan Al-Mazdawi', 
-          ar: 'نادر اللولبي، محمد عثمان، واصف الخويلدي، مهند كلاش، رمضان المزداوي'
-        }
-      }
-    }
-,    
-
-
+         episodes: { en: "", ar: "" }, // Not applicable for movies
+         duration: { en: "20 minutes", ar: "20 دقيقة" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
+         productionYear: { en: "2016", ar: "2016" },
+         producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
+         director: { en: "Osama Rezg", ar: "أسامة رزق" },
+         cast: {
+            en: "Nader Al-Loulabi, Mohamed Osman, Wasif Al-Khuwailidi, Muhannad Kalash, Ramadan Al-Mazdawi",
+            ar: "نادر اللولبي، محمد عثمان، واصف الخويلدي، مهند كلاش، رمضان المزداوي",
+         },
+      },
+   },
    {
       id: 11,
       poster: poster11, // Make sure to replace 'poster8' with the correct import or path
-      title: { en: 'Al-Barouni', ar: 'فيلم الباروني' },
+      title: { en: "Al-Barouni", ar: "فيلم الباروني" },
       year: 2020,
-      description: { 
-        en: 'The film "Al-Barouni" depicts a part of the life of the renowned Libyan freedom fighter Suleiman Pasha Al-Barouni, also known as "The Leader". Born in 1870 in Kabaw, Jabal Nafusa, Libya, he was a scholar, politician, poet, and one of the most significant fighters in Libya\'s history. Al-Barouni contributed to the establishment of the first Arab Republic, the Tripolitanian Republic, in 1918. He was an early fighter against Italian occupation, using both diplomacy and arms, paying a heavy price for his struggle. He was exiled from his homeland and died in 1940 in Muscat, Oman.',
-        ar: 'فيلم الباروني يتناول جزء من حياة المناضل الليبي المعروف ( سليمان باشا الباروني ) اشتهر بإسم ( الزعيم ) الذي ولد سنة 1870 في مدينة كاباو في جبل نفوسة ليبيا و اشتهر بأنه جمع العلم و الدين و السياسة و الشعر و الادب ، فأصبح احد اهم المناضلين في تاريخ ليبيا و ساهم في تأسيس أول جمهورية عربية وهي الجمهورية الطرابلسية التي شارك في تأسيسها سنة 1918. كان من اوائل المناضلين ضد الاحتلال الايطالي الذي واجهه بالسياسة و السلاح و دفع ثمناً باهضاً لنضاله و تم نفيه خارج وطنه حتى و افته المنية سنة 1940 في مسقط بعمان.'
+      description: {
+         en: 'The film "Al-Barouni" depicts a part of the life of the renowned Libyan freedom fighter Suleiman Pasha Al-Barouni, also known as "The Leader". Born in 1870 in Kabaw, Jabal Nafusa, Libya, he was a scholar, politician, poet, and one of the most significant fighters in Libya\'s history. Al-Barouni contributed to the establishment of the first Arab Republic, the Tripolitanian Republic, in 1918. He was an early fighter against Italian occupation, using both diplomacy and arms, paying a heavy price for his struggle. He was exiled from his homeland and died in 1940 in Muscat, Oman.',
+         ar: "فيلم الباروني يتناول جزء من حياة المناضل الليبي المعروف ( سليمان باشا الباروني ) اشتهر بإسم ( الزعيم ) الذي ولد سنة 1870 في مدينة كاباو في جبل نفوسة ليبيا و اشتهر بأنه جمع العلم و الدين و السياسة و الشعر و الادب ، فأصبح احد اهم المناضلين في تاريخ ليبيا و ساهم في تأسيس أول جمهورية عربية وهي الجمهورية الطرابلسية التي شارك في تأسيسها سنة 1918. كان من اوائل المناضلين ضد الاحتلال الايطالي الذي واجهه بالسياسة و السلاح و دفع ثمناً باهضاً لنضاله و تم نفيه خارج وطنه حتى و افته المنية سنة 1940 في مسقط بعمان.",
       },
       trailer: "https://drive.google.com/file/d/1Ff53Gvqz6kAHysdEu8seMcniCqFFo2uZ/preview",
-      fullShowLink: 'https://www.toog.ly/ar/detail/barony/175074',
+      fullShowLink: "https://www.toog.ly/ar/detail/barony/175074",
       btsImages: [
          btselbarony1,
          btselbarony2,
@@ -608,36 +584,36 @@ const works = [
          btselbarony6,
          btselbarony7,
       ], // Add behind-the-scenes images if available
-      awards: { 
-        en: [], // Add awards if any
-        ar: []
+      awards: {
+         en: [], // Add awards if any
+         ar: [],
       },
       details: {
-        episodes: { en: '', ar: '' }, // Not applicable for movies
-        duration: { en: '', ar: '' }, // Not applicable for movies
-        productionCompany: { en: 'ART Production', ar: 'ART Productıon' },
-        productionYear: { en: '2020', ar: '2020' },
-        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
-        writer: { en: 'Azza Shalabi', ar: 'عزة شلبي' },
-        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
-        cast: { 
-          en: 'Rabie Al-Qati, Abdul Hamid Al-Tayeb, Nidal Kahlool', 
-          ar: 'ربيع القاطي، عبد الحميد التائب، نضال كحلول'
-        }
-      }
-    },
+         episodes: { en: "", ar: "" }, // Not applicable for movies
+         duration: { en: "", ar: "" }, // Not applicable for movies
+         productionCompany: { en: "ART Production", ar: "ART Productıon" },
+         productionYear: { en: "2020", ar: "2020" },
+         producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         writer: { en: "Azza Shalabi", ar: "عزة شلبي" },
+         director: { en: "Osama Rezg", ar: "أسامة رزق" },
+         cast: {
+            en: "Rabie Al-Qati, Abdul Hamid Al-Tayeb, Nidal Kahlool",
+            ar: "ربيع القاطي، عبد الحميد التائب، نضال كحلول",
+         },
+      },
+   },
 
-    {
+   {
       id: 12,
       poster: poster12, // Make sure to replace 'poster11' with the correct import or path
-      title: { en: 'Phobia', ar: 'فوبيا' },
+      title: { en: "Phobia", ar: "فوبيا" },
       year: 2013,
-      description: { 
-        en: 'The series "Phobia" is a black comedy that addresses the fears experienced by Libyans after the Arab Spring revolution, and what happened to them during those difficult times.',
-        ar: 'يتناول مسلسل «فوبيا» في إطار الكوميديا السوداء، المخاوف التي يعيشها الليبيون بعد ثورة الربيع العربي، وما حدث لهم على مدار تلك اﻷوقات العصيبة التي جرت لهم.'
+      description: {
+         en: 'The series "Phobia" is a black comedy that addresses the fears experienced by Libyans after the Arab Spring revolution, and what happened to them during those difficult times.',
+         ar: "يتناول مسلسل «فوبيا» في إطار الكوميديا السوداء، المخاوف التي يعيشها الليبيون بعد ثورة الربيع العربي، وما حدث لهم على مدار تلك اﻷوقات العصيبة التي جرت لهم.",
       },
       trailer: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview", // Add the trailer link if available
-      fullShowLink: 'https://www.toog.ly/ar/detail/fobia/175191',
+      fullShowLink: "https://www.toog.ly/ar/detail/fobia/175191",
       btsImages: [
          btsfobya1,
          btsfobya2,
@@ -648,35 +624,34 @@ const works = [
          btsfobya7,
          btsfobya8,
          btsfobya9,
-
       ], // Add behind-the-scenes images if available
       awards: { en: [], ar: [] }, // Add awards if available
       details: {
-        episodes: { en: '', ar: '' }, // Not applicable for movies
-        duration: { en: '', ar: '' }, // Add episode duration if available
-        productionCompany: { en: 'ART Production', ar: 'ART Production' },
-        productionYear: { en: '2013', ar: '2013' },
-        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
-        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
-        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
-        cast: { 
-          en: 'Mohamed Osman, Wasif Al-Khuwailidi, Jamal Zayed, Ramadan Al-Mazdawi, Wafaa Nabil, Muhannad Kalash', 
-          ar: 'محمد عثمان، واصف الخويلدي، جمال زايد، رمضان المزداوي، وفاء نبيل، مهند كلش'
-        }
-      }
-    },
+         episodes: { en: "", ar: "" }, // Not applicable for movies
+         duration: { en: "", ar: "" }, // Add episode duration if available
+         productionCompany: { en: "ART Production", ar: "ART Production" },
+         productionYear: { en: "2013", ar: "2013" },
+         producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
+         director: { en: "Osama Rezg", ar: "أسامة رزق" },
+         cast: {
+            en: "Mohamed Osman, Wasif Al-Khuwailidi, Jamal Zayed, Ramadan Al-Mazdawi, Wafaa Nabil, Muhannad Kalash",
+            ar: "محمد عثمان، واصف الخويلدي، جمال زايد، رمضان المزداوي، وفاء نبيل، مهند كلش",
+         },
+      },
+   },
 
-    {
+   {
       id: 13,
       poster: poster13, // Make sure to replace 'poster12' with the correct import or path
-      title: { en: 'Ayad', ar: 'عياد' },
+      title: { en: "Ayad", ar: "عياد" },
       year: 2015,
-      description: { 
-        en: 'The series "Ayad" tells the story of a young man named Ayad, whom people describe as unlucky and nicknamed "Ayad the Misfortunate". He has failed at everything in his life. In contrast, his cousin Walid lives next door and is always lucky. In each episode, we watch the funny stories that happen to them.',
-        ar: 'يتناول المسلسل قصة شاب اسمه عياد يصفه الناس بأنه منحوس و اسم الشهرة ( عياد المتشحط ) لم يستطع ان ينجح في اي شيئ في حياته و على طرف النقيض يعيش بجانبه ابن عمه وليد المحظوظ دائما نشاهد مايحدث معهم في كل حلقة من قصص طريفة.'
+      description: {
+         en: 'The series "Ayad" tells the story of a young man named Ayad, whom people describe as unlucky and nicknamed "Ayad the Misfortunate". He has failed at everything in his life. In contrast, his cousin Walid lives next door and is always lucky. In each episode, we watch the funny stories that happen to them.',
+         ar: "يتناول المسلسل قصة شاب اسمه عياد يصفه الناس بأنه منحوس و اسم الشهرة ( عياد المتشحط ) لم يستطع ان ينجح في اي شيئ في حياته و على طرف النقيض يعيش بجانبه ابن عمه وليد المحظوظ دائما نشاهد مايحدث معهم في كل حلقة من قصص طريفة.",
       },
-      trailer: 'https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview',
-      fullShowLink: 'https://www.youtube.com/@3yadmetshhet616/videos',
+      trailer: "https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview",
+      fullShowLink: "https://www.youtube.com/@3yadmetshhet616/videos",
       btsImages: [
          btsayad1,
          btsayad2,
@@ -690,26 +665,22 @@ const works = [
          btsayad10,
          btsayad11,
          btsayad12,
-
       ], // Add behind-the-scenes images if available
       awards: { en: [], ar: [] }, // Add awards if available
       details: {
-        episodes: { en: '', ar: '' }, // Not applicable for movies
-        duration: { en: '', ar: '' }, // Add episode duration if available
-        productionCompany: { en: 'Libya Al-Ahrar Channel', ar: 'قناة ليبيا الاحرار' },
-        productionYear: { en: '2015', ar: '2015' },
-        producer: { en: 'Walid Al-Lafi', ar: 'وليد اللافي' },
-        writer: { en: 'Siraj Huwaidi', ar: 'سراج هويدي' },
-        director: { en: 'Osama Rezg', ar: 'أسامة رزق' },
-        cast: { 
-          en: 'Mohamed Osman, Mohamed Kara, Osama Al-Bahi, Munira Al-Barouni', 
-          ar: 'محمد عثمان، محمد كارة، أسامة الباهي، منيرة بالروين'
-        }
-      }
-    }
-    
-    
-    
+         episodes: { en: "15", ar: "15" }, // Not applicable for movies
+         duration: { en: "20 minutes", ar: "20 دقيقة" },
+         productionCompany: { en: "Libya Al-Ahrar Channel", ar: "قناة ليبيا الاحرار" },
+         productionYear: { en: "2015", ar: "2015" },
+         producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
+         director: { en: "Osama Rezg", ar: "أسامة رزق" },
+         cast: {
+            en: "Mohamed Osman, Mohamed Kara, Osama Al-Bahi, Munira Al-Barouni",
+            ar: "محمد عثمان، محمد كارة، أسامة الباهي، منيرة بالروين",
+         },
+      },
+   },
 
    // Add similar objects for other works
 ];
@@ -810,34 +781,33 @@ const WorkDetail = () => {
                   </div>
                )}
 
-               <h3 className="awardstitle">{t("awards")}</h3>
+               {/* <h3 className="awardstitle">{t("awards")}</h3>
                <ul className="awards-list">
                   {work.awards[lang].map((award, index) => (
                      <li key={index}>{award}</li>
                   ))}
-               </ul>
+               </ul> */}
             </Col>
          </Row>
 
          <Row>
-   <Col md={12}>
-      <h3 className="video">
-         {t("trailer")}
-         <div className="videoitslef">
-            <iframe 
-               width="60%" 
-               height="500" 
-               src={work.trailer} 
-               frameBorder="0" 
-               allow="autoplay; encrypted-media" 
-               allowFullScreen 
-               title="Trailer">
-            </iframe>
-         </div>
-      </h3>
-   </Col>
-</Row>
-
+            <Col md={12}>
+               <h3 className="video">
+                  {t("trailer")}
+                  <div className="videoitslef">
+                     <iframe
+                        width="60%"
+                        height="500"
+                        src={work.trailer}
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        title="Trailer"
+                     ></iframe>
+                  </div>
+               </h3>
+            </Col>
+         </Row>
 
          <h3 className="bts">{t("behindTheScenes")}</h3>
          <Row className="bts-images">

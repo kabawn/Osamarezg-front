@@ -428,27 +428,33 @@ const AdminPage = () => {
       )}
 
       {selectedScript && (
-        <Modal show={true} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>{selectedScript.fullName}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Row>
-              <Col><strong>Country:</strong> {selectedScript.country || "N/A"}</Col>
-              <Col><strong>Gender:</strong> {selectedScript.sex || "N/A"}</Col>
-            </Row>
-            <Row>
-              <Col><strong>Phone:</strong> {selectedScript.phone || "N/A"}</Col>
-              <Col><strong>Email:</strong> {selectedScript.email || "N/A"}</Col>
-            </Row>
-            <Row>
-              <Col><strong>Submitted on:</strong> {new Date(selectedScript.submissionDate).toLocaleDateString()}</Col>
-            </Row>
-            <Button href={getMediaUrl(selectedScript.scriptFile)} target="_blank" variant="primary" className="mt-4">
-              Download Script
-            </Button>
-          </Modal.Body>
-        </Modal>
+       <Modal show={true} onHide={handleClose}>
+       <Modal.Header closeButton>
+         <Modal.Title>{selectedScript.fullName}</Modal.Title>
+       </Modal.Header>
+       <Modal.Body>
+         <Row>
+           <Col><strong>Country:</strong> {selectedScript.country || "N/A"}</Col>
+           <Col><strong>Gender:</strong> {selectedScript.sex || "N/A"}</Col>
+         </Row>
+         <Row>
+           <Col><strong>Phone:</strong> {selectedScript.phone || "N/A"}</Col>
+           <Col><strong>Email:</strong> {selectedScript.email || "N/A"}</Col>
+         </Row>
+         <Row>
+           <Col><strong>Submitted on:</strong> {new Date(selectedScript.submissionDate).toLocaleDateString()}</Col>
+         </Row>
+         <Button
+           href={getMediaUrl(selectedScript.scriptFile)}
+           target="_blank"
+           variant="primary"
+           className="mt-4 button-black-text" // Apply the custom CSS class
+         >
+           Download Script
+         </Button>
+       </Modal.Body>
+     </Modal>
+     
       )}
 
       {lightboxImage && (
@@ -459,59 +465,64 @@ const AdminPage = () => {
         </Modal>
       )}
 
-      <Modal show={showBlogModal} onHide={handleClose} className={isRtl ? "rtl" : "ltr"}>
-        <Modal.Header closeButton>
-          <Modal.Title>{isEditingBlog ? t("Edit Blog Post") : t("Add Blog Post")}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={handleBlogSubmit}>
-            <Form.Group controlId="title">
-              <Form.Label>{t("Title")}</Form.Label>
-              <Form.Control
-                type="text"
-                name="title"
-                value={blogForm.title}
-                onChange={handleBlogFormChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group controlId="content" className="mt-3">
-              <Form.Label>{t("Content")}</Form.Label>
-              <Form.Control
-                as="textarea"
-                name="content"
-                value={blogForm.content}
-                onChange={handleBlogFormChange}
-                rows={5}
-                required
-              />
-            </Form.Group>
-            <Form.Group controlId="author" className="mt-3">
-              <Form.Label>{t("Author")}</Form.Label>
-              <Form.Control
-                type="text"
-                name="author"
-                value={blogForm.author}
-                onChange={handleBlogFormChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group controlId="images" className="mt-3">
-              <Form.Label>{t("Images")}</Form.Label>
-              <Form.Control
-                type="file"
-                name="images"
-                onChange={handleBlogFormChange}
-                multiple
-                accept="image/*"
-              />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="mt-4">
-              {isEditingBlog ? t("Update") : t("Submit")}
-            </Button>
-          </Form>
-        </Modal.Body>
-      </Modal>
+<Modal show={showBlogModal} onHide={handleClose} className={isRtl ? "rtl" : "ltr"}>
+  <Modal.Header closeButton>
+    <Modal.Title>{isEditingBlog ? t("Edit Blog Post") : t("Add Blog Post")}</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <Form onSubmit={handleBlogSubmit}>
+      <Form.Group controlId="title">
+        <Form.Label>{t("Title")}</Form.Label>
+        <Form.Control
+          type="text"
+          name="title"
+          value={blogForm.title}
+          onChange={handleBlogFormChange}
+          required
+        />
+      </Form.Group>
+      <Form.Group controlId="content" className="mt-3">
+        <Form.Label>{t("Content")}</Form.Label>
+        <Form.Control
+          as="textarea"
+          name="content"
+          value={blogForm.content}
+          onChange={handleBlogFormChange}
+          rows={5}
+          required
+        />
+      </Form.Group>
+      <Form.Group controlId="author" className="mt-3">
+        <Form.Label>{t("Author")}</Form.Label>
+        <Form.Control
+          type="text"
+          name="author"
+          value={blogForm.author}
+          onChange={handleBlogFormChange}
+          required
+        />
+      </Form.Group>
+      <Form.Group controlId="images" className="mt-3">
+        <Form.Label>{t("Images")}</Form.Label>
+        <Form.Control
+          type="file"
+          name="images"
+          onChange={handleBlogFormChange}
+          multiple
+          accept="image/*"
+        />
+      </Form.Group>
+      <Button
+        variant="primary"
+        type="submit"
+        className="mt-4 button button-black-text" // Apply the custom CSS class
+      >
+        {isEditingBlog ? t("Update") : t("Submit")}
+      </Button>
+    </Form>
+  </Modal.Body>
+</Modal>
+
     </>
   );
 };

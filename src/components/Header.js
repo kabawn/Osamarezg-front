@@ -1,6 +1,6 @@
 // src/components/Header.js
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container,  } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -64,7 +64,7 @@ const Header = () => {
   return (
     <StyledNavbar expand="lg" className="header" lang={currentLang} expanded={expanded}>
       <Container>
-        <BrandLink to="/">OSAMA REZEG</BrandLink>
+        <BrandLink to="/">OSAMA REZG</BrandLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`ms-auto ${currentLang === 'ar' ? 'nav-ar' : 'nav-en'}`}>
@@ -76,7 +76,7 @@ const Header = () => {
             <NavLink to="/submit-script" onClick={handleNavLinkClick}>{t('sendScript')}</NavLink>
             <NavLink to="/exclusive" onClick={handleNavLinkClick}>{t('exclusive')}</NavLink>
             <NavLink to="/contact" onClick={handleNavLinkClick}>{t('contact')}</NavLink>
-            {isLoggedIn ? (
+            {/* {isLoggedIn ? (
               <Button variant="outline-light" onClick={() => { handleLogout(); handleNavLinkClick(); }} className="auth-button">
                 {t('signout')}
               </Button>
@@ -84,7 +84,7 @@ const Header = () => {
               <NavLink to="/login" onClick={handleNavLinkClick} className="auth-button">
                 <Button variant="outline-light">{t('login')}</Button>
               </NavLink>
-            )}
+            )} */}
           </Nav>
           <div className="language-switcher-wrapper">
             <LanguageSwitcher className="language-switcher" />

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import "./Director.css";
 import directorImage from "../assets/herodirector.jpg";
 
@@ -9,14 +10,12 @@ import awardImageYouthMagazine from "../assets/award.png";
 import awardImageArabFilmFestival from "../assets/awards/arab_film_festival.jpg";
 import awardImageMaghrebiFilmFestival from "../assets/awards/maghrebi_film_festival.jpeg";
 import awardImageArtCityFestival from "../assets/award.png";
-import awardMondal from "../assets/awards/mondal cario.jpg"
-import awardInternational from "../assets/awards/International Cinema.jpg"
-
-
+import awardMondal from "../assets/awards/mondal cario.jpg";
+import awardInternational from "../assets/awards/International Cinema.jpg";
 
 import directorImageosama from "../assets/osamaoknoback.png";
 import fobyaPoter from "../assets/posters/fobya.webp";
-import ayad from "../assets/posters/ayad.webp"
+import ayad from "../assets/posters/ayad.webp";
 import theRandomPoster from "../assets/posters/The Random.webp";
 import dragunovPoster from "../assets/posters/Poster dragnof.webp";
 import rubikPoster from "../assets/posters/Rubik.webp";
@@ -25,27 +24,30 @@ import azzaimanPoster from "../assets/posters/Poster Zaeman.webp";
 import albaronyPoster from "../assets/posters/albarony.webp";
 import ghasakPoster from "../assets/posters/Poster Ghasaq.webp";
 import zankatArreehPartTwoPoster from "../assets/posters/zangat alreh 2.webp";
-import alsarayaPoster from "../assets/posters/el saraya final option 3 V1.webp";
-import alsarayaPartTwoPoster from "../assets/posters/Poster ALsraya Part 1.webp";
+import alsarayaPoster from "../assets/posters/Poster ALsraya Part 1.webp";
+import alsarayaPartTwoPoster from "../assets/posters/el saraya final option 3 V1.webp";
 import banatAlamPoster from "../assets/posters/bnat.webp";
+
+
 
 const Director = () => {
    const { t, i18n } = useTranslation();
+   const navigate = useNavigate();
 
    const filmography = [
-      { title: "Fobya", year: 2012, poster: fobyaPoter },
-      { title: "The Random", year: 2013, poster: theRandomPoster },
-      { title: "Dragunov", year: 2014, poster: dragunovPoster },
-      { title: "Ayad", year: 2015, poster: ayad },
-      { title: "Rubik", year: 2017, poster: rubikPoster },
-      { title: "Zanka Al-Reeh", year: 2019, poster: zankaAlReehPoster },
-      { title: "Azza’iman", year: 2020, poster: azzaimanPoster },
-      { title: "Albarony", year: 2020, poster: albaronyPoster },
-      { title: "Ghasak", year: 2021, poster: ghasakPoster },
-      { title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
-      { title: "Alsaraya", year: 2022, poster: alsarayaPoster },
-      { title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
-      { title: "Banat Alam", year: 2024, poster: banatAlamPoster },
+      { id: 12, title: "Fobya", year: 2012, poster: fobyaPoter },
+      { id: 10, title: "The Random", year: 2013, poster: theRandomPoster },
+      { id: 8, title: "Dragunov", year: 2014, poster: dragunovPoster },
+      { id: 13, title: "Ayad", year: 2015, poster: ayad },
+      { id: 9, title: "Rubik", year: 2017, poster: rubikPoster },
+      { id: 7, title: "Zankat Al-Reeh", year: 2019, poster: zankaAlReehPoster },
+      { id: 6, title: "Azzaiman", year: 2020, poster: azzaimanPoster },
+      { id: 11, title: "Albarony", year: 2020, poster: albaronyPoster },
+      { id: 5, title: "Ghasak", year: 2021, poster: ghasakPoster },
+      { id: 4, title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
+      { id: 3, title: "Alsaraya", year: 2022, poster: alsarayaPoster },
+      { id: 2, title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
+      { id: 1, title: "Banat Alam", year: 2024, poster: banatAlamPoster },
    ];
 
    const awards = [
@@ -166,7 +168,7 @@ const Director = () => {
          titleAr: "جائزة لجنة التحكيم الخاصة (فوبيا) مونديال القاهرة للإذاعة والتلفزيون2014.",
          event: "Cairo Radio and Television Festival 2014",
          eventAr: "مونديال القاهرة للإذاعة والتلفزيون 2014",
-         image: awardMondal 
+         image: awardMondal
       },
       {
          title: "Best Film and Best Director Award for Al-Barony",
@@ -226,6 +228,10 @@ const Director = () => {
       };
    }, []);
 
+   const handlePosterClick = (id) => {
+      navigate(`/works/${id}`);
+   };
+
    return (
       <div className={`director-container ${i18n.language === "ar" ? "rtl" : "ltr"}`}>
          <div className="director-hero">
@@ -250,7 +256,7 @@ const Director = () => {
                <div className="grid-container">
                   {filmography.map((item, index) => (
                      <div key={index} className="grid-item">
-                        <div className="poster">
+                        <div className="poster" onClick={() => handlePosterClick(item.id)}>
                            <img data-src={item.poster} alt={item.title} className="lazy-load" />
                         </div>
                         <div className="poster-info">

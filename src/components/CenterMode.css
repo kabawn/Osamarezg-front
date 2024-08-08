@@ -1,4 +1,3 @@
-/* src/components/CenterMode.css */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tajawal:wght@400;700&display=swap');
 
 body {
@@ -153,6 +152,12 @@ body {
   text-align: left;
   direction: ltr;
   font-family: 'Raleway', sans-serif; /* Use Raleway for English text */
+}
+
+/* Remove blue underline from links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color of the parent element */
 }
 
 /* Responsive styles */

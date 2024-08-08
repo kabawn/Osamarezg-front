@@ -71,12 +71,55 @@
 
 .video-modal {
   padding: 0;
+  position: relative; /* Ensure close button is correctly positioned */
+}
+
+/* Update the size of the video in the modal */
+.video-modal iframe {
+  width: 100%; /* Full width of the modal */
+  height: 38.25vw; /* Aspect ratio 16:9; adjust height based on width */
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Style for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 27px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1050; /* Ensure it is above other elements */
+}
+
+.close-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Style for the modal dialog to ensure it is wide enough */
+.video-modal-dialog {
+  max-width: 90vw; /* Adjust as needed */
+  max-height: 80vh; /* Adjust as needed */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .poster {
     margin-bottom: 10px;
+  }
+
+  .video-modal iframe {
+    height: 50vw; /* Adjust height based on smaller width */
   }
 }
 
@@ -91,5 +134,9 @@
     margin-bottom: 80px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
+  }
+
+  .video-modal iframe {
+    height: 60vw; /* Adjust height for very small screens */
   }
 }

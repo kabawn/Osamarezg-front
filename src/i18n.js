@@ -69,7 +69,7 @@ const resources = {
          sendScript: "Send Script",
          scriptIntro:
             "If you have a script and would like to share it with us, please fill out the form below.",
-         journey: "A Journey Through Cinema",
+         journey: "A Journey Through Art",
          bioText: `Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded the media production companies Al-Sura for Media Production and ART Production. Rizk directed notable dramas such as (Phobia), (Zanqat Al-Reeh), and (Al-Za'imaan). His first feature film was (Al-Barouni) in 2021. He also directed the series (Banat Al-Am), which was streamed on the (Shahid) platform and achieved great success. In 2021, he was named one of the 40 most influential figures in Libya under the age of 40.`,
          keepInTouch: "KEEP IN TOUCH",
          email: "email@example.com",
@@ -93,8 +93,11 @@ const resources = {
          selectSex: "Select Sex",
          DirectorBlog: "Director's Blog",
          Latest: "Latest insights and articles from the director.",
-         readmore:"Read More"
-
+         readmore: "Read More",
+         shareYourScript: "Share Your Script",
+         inviteMessage:
+            "We invite you to share your script with us. Click the button below to submit your script.",
+         submitScript: "Submit Script",
       },
    },
    ar: {
@@ -162,7 +165,7 @@ const resources = {
          sendScript: "إرسال نص",
          scriptIntro: "إذا كان لديك نص وترغب في مشاركته معنا ، يرجى ملء النموذج أدناه.",
          filmography: "قائمة الاعمال",
-         journey: "رحلة عبر السينما",
+         journey: "رحلة عبر الفن",
          bioText: `أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا. أسس شركتي الصورة للإنتاج الإعلامي و ART Production. أخرج أعمالًا درامية مميزة منها (فوبيا) و(زنقة الريح) و(الزعيمان). وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) الذي عُرض على منصة (شاهد) وحقق نجاحًا كبيرًا. في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.`,
          keepInTouch: "ابقى على تواصل",
          email: "البريد الالكتروني",
@@ -188,7 +191,10 @@ const resources = {
          selectSex: "اختر الجنس",
          DirectorBlog: "مدونة المخرج",
          Latest: "مقالات من المخرج",
-         readmore:"اقرا المزيد"
+         readmore: "اقرا المزيد",
+         shareYourScript: "شارك نصك",
+         inviteMessage: "ندعوك لمشاركة نصك معنا. اضغط على الزر أدناه لتقديم نصك.",
+         submitScript: "تقديم النص",
       },
    },
 };

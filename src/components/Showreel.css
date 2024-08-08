@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh; /* Full height of the viewport */
   background-color: #fffefe; /* Background color for the container */
-  padding: 20px; /* Padding to prevent the video from touching the edges on small screens */
+  padding: 90px; /* Padding to prevent the video from touching the edges on small screens */
   box-sizing: border-box;
 }
 
@@ -14,6 +14,10 @@
   text-align: center;
   color: rgb(0, 0, 0); /* Text color */
   margin-bottom: 20px; /* Space between text and video */
+}
+
+.smalltex{
+  margin-top: 20px;
 }
 
 .title {

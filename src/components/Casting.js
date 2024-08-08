@@ -1,4 +1,3 @@
-// src/components/Casting.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -10,8 +9,14 @@ const Casting = () => {
   const navigate = useNavigate();
   const currentLang = i18n.language;
 
-  const handleButtonClick = () => {
+  const handleRegisterClick = () => {
     navigate('/casting'); // Navigate to the /casting route
+    window.scrollTo(0, 0); // Scroll to the top
+  };
+
+  const handleScriptSubmitClick = () => {
+    navigate('/casting'); // Navigate to the /casting route
+    window.scrollTo(0, 0); // Scroll to the top
   };
 
   return (
@@ -20,7 +25,16 @@ const Casting = () => {
         <div className="casting-content" style={{ fontFamily: currentLang === 'ar' ? 'Tajawal, sans-serif' : 'Raleway, sans-serif' }}>
           <h1>{t('exploringTalents')}</h1>
           <h2>{t('shareExperience')}</h2>
-          <button className="casting-button" onClick={handleButtonClick}>{t('registerNow')}</button>
+          <button className="casting-button" onClick={handleRegisterClick}>
+            {t('registerNow')}
+          </button>
+          <div className="script-submission">
+            <h3>{t('shareYourScript')}</h3>
+            <p>{t('inviteMessage')}</p>
+            <button className="casting-button" onClick={handleScriptSubmitClick}>
+              {t('submitScript')}
+            </button>
+          </div>
         </div>
       </div>
     </div>
