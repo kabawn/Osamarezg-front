@@ -98,6 +98,10 @@ const resources = {
          inviteMessage:
             "We invite you to share your script with us. Click the button below to submit your script.",
          submitScript: "Submit Script",
+         contactDirector:
+            "If you would like to contact the director, you can do that through these social media platforms:",
+         contactTitle: "Contact the Director",
+         developedBy: "This site is developed by Modern Code Company",
       },
    },
    ar: {
@@ -195,6 +199,11 @@ const resources = {
          shareYourScript: "شارك نصك",
          inviteMessage: "ندعوك لمشاركة نصك معنا. اضغط على الزر أدناه لتقديم نصك.",
          submitScript: "تقديم النص",
+         contactDirector:
+            "إذا كنت ترغب في الاتصال بنا ، يمكنك القيام بذلك من خلال هذه المنصات الاجتماعية:",
+
+         contactTitle: "الاتصال بنا",
+         developedBy: "تم تطوير الموقع من قبل فريق العمل في شركة البرمجة الحديثة",
       },
    },
 };

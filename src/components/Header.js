@@ -74,7 +74,7 @@ const Header = () => {
             <NavLink to="/blog" onClick={handleNavLinkClick}>{t('blog')}</NavLink>
             <NavLink to="/casting" onClick={handleNavLinkClick}>{t('casting')}</NavLink>
             <NavLink to="/submit-script" onClick={handleNavLinkClick}>{t('sendScript')}</NavLink>
-            <NavLink to="/exclusive" onClick={handleNavLinkClick}>{t('exclusive')}</NavLink>
+            {/* <NavLink to="/exclusive" onClick={handleNavLinkClick}>{t('exclusive')}</NavLink> */}
             <NavLink to="/contact" onClick={handleNavLinkClick}>{t('contact')}</NavLink>
             {/* {isLoggedIn ? (
               <Button variant="outline-light" onClick={() => { handleLogout(); handleNavLinkClick(); }} className="auth-button">

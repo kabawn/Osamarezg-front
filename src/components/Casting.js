@@ -15,7 +15,7 @@ const Casting = () => {
   };
 
   const handleScriptSubmitClick = () => {
-    navigate('/casting'); // Navigate to the /casting route
+    navigate('/submit-script'); // Navigate to the /casting route
     window.scrollTo(0, 0); // Scroll to the top
   };
 
