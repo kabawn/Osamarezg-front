@@ -84,7 +84,8 @@ const resources = {
          showreelDescription: "Experience the finest works and creativity of the director.",
          directorsWord: "DIRECTOR'S WORKS",
          exclusive: "Exclusive",
-         errorUploadPhotos: "You can upload up to 3 images only.",
+         errorUploadPhotos: "Please upload at least one photo.",
+         errorUploadVideo: "Please upload a video.",
          errorUploadVideoSize: "Video file size should not exceed 100 MB.",
          successCasting: "Thanks for submitting for the casting. We will contact you soon.",
          errorCasting: "Failed to submit casting data.",
@@ -104,6 +105,18 @@ const resources = {
             "If you would like to contact the director, you can do that through these social media platforms:",
          contactTitle: "Contact the Director",
          developedBy: "This site is developed by Modern Code Company",
+         workLink:"Previous works",
+         submissionSuccess:"Submission Successful",
+         thankYou:"Thank you for your submission. We will review it and contact you soon.",
+         submitting:"Submitting...",
+         workLinks:"Links of your previous works. ",
+         addAnotherLink:"Add Another Link",
+         remove:"Remove",
+         successMessage:"Thanks for submitting your script. We will contact you soon."
+
+
+
+
       },
    },
    ar: {
@@ -184,7 +197,7 @@ const resources = {
          showreelDescription: "اكتشف أفضل أعمال وإبداعات مخرجنا.",
          directorsWord: "اعمال المخرج",
          exclusive: "حصري",
-         errorUploadPhotos: "يمكنك تحميل 3 صور فقط.",
+         errorUploadPhotos: "يرجى تحميل على الاقل صور واحدة",
          errorUploadVideoSize: "يجب ألا يتجاوز حجم ملف الفيديو 100 ميجابايت.",
          successCasting: "شكرًا لتقديم طلب التمثيل. سنتواصل معك قريبًا.",
          errorCasting: "فشل في تقديم بيانات التمثيل.",
@@ -206,6 +219,15 @@ const resources = {
 
          contactTitle: "الاتصال بنا",
          developedBy: " تطوير  شركة البرمجة الحديثة",
+         workLinks:" روابط لأعمال سابقة",
+         remove:"إزالة",
+         addAnotherLink:"إضافة رابط اخر",
+         errorUploadVideo: "يرجى تحميل فيديو",
+         submissionSuccess:"تم الإرسال بنجاح",
+         thankYou:"شكرًا لتقديمك. سنقوم بمراجعته وسنتواصل معك قريبًا.",
+         submitting:"جاري الإرسال...",
+         successMessage: "شكرًا لتقديم السيناريو الخاص بك. سنتواصل معك قريبًا.",
+
       },
    },
 };

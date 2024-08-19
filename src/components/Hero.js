@@ -54,6 +54,8 @@ const Hero = () => {
         autoPlay
         loop
         muted={isMuted}
+        playsInline  /* Ensures the video plays inline on iOS */
+        webkit-playsinline="true"  /* Compatibility for older iOS versions */
       >
         <source src={require('../assets/herovideo.mp4')} type="video/mp4" />
         Your browser does not support the video tag.

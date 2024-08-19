@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "../axios"; // Adjust the path as necessary
 import { useTranslation } from "react-i18next";
-import { Container, Form, Button, Row, Col, Alert, Spinner } from "react-bootstrap";
+import { Container, Form, Button, Row, Col, Modal, Spinner } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CastingPage.css";
 
@@ -30,6 +30,7 @@ const countries = [
   "Yemen", "Zambia", "Zimbabwe"
 ];
 
+
 const CastingPage = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
@@ -42,11 +43,12 @@ const CastingPage = () => {
     nationality: "",
     photos: [],
     video: null,
+    workLinks: [""], // Add workLinks as an array
   });
 
   const [photoPreviews, setPhotoPreviews] = useState([]);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [modalMessage, setModalMessage] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false); // Add loading state
 
   const handleInputChange = (e) => {
@@ -61,7 +63,8 @@ const CastingPage = () => {
       const totalPhotos = formData.photos.length + newPhotos.length;
 
       if (totalPhotos > 3) {
-        setErrorMessage(t("errorUploadPhotos"));
+        setModalMessage(t("errorUploadPhotosLimit"));
+        setShowModal(true);
         return;
       }
 
@@ -72,12 +75,27 @@ const CastingPage = () => {
       setPhotoPreviews([...photoPreviews, ...newPreviews]);
     } else if (id === "video") {
       if (files[0].size > 100 * 1024 * 1024) {
-        // 100 MB
-        setErrorMessage(t("errorUploadVideoSize"));
+        setModalMessage(t("errorUploadVideoSize"));
+        setShowModal(true);
         return;
       }
       setFormData({ ...formData, video: files[0] });
     }
+  };
+
+  const handleWorkLinkChange = (index, value) => {
+    const updatedWorkLinks = [...formData.workLinks];
+    updatedWorkLinks[index] = value;
+    setFormData({ ...formData, workLinks: updatedWorkLinks });
+  };
+
+  const addWorkLinkField = () => {
+    setFormData({ ...formData, workLinks: [...formData.workLinks, ""] });
+  };
+
+  const removeWorkLinkField = (index) => {
+    const updatedWorkLinks = formData.workLinks.filter((_, i) => i !== index);
+    setFormData({ ...formData, workLinks: updatedWorkLinks });
   };
 
   const handleRemovePhoto = (index) => {
@@ -92,9 +110,21 @@ const CastingPage = () => {
 
     if (loading) return; // Prevent multiple submissions
 
+    // Validate that at least one image and one video are uploaded
+    if (formData.photos.length === 0) {
+      setModalMessage(t("errorUploadPhotos"));
+      setShowModal(true);
+      return;
+    }
+    if (!formData.video) {
+      setModalMessage(t("errorUploadVideo"));
+      setShowModal(true);
+      return;
+    }
+
     setLoading(true); // Set loading state to true
-    setErrorMessage("");
-    setSuccessMessage("");
+    setModalMessage("");
+    setShowModal(false);
 
     const data = new FormData();
     data.append("fullName", formData.fullName);
@@ -110,10 +140,16 @@ const CastingPage = () => {
       data.append("video", formData.video);
     }
 
+    formData.workLinks.forEach((link, index) => {
+      if (link) { // Only include non-empty links
+        data.append(`workLinks[${index}]`, link);
+      }
+    });
+
     try {
       const response = await axios.post("/submit-casting", data);
       if (response.status === 200) {
-        setSuccessMessage(t("successCasting"));
+        setModalMessage(t("successCasting"));
         setFormData({
           fullName: "",
           age: "",
@@ -122,15 +158,17 @@ const CastingPage = () => {
           nationality: "",
           photos: [],
           video: null,
+          workLinks: [""], // Reset workLinks to a single empty string
         });
         setPhotoPreviews([]);
       } else {
-        setErrorMessage(t("errorCasting"));
+        setModalMessage(t("errorCasting"));
       }
     } catch (error) {
-      setErrorMessage(t("errorCastingTryAgain"));
+      setModalMessage(t("errorCastingTryAgain"));
     } finally {
       setLoading(false); // Set loading state to false
+      setShowModal(true); // Show modal with the message
     }
   };
 
@@ -149,8 +187,6 @@ const CastingPage = () => {
       <Row className="justify-content-center mt-5">
         <Col md={6}>
           <h1 className="text-center hero-text">{t("castingtextupform")}</h1>
-          {successMessage && <Alert variant="success">{successMessage}</Alert>}
-          {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="fullName">
               <Form.Label>{t("fullName")}</Form.Label>
@@ -216,6 +252,36 @@ const CastingPage = () => {
               </Form.Control>
             </Form.Group>
 
+            <Form.Group controlId="workLinks" className="mt-3">
+              <Form.Label>{t("workLinks")}</Form.Label>
+              {formData.workLinks.map((link, index) => (
+                <div key={index} className="mb-2">
+                  <Row>
+                    <Col>
+                      <Form.Control
+                        type="url"
+                        placeholder={t("workLink")}
+                        value={link}
+                        onChange={(e) => handleWorkLinkChange(index, e.target.value)}
+                      />
+                    </Col>
+                    <Col xs="auto">
+                      <Button
+                        variant="danger"
+                        onClick={() => removeWorkLinkField(index)}
+                        disabled={formData.workLinks.length === 1}
+                      >
+                        {t("remove")}
+                      </Button>
+                    </Col>
+                  </Row>
+                </div>
+              ))}
+              <Button variant="secondary" onClick={addWorkLinkField}>
+                {t("addAnotherLink")}
+              </Button>
+            </Form.Group>
+
             <Form.Group controlId="photos" className="mt-3">
               <Form.Label>{t("uploadPhotos")}</Form.Label>
               <Form.Control
@@ -237,7 +303,7 @@ const CastingPage = () => {
                       size="sm"
                       onClick={() => handleRemovePhoto(index)}
                     >
-                      Remove
+                      {t("remove")}
                     </Button>
                   </div>
                 ))}
@@ -277,6 +343,17 @@ const CastingPage = () => {
           </Form>
         </Col>
       </Row>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+        <Modal.Body>
+          <p className="text-center">{modalMessage}</p>
+          <div className="text-center">
+            <Button variant="secondary" onClick={() => setShowModal(false)}>
+              {t("close")}
+            </Button>
+          </div>
+        </Modal.Body>
+      </Modal>
     </Container>
   );
 };
