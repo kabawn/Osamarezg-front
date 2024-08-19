@@ -18,19 +18,58 @@ import poster12 from "../assets/posters/fobya.webp";
 import poster13 from "../assets/posters/ayad.webp";
 
 const works = [
-   { poster: poster1, videoUrl: "https://drive.google.com/file/d/1eylvo1WyWEYjr_ev6EAjKMGDmoEkFKQE/preview" },
-   { poster: poster2, videoUrl: "https://drive.google.com/file/d/13XMRlIacqdeG2vOWvWIR4MyFR-4goBBs/preview" },
-   { poster: poster3, videoUrl: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview" },
-   { poster: poster4, videoUrl: "https://drive.google.com/file/d/1dznZw2BELbMcG_YT_ul1ZxReYOZL2oND/preview" },
-   { poster: poster5, videoUrl: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview" },
-   { poster: poster11, videoUrl: "https://drive.google.com/file/d/1Ff53Gvqz6kAHysdEu8seMcniCqFFo2uZ/preview" },
-   { poster: poster6, videoUrl: "https://drive.google.com/file/d/1C6wxji6XQZt2Xj_rpw_quWASzmgbMSLZ/preview" },
-   { poster: poster7, videoUrl: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview" },
-   { poster: poster8, videoUrl: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview" },
-   { poster: poster9, videoUrl: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview" },
-   { poster: poster10, videoUrl: "https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview" },
-   { poster: poster12, videoUrl: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview" },
-   { poster: poster13, videoUrl: "https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview" },
+   {
+      poster: poster1,
+      videoUrl: "https://drive.google.com/file/d/1eylvo1WyWEYjr_ev6EAjKMGDmoEkFKQE/preview",
+   },
+   {
+      poster: poster2,
+      videoUrl: "https://drive.google.com/file/d/13XMRlIacqdeG2vOWvWIR4MyFR-4goBBs/preview",
+   },
+   {
+      poster: poster3,
+      videoUrl: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview",
+   },
+   {
+      poster: poster4,
+      videoUrl: "https://drive.google.com/file/d/1dznZw2BELbMcG_YT_ul1ZxReYOZL2oND/preview",
+   },
+   {
+      poster: poster5,
+      videoUrl: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview",
+   },
+   {
+      poster: poster11,
+      videoUrl: "https://drive.google.com/file/d/1Ff53Gvqz6kAHysdEu8seMcniCqFFo2uZ/preview",
+   },
+   {
+      poster: poster6,
+      videoUrl: "https://drive.google.com/file/d/1C6wxji6XQZt2Xj_rpw_quWASzmgbMSLZ/preview",
+   },
+   {
+      poster: poster7,
+      videoUrl: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview",
+   },
+   {
+      poster: poster8,
+      videoUrl: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview",
+   },
+   {
+      poster: poster9,
+      videoUrl: "https://drive.google.com/file/d/1KD2qUyb3rrqYEB2vhC7QrWiyrPf5wirP/preview",
+   },
+   {
+      poster: poster10,
+      videoUrl: "https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview",
+   },
+   {
+      poster: poster12,
+      videoUrl: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview",
+   },
+   {
+      poster: poster13,
+      videoUrl: "https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview",
+   },
 ];
 
 const Works = () => {
@@ -88,7 +127,12 @@ const Works = () => {
             </div>
          </Container>
 
-         <Modal show={selectedVideo !== null} onHide={handleClose} centered dialogClassName="video-modal-dialog">
+         <Modal
+            show={selectedVideo !== null}
+            onHide={handleClose}
+            centered
+            dialogClassName="video-modal-dialog"
+         >
             <Modal.Body className="video-modal">
                {selectedVideo && (
                   <iframe
@@ -101,7 +145,9 @@ const Works = () => {
                      title="Selected Video"
                   ></iframe>
                )}
-               <button className="close-button" onClick={handleClose}>×</button>
+               <button className="close-button" onClick={handleClose}>
+                  ×
+               </button>
             </Modal.Body>
          </Modal>
       </section>

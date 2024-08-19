@@ -9,6 +9,19 @@ const DirectorContact = () => {
 
   const isArabic = i18n.language === 'ar';
 
+  const openFacebookApp = () => {
+    const fbUrl = "fb://profile/osama.rezg"; // Replace with the actual Facebook profile ID if necessary
+    const fallbackUrl = "https://www.facebook.com/osama.rezg";
+
+    window.location.href = fbUrl;
+
+    setTimeout(() => {
+      if (window.location.href === fbUrl) {
+        window.location.href = fallbackUrl;
+      }
+    }, 500);
+  };
+
   return (
     <div style={styles.background}>
       <Container>
@@ -23,7 +36,7 @@ const DirectorContact = () => {
                   {t('contactDirector')}
                 </p>
                 <div className="text-center">
-                  <Button variant="link" href="https://www.facebook.com/osama.rezg">
+                  <Button variant="link" onClick={openFacebookApp}>
                     <FaFacebook size={30} style={styles.icon} />
                   </Button>
                   <Button variant="link" href="https://www.instagram.com/osamarezg">

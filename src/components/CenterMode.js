@@ -97,7 +97,7 @@ function CenterMode() {
       {
          id: 3,
          image: recentWork5,
-         title: { ar: "مسلسل السرايا الجزء الاول", en: "Alsaraya (Part 1)" },
+         title: { ar: " مسلسل السرايا (الجزء الاول) ", en: "Alsaraya (Part 1)" },
          description: {
             ar: "يؤرخ لواحدة من اهم الفترات في التاريخ الليبي التي شهدت صراعا كبيرا على السلطة وهي فترة حكم الأسرة القرمانللية لأيالة طرابلس وتحديدا في عهد ( علي باشا القرمانللي ) تجري في الفترة الواقعة ما بين عامي 1784 و1795 وينقل لنا ما يحدث خلف اسوار السرايا من صراع خفي بين ابناء علي باشا.",
             en: "Chronicles one of the most significant periods in Libyan history that witnessed a great power struggle during the Qaramanli dynasty's rule over the Tripoli province, specifically in the era of Ali Pasha Qaramanli between 1784 and 1795, revealing the hidden conflicts behind the walls of the Saraya among Ali Pasha's sons.",
@@ -108,7 +108,7 @@ function CenterMode() {
       {
          id: 4,
          image: recentWork2,
-         title: { ar: "مسلسل السرايا الجزء الثاني", en: "Alsaraya (Part 2)" },
+         title: { ar: "مسلسل السرايا (الجزء الثاني)", en: "Alsaraya (Part 2)" },
          description: {
             ar: "يسرد الجزء الثاني من مسلسل السرايا الفترة من سنة 1800 إلى 1811، مع التركيز على حكم يوسف باشا القرمانلي. كانت هذه الحقبة مليئة بالتحديات الداخلية والخارجية، بما في ذلك الأطماع الأجنبية ومؤامرات القناصل والصراعات الداخلية حول الخلافة. يبرز المسلسل تأسيس أول دولة حقيقية على التراب الليبي واستراتيجيات يوسف لموازنة هذه التحديات والأحداث التاريخية الرئيسية التي أعادت تشكيل المنطقة.",
             en: "The second part of Alsaraya narrates the period from 1800 to 1811, focusing on the rule of Yusuf Pasha Qaramanli. This era was full of internal and external challenges, including foreign ambitions, consular conspiracies, and internal conflicts over succession. The series highlights the establishment of the first real state on Libyan soil and Yusuf's strategies to balance these challenges and the key historical events that reshaped the region.",

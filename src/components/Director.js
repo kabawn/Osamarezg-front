@@ -28,154 +28,166 @@ import alsarayaPoster from "../assets/posters/Poster ALsraya Part 1.webp";
 import alsarayaPartTwoPoster from "../assets/posters/el saraya final option 3 V1.webp";
 import banatAlamPoster from "../assets/posters/bnat.webp";
 
-
-
 const Director = () => {
    const { t, i18n } = useTranslation();
    const navigate = useNavigate();
 
    const filmography = [
-      { id: 12, title: "Fobya", year: 2012, poster: fobyaPoter },
-      { id: 10, title: "The Random", year: 2013, poster: theRandomPoster },
-      { id: 8, title: "Dragunov", year: 2014, poster: dragunovPoster },
-      { id: 13, title: "Ayad", year: 2015, poster: ayad },
-      { id: 9, title: "Rubik", year: 2017, poster: rubikPoster },
-      { id: 7, title: "Zankat Al-Reeh", year: 2019, poster: zankaAlReehPoster },
-      { id: 6, title: "Azzaiman", year: 2020, poster: azzaimanPoster },
-      { id: 11, title: "Albarony", year: 2020, poster: albaronyPoster },
-      { id: 5, title: "Ghasak", year: 2021, poster: ghasakPoster },
-      { id: 4, title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
-      { id: 3, title: "Alsaraya", year: 2022, poster: alsarayaPoster },
-      { id: 2, title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
       { id: 1, title: "Banat Alam", year: 2024, poster: banatAlamPoster },
+      { id: 2, title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
+      { id: 3, title: "Alsaraya - Part one", year: 2022, poster: alsarayaPoster },
+      { id: 4, title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
+      { id: 5, title: "Ghasak", year: 2021, poster: ghasakPoster },
+      { id: 11, title: "Albarony", year: 2020, poster: albaronyPoster },
+      { id: 6, title: "Azzaiman", year: 2020, poster: azzaimanPoster },
+      { id: 7, title: "Zankat Al-Reeh", year: 2019, poster: zankaAlReehPoster },
+      { id: 9, title: "Rubik", year: 2017, poster: rubikPoster },
+      { id: 13, title: "Ayad", year: 2015, poster: ayad },
+      { id: 8, title: "Dragunov", year: 2014, poster: dragunovPoster },
+      { id: 10, title: "The Random", year: 2013, poster: theRandomPoster },
+      { id: 12, title: "Fobya", year: 2012, poster: fobyaPoter },
    ];
 
    const awards = [
       {
-         title: "Second best drama series for Zankat Arreeh",
-         titleAr: "جائزة افضل مسلسل درامي عن مسلسل السرايا – الجزء الثاني في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2023",
+         title: "Second best drama series for Zankat Arreeh (Part tow)",
+         titleAr:
+            "جائزة افضل مسلسل درامي عن مسلسل السرايا – الجزء الثاني في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2023",
          event: "ASBU Festival in Tunisia 2021",
          eventAr: "مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2021",
-         image: awardImageAsbu
+         image: awardImageAsbu,
       },
       {
-         title: "Best drama series for Asaraya",
-         titleAr: "جائزة افضل مسلسل درامي عن مسلسل السرايا في مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
+         title: "Best drama series for Asaraya (Part one)",
+         titleAr:
+            "جائزة افضل مسلسل درامي عن مسلسل السرايا الجزء الاول في مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
          event: "ASBU Festival in Jeddah 2022",
          eventAr: "مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
-         image: awardImageAsbu
+         image: awardImageAsbu,
+      },
+
+      {
+         title: "Best drama series for Zankat Al-Reeh (Part one)",
+         titleAr:
+            "جائزة تاني افضل مسلسل درامي عن مسلسل زنقة الريح الجزء الاول في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2021",
+         event: "ASBU Festival in Jeddah 2022",
+         eventAr: "مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2021",
+         image: awardImageAsbu,
       },
       {
          title: "Best documentary film director award",
          titleAr: "جائزة افضل مخرج لفيلم وثائقي 2009",
          event: "2009",
          eventAr: "2009",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best program director award",
          titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2010",
          event: "Youth magazine 2010",
          eventAr: "مجلة الشبابية 2010",
-         image: awardImageYouthMagazine
+         image: awardImageYouthMagazine,
       },
       {
          title: "Best program director award",
          titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2013",
          event: "Youth magazine 2013",
          eventAr: "مجلة الشبابية 2013",
-         image: awardImageYouthMagazine
+         image: awardImageYouthMagazine,
       },
       {
          title: "Best drama director award",
          titleAr: "جائزة سيبتيموس جائزة افضل مخرج درامي 2014",
          event: "Septimius Award 2014",
          eventAr: "سيبتيموس 2014",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best program director award for Alamat Estifham",
          titleAr: "جائزة أفضل مخرج برامج 2013 (علامة استفهام)",
          event: "Alamat Estifham 2013",
          eventAr: "علامة استفهام 2013",
-         image: awardImageYouthMagazine
+         image: awardImageYouthMagazine,
       },
       {
          title: "Best drama director award for Phobia",
          titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج درامي 2014 (فوبيا)",
          event: "Septimius Award 2014",
          eventAr: "سيبتيموس 2014",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best drama director award for Dragunov",
          titleAr: " جائزة سيبتيموس.جائزة أفضل مخرج دراما 2015 (دراجنوف)",
          event: "Septimius Award 2015",
          eventAr: "سيبتيموس 2015",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best drama director award for Zankat Arreeh",
          titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج دراما 2019 ( زنقة الريح )",
          event: "Septimius Award 2019",
          eventAr: "سيبتيموس 2019",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best drama director award for The Two Leaders",
          titleAr: "جائزة سبتيموس افضل مخرج دراما عن مسلسل 2020 ( الزعيمان )",
          event: "Septimius Award 2020",
          eventAr: "سيبتيموس 2020",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
-         title: "Best drama director award for Ghasaq",
+         title: "Best drama director award for Ghasak",
          titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( السرايا )",
          event: "Septimius Award 2021",
          eventAr: "سيبتيموس 2021",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Best drama director award for Alsaraya – Part One",
          titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( السرايا )",
          event: "Septimius Award 2023",
          eventAr: "سيبتيموس 2023",
-         image: awardImageSeptymos
+         image: awardImageSeptymos,
       },
       {
          title: "Bronze award for The Random",
-         titleAr: "الجائزة البرونزية لفيلم (العشوائي) عن فئة الأفلام القصيرة بمهرجان الفيلم العربي بمدينة قابس في تونس 2016.",
+         titleAr:
+            "الجائزة البرونزية لفيلم (العشوائي) عن فئة الأفلام القصيرة بمهرجان الفيلم العربي بمدينة قابس في تونس 2016.",
          event: "Arab Film Festival in Gabes, Tunisia 2016",
          eventAr: "مهرجان الفيلم العربي بمدينة قابس في تونس 2016",
-         image: awardImageArabFilmFestival
+         image: awardImageArabFilmFestival,
       },
       {
          title: "Special mention for The Random",
-         titleAr: "تنويه خاص لفيلم (العشوائي) من لجنة التحكيم بمهرجان الفيلم المغاربي بوجدة في المغرب 2016.",
+         titleAr:
+            "تنويه خاص لفيلم (العشوائي) من لجنة التحكيم بمهرجان الفيلم المغاربي بوجدة في المغرب 2016.",
          event: "Maghrebi Film Festival in Oujda, Morocco, 2016",
          eventAr: "مهرجان الفيلم المغاربي بوجدة في المغرب 2016",
-         image: awardImageMaghrebiFilmFestival
+         image: awardImageMaghrebiFilmFestival,
       },
       {
          title: "Best African film award for Random",
          titleAr: "جائزة أفضل فيلم إفريقي لفيلم (العشوائي) من مهرجان ART City بالكاميرون 2016.",
          event: "ART City Festival in Cameroon 2016",
          eventAr: "مهرجان ART City بالكاميرون 2016",
-         image: awardImageArtCityFestival
+         image: awardImageArtCityFestival,
       },
       {
          title: "Special Jury Award for Phobia",
          titleAr: "جائزة لجنة التحكيم الخاصة (فوبيا) مونديال القاهرة للإذاعة والتلفزيون2014.",
          event: "Cairo Radio and Television Festival 2014",
          eventAr: "مونديال القاهرة للإذاعة والتلفزيون 2014",
-         image: awardMondal
+         image: awardMondal,
       },
       {
          title: "Best Film and Best Director Award for Al-Barony",
-         titleAr: "جائزة افضل فيلم و افضل اخراج في مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب عن فيلم الباروني 2023",
+         titleAr:
+            "جائزة افضل فيلم و افضل اخراج في مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب عن فيلم الباروني 2023",
          event: "International Cinema and Migration Festival in Oujda, Morocco 2023",
          eventAr: "مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب 2023",
-         image: awardInternational
+         image: awardInternational,
       },
    ];
 

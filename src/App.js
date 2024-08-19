@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -19,9 +18,10 @@ import CastingPage from './components/CastingPage';
 import ScriptSubmission from './components/ScriptSubmission';
 import LoginPage from './components/LoginPage';
 import AdminPage from './components/AdminPage';
-import BlogDetails from './components/BlogDetails'; // Import the BlogDetails component
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+import BlogDetails from './components/BlogDetails'; 
+import ScrollToTop from './components/ScrollToTop';
 import DirectorContact from './components/DirectorContact';
+import ProtectedRoute from './components/ProtectedRoute'; 
 
 import './index.css';
 
@@ -50,8 +50,9 @@ function App() {
         <Route path="/casting" element={<CastingPage />} /> 
         <Route path="/submit-script" element={<ScriptSubmission />} /> 
         <Route path="/login" element={<LoginPage />} /> 
-        <Route path="/admin" element={<AdminPage />} /> 
-        <Route path="/blogs/:id" element={<BlogDetails />} /> {/* Add route for blog details */}
+        {/* Protect the admin route */}
+        <Route path="/admin" element={<ProtectedRoute element={<AdminPage />} />} /> 
+        <Route path="/blogs/:id" element={<BlogDetails />} /> 
         <Route path="/contact" element={<DirectorContact/>}/>
       </Routes>
       <Footer />

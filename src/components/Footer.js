@@ -62,13 +62,13 @@ const Footer = () => {
                </div>
             </div>
             <div className="text-center mt-5">
-               <p>{t("developedBy")}</p>
+               <p className="companyinfo">{t("developedBy")}</p>
                <a href="https://www.moderncode.ly" target="_blank" rel="noopener noreferrer">
-                  <img
+                  {/* <img
                      src={logo}
                      alt="Modern Code Company Logo"
                      style={{ width: "100px", marginTop: "10px" }}
-                  />
+                  /> */}
                </a>
             </div>
          </div>

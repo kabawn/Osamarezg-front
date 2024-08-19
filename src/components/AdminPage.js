@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import heroImage from "../assets/herodirector.jpg"; // Ensure you have this image in the correct path
 import "./AdminPage.css"; // Import the CSS file for custom styling
+import { useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
 
 const HeroSection = styled.div`
   background-image: url(${heroImage});
@@ -36,6 +37,7 @@ const AdminPage = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const isRtl = currentLang === 'ar';
+  const navigate = useNavigate(); // Use useNavigate instead of useHistory
 
   const [castings, setCastings] = useState([]);
   const [scripts, setScripts] = useState([]);
@@ -53,6 +55,13 @@ const AdminPage = () => {
   const [blogForm, setBlogForm] = useState({ title: "", content: "", author: "", images: [] });
   const [showBlogModal, setShowBlogModal] = useState(false);
   const [isEditingBlog, setIsEditingBlog] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false); // New state for delete confirmation
+  const [castingToDelete, setCastingToDelete] = useState(null); // New state to store the casting to be deleted
+
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Remove the token
+    navigate("/login"); // Use navigate instead of history.push
+  };
 
   useEffect(() => {
     const fetchCastings = async () => {
@@ -227,6 +236,29 @@ const AdminPage = () => {
     }
   };
 
+  // New functions for handling casting deletion
+  const handleCastingDeleteClick = (casting) => {
+    setCastingToDelete(casting);
+    setShowDeleteModal(true);
+  };
+
+  const confirmDeleteCasting = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      await axios.delete(`/castings/${castingToDelete._id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      setCastings(castings.filter(casting => casting._id !== castingToDelete._id));
+      setShowDeleteModal(false);
+      setCastingToDelete(null);
+    } catch (error) {
+      setErrorMessage("Error deleting casting request.");
+    }
+  };
+
   return (
     <>
       <HeroSection>
@@ -234,6 +266,9 @@ const AdminPage = () => {
         <HeroContent>
           <h1 className="herotext">Director Dashboard</h1>
           <p>Manage casting requests and scripts</p>
+          <Button variant="danger" onClick={handleLogout}>
+            Logout
+          </Button> {/* Add the Logout button here */}
         </HeroContent>
       </HeroSection>
       <Container className={isRtl ? "rtl" : "ltr"}>
@@ -305,6 +340,9 @@ const AdminPage = () => {
                         <Card.Text>Gender: {casting.gender}</Card.Text>
                         <Card.Text>Phone: {casting.phoneNumber}</Card.Text>
                         <Card.Text>Submitted on: {new Date(casting.submissionDate).toLocaleDateString()}</Card.Text>
+                        <Button variant="danger" onClick={() => handleCastingDeleteClick(casting)}>
+                          Delete
+                        </Button>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -523,6 +561,23 @@ const AdminPage = () => {
   </Modal.Body>
 </Modal>
 
+      {/* Delete Confirmation Modal */}
+      <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirm Deletion</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Are you sure you want to delete this casting request?
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowDeleteModal(false)}>
+            Cancel
+          </Button>
+          <Button variant="danger" onClick={confirmDeleteCasting}>
+            Delete
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };

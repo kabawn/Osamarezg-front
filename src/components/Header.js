@@ -1,6 +1,5 @@
-// src/components/Header.js
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container,  } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -64,7 +63,7 @@ const Header = () => {
   return (
     <StyledNavbar expand="lg" className="header" lang={currentLang} expanded={expanded}>
       <Container>
-        <BrandLink to="/">OSAMA REZG</BrandLink>
+        <BrandLink to="/"></BrandLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`ms-auto ${currentLang === 'ar' ? 'nav-ar' : 'nav-en'}`}>
@@ -87,7 +86,7 @@ const Header = () => {
             )} */}
           </Nav>
           <div className="language-switcher-wrapper">
-            <LanguageSwitcher className="language-switcher" />
+            <LanguageSwitcher className="language-switcher" onLanguageChange={handleNavLinkClick} />
           </div>
         </Navbar.Collapse>
       </Container>

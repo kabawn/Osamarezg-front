@@ -91,7 +91,7 @@
 
 .bio-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items at the top */
   justify-content: space-between;
   background: #222;
   border-radius: 10px;
@@ -101,12 +101,30 @@
   max-width: 1200px;
   padding: 20px;
   margin-top: 30px;
+  min-height: 250px; /* Ensure a minimum height for consistency */
 }
 
 .bio-text {
   flex: 1;
   margin-right: 20px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%; /* Make sure the text container takes up the full height */
+}
+
+.bio-text p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 15; /* Limit the number of lines to 6 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%; /* Make sure the text takes up the full container height */
 }
 
 .bio-image {
@@ -209,6 +227,12 @@
     padding: 20px 0;
   }
 
+  .bio-text p {
+    font-size: 1rem;
+    line-height: 1.5; /* Adjust line-height for smaller screens */
+    padding: 5px 0; /* Adjust padding for smaller screens */
+  }
+
   .bio-image {
     width: 100%;
     max-width: 400px;
@@ -222,6 +246,10 @@
   .director-section h2 {
     font-size: 2rem;
     margin-top: 50px;
+  }
+
+  .director-hero {
+    height: 50vh; /* Set a smaller height for mobile screens */
   }
 
   .bio-card p {

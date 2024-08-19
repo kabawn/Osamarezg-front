@@ -71,7 +71,7 @@ const DropdownItem = styled.button`
   }
 `;
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ onLanguageChange }) => {
   const { i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -86,6 +86,9 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lng);
     localStorage.setItem('language', lng);
     setShowDropdown(false);
+    if (onLanguageChange) {
+      onLanguageChange(); // Call the callback to close the menu
+    }
   };
 
   return (
@@ -94,7 +97,7 @@ const LanguageSwitcher = () => {
         <img src={i18n.language === 'en' ? usaFlag : arFlag} alt="Selected Language" />
         {i18n.language === 'en' ? 'English' : 'العربية'}
       </LanguageButton>
-      <DropdownMenu $show={showDropdown}> {/* Use $show here */}
+      <DropdownMenu $show={showDropdown}>
         <DropdownItem onClick={() => changeLanguage('en')}>
           <img src={usaFlag} alt="English" />
           English

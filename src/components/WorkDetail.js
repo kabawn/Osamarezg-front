@@ -170,7 +170,7 @@ const works = [
       details: {
          episodes: { en: "14 episodes", ar: "14 حلقة" },
          duration: { en: "55 to 60 minutes", ar: "55 إلى 60 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2024", ar: "2024" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -216,7 +216,7 @@ const works = [
       details: {
          episodes: { en: "13 episodes", ar: " 13 حلقة" },
          duration: { en: "55 to 60 minutes", ar: " 55 الى 60 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2023", ar: "2023" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -256,7 +256,7 @@ const works = [
       details: {
          episodes: { en: "14 episodes", ar: " 14 حلقة" },
          duration: { en: "55 to 60 minutes", ar: " 55 الى 60 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2022", ar: "2022" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -301,7 +301,7 @@ const works = [
       details: {
          episodes: { en: "15 episodes", ar: "15 حلقة" },
          duration: { en: "45 to 60 minutes", ar: "45 الى 60 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2021", ar: "2021" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Abdulrahman Haqiq", ar: "عبد الرحمان حقيق" },
@@ -324,7 +324,7 @@ const works = [
          ar: "ملخص المسلسل: يؤرخ مسلسل (غسق) لملحمة (البنيان المرصوص) وهي معركة قام بها الجيش الليبي ضد تنظيم الدولة (داعش) الذي سيطر على مدينة سرت الليبية، ويرصد المسلسل الأوضاع داخل مدينة سرت تحت سيطرة التنظيم، وكذلك الأوضاع في مدينتي مصراتة وطرابلس من سبتمبر 2014 حتى ديسمبر 2016 تاريخ سقوط آخر معاقل (داعش) في سرت، ويسرد نضال الشعب الليبي ضد التطرف والإرهاب.",
       },
       trailer: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/ghasaq/174516",
+      fullShowLink: "https://www.toog.ly/ar/detail/Ghasak/174516",
       btsImages: [
          btsqaseq1,
          btsqaseq2,
@@ -360,7 +360,7 @@ const works = [
       details: {
          episodes: { en: "10 episodes", ar: "10 حلقات" },
          duration: { en: "60 minutes", ar: "60 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2021", ar: "2021" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -397,7 +397,7 @@ const works = [
       details: {
          episodes: { en: "18 episodes", ar: "18 حلقة" },
          duration: { en: "40 to 50 minutes", ar: "40 إلى 50 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2020", ar: "2020" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Ezzat Shalabi, Ahmed Nabil", ar: "عزة شلبي، أحمد نبيل" },
@@ -429,7 +429,7 @@ const works = [
       details: {
          episodes: { en: "20 episodes", ar: "20 حلقة" },
          duration: { en: "45 to 55 minutes", ar: "45 إلى 55 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2019", ar: "2019" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Abdul Rahman Haqiq", ar: "عبد الرحمان حقيق" },
@@ -460,7 +460,7 @@ const works = [
       details: {
          episodes: { en: "15 episodes", ar: "15 حلقة" },
          duration: { en: "45 minutes", ar: "45 دقيقة" },
-         productionCompany: { en: "ARTCompany", ar: "شركة ART" },
+         productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2014", ar: "2014" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
          writer: { en: "Siraj Huwaidi", ar: "سراج هويدي" },
@@ -502,8 +502,8 @@ const works = [
          ar: [],
       },
       details: {
-         episodes: { en: "", ar: "" }, // Not applicable for movies
-         duration: { en: "", ar: "" }, // Not applicable for movies
+         episodes: { en: "10 episodes", ar: "10 حلقات" }, // Not applicable for movies
+         duration: { en: "30 to 40 minutes", ar: "30 إلى 40 دقيقة" },
          productionCompany: { en: "ART Production", ar: "ART Productıon" },
          productionYear: { en: "2017", ar: "2017" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
@@ -589,8 +589,8 @@ const works = [
          ar: [],
       },
       details: {
-         episodes: { en: "", ar: "" }, // Not applicable for movies
-         duration: { en: "", ar: "" }, // Not applicable for movies
+         episodes: { en: "Moive", ar: "فيلم" }, // Not applicable for movies
+         duration: { en: "2h:34m ", ar: " 2س26د" }, // Not applicable for movies
          productionCompany: { en: "ART Production", ar: "ART Productıon" },
          productionYear: { en: "2020", ar: "2020" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },

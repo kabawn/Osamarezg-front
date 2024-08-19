@@ -12,7 +12,7 @@ const Blog = () => {
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
 
-   const imageBaseURL = "http://192.168.1.78:5000/"; // Define the base URL for images
+   const imageBaseURL = "https://osamarezg.com/"; // Define the base URL for images
 
    useEffect(() => {
       const fetchBlogs = async () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "../axios"; // Adjust the path as necessary
 import { useTranslation } from "react-i18next";
-import { Container, Form, Button, Row, Col, Alert } from "react-bootstrap";
+import { Container, Form, Button, Row, Col, Alert, Spinner } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CastingPage.css";
 
@@ -47,6 +47,7 @@ const CastingPage = () => {
   const [photoPreviews, setPhotoPreviews] = useState([]);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false); // Add loading state
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -89,6 +90,9 @@ const CastingPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (loading) return; // Prevent multiple submissions
+
+    setLoading(true); // Set loading state to true
     setErrorMessage("");
     setSuccessMessage("");
 
@@ -125,6 +129,8 @@ const CastingPage = () => {
       }
     } catch (error) {
       setErrorMessage(t("errorCastingTryAgain"));
+    } finally {
+      setLoading(false); // Set loading state to false
     }
   };
 
@@ -247,8 +253,26 @@ const CastingPage = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-4 button">
-              {t("submit")}
+            <Button
+              variant="primary"
+              type="submit"
+              className="mt-4 button"
+              disabled={loading} // Disable button while loading
+            >
+              {loading ? (
+                <>
+                  <Spinner
+                    as="span"
+                    animation="border"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                  />{" "}
+                  {t("loading")}...
+                </>
+              ) : (
+                t("submit")
+              )}
             </Button>
           </Form>
         </Col>
