@@ -551,7 +551,7 @@ const works = [
          ],
       },
       details: {
-         episodes: { en: "", ar: "" }, // Not applicable for movies
+         episodes: { en: "Moive", ar: "فيلم" }, // Not applicable for movies
          duration: { en: "20 minutes", ar: "20 دقيقة" },
          productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2016", ar: "2016" },
@@ -627,8 +627,8 @@ const works = [
       ], // Add behind-the-scenes images if available
       awards: { en: [], ar: [] }, // Add awards if available
       details: {
-         episodes: { en: "", ar: "" }, // Not applicable for movies
-         duration: { en: "", ar: "" }, // Add episode duration if available
+         episodes: { en: "15 episodes", ar: "15 حلقة" }, // Not applicable for movies
+         duration: { en: " 20 to 30 min", ar: "من 20 الى 30 دقيقة" }, // Add episode duration if available
          productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2013", ar: "2013" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },

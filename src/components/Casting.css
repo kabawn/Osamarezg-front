@@ -74,7 +74,7 @@
 
 /* New section styles */
 .script-submission {
-  margin-top: 50px; /* Space between existing content and new section */
+  margin-top:10px; /* Space between existing content and new section */
 }
 
 .script-submission h3 {
@@ -161,7 +161,7 @@
 @media (max-width: 576px) {
   .casting-content h1 {
     font-size: 35px;
-    margin-top: 400px;
+    margin-top: 600px;
   }
 
   .casting-content h2 {

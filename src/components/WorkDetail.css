@@ -131,8 +131,9 @@
 
 .close-button {
   display: block;
+  width: 100px;
   margin: 20px auto 0;
-  background-color: #007bff;
+  background-color: #3b00b0;
   border: none;
   border-radius: 5px;
   color: #fff;
