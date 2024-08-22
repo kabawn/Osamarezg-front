@@ -302,7 +302,7 @@
 
   .bio-text p {
     font-size: 1rem;
-    line-height: 1.5; /* Adjust line-height for smaller screens */
+    line-height: 1.8; /* Adjust line-height for smaller screens */
     padding: 5px 0; /* Adjust padding for smaller screens */
   }
 
@@ -374,8 +374,10 @@
   }
 
   .bio-text p {
-    font-size: 0.875rem;
-  }
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
 
   .grid-container {
     grid-template-columns: 1fr;

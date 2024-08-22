@@ -264,7 +264,7 @@ const Director = () => {
          <div className="director-hero">
             <img src={directorImage} alt="Director" className="director-image" />
             <div className="director-info">
-               <h1 className="director-title">Osama Rezg</h1>
+               <h2 className="director-title">{t("directorosama")}</h2>
                <p className="director-subtitle">{t("journey")}</p>
             </div>
          </div>

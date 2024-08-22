@@ -160,6 +160,7 @@ const resources = {
          morocoactor: "Moroccan actor",
          mohamed: "Mohamed Othman",
          libyenactor: "Libyen actor",
+         directorosama:"Director Osama Rezg"
       },
    },
    ar: {
@@ -321,6 +322,8 @@ const resources = {
          morocoactor: "ممثل مغربي",
          mohamed: "محمد عثمان",
          libyenactor: "ممثل ليبي",
+         directorosama:"المخرج أسامة رزق"
+
       },
    },
 };
