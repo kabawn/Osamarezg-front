@@ -54,6 +54,8 @@
 
   .showreel-video {
       border: 1px solid #fff; /* Slightly smaller border */
+      width: 100%;
+
   }
 }
 

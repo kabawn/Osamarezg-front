@@ -78,7 +78,7 @@ function CenterMode() {
          title: { ar: "مسلسل بنات العم", en: "Banat Al-am" },
          description: {
             ar: "تدور أحداث مسلسل بنات العم في وقتنا الحالي حيث تعيش خلود في منزل عمها نوري بعد وفاة والدها وزواج والدتها وسفرها إلى الخارج. تتربى خلود وتكبر في كنف عمها الحاج نوري بصحبة ابنة عمها عفاف التي تماثلها في العمر وتدرس معها في نفس الكلية وتبدوان في قمة الانسجام كأختين وليس بنات عم.",
-            en: "The series Banat Al-Om takes place in the present day where Khulood lives with her uncle Nouri after her father's death and her mother's remarriage and travel abroad. Khulood grows up in the care of her uncle Hajj Nouri, alongside her cousin Afaf, who is the same age and studies in the same college. They appear to be in perfect harmony as sisters, not just cousins.",
+            en: "The series Banat Al-Om takes place in the present day where Khulood lives with her uncle Nouri after her father's death and her mother's remarriage and travel abroad. Khulood grows up in the care of her uncle Hajj Nouri, alongside her cousin Afaf, who is the same age and studies in the same college. ",
          },
          year: 2024,
          link: "/works/1",

@@ -51,7 +51,7 @@ const Director = () => {
 
    const awards = [
       {
-         title: " Best Historical Series for Alsraya (Part tow)",
+         title: " Best Historical Series for Alsraya (Part tow) 2023",
          titleAr:
             "جائزةافضل مسلسل تاريخي عن مسلسل السرايا – الجزء الثاني في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2023",
          event: "ASBU Festival in Tunisia 2023",
@@ -59,15 +59,15 @@ const Director = () => {
          image: awardImageAsbu,
       },
       {
-         title: "Best drama director award for Alsaraya – Part One",
-         titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( السرايا )",
+         title: "Best drama director award for Alsaraya – Part One 2023",
+         titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2023 ( السرايا )",
          event: "Septimius Award 2023",
          eventAr: "سيبتيموس 2023",
          image: awardImageSeptymos,
       },
 
       {
-         title: "Best Film and Best Director Award for Al-Barony",
+         title: "Best Film and Best Director Award for Al-Barony 2023",
          titleAr:
             "جائزة افضل فيلم و افضل اخراج في مهرجان السينما و الهجرة الدولي في مدينة وجدة – المغرب عن فيلم الباروني 2023",
          event: "International Cinema and Migration Festival in Oujda, Morocco 2023",
@@ -75,7 +75,7 @@ const Director = () => {
          image: awardInternational,
       },
       {
-         title: "Best Historical Series for Alsaraya (Part one)",
+         title: "Best Historical Series for Alsaraya (Part one) 2022",
          titleAr:
             "جائزة افضل مسلسل تاريخي عن مسلسل السرايا الجزء الاول في مهرجان اتحاد اذاعات الدول العربية ASBU في جدة 2022",
          event: "ASBU Festival in Jeddah 2022",
@@ -83,7 +83,7 @@ const Director = () => {
          image: awardImageAsbu,
       },
       {
-         title: "Best drama director award for Ghasak",
+         title: "Best drama director award for Ghasak 2022",
          titleAr: "جائزة سيبتموس افضل مخرج دراما عن مسلسل 2022 ( غسق )",
          event: "Septimius Award 2022",
          eventAr: "سيبتيموس 2022",
@@ -91,7 +91,7 @@ const Director = () => {
       },
 
       {
-         title: "Second best drama series for Zankat Al-Reeh (Part one)",
+         title: "Second best drama series for Zankat Al-Reeh (Part one) 2021",
          titleAr:
             "جائزة تاني افضل مسلسل درامي عن مسلسل زنقة الريح الجزء الاول في مهرجان اتحاد اذاعات الدول العربية ASBU في تونس 2021",
          event: "ASBU Festival in Tunis 2021",
@@ -100,21 +100,21 @@ const Director = () => {
       },
 
       {
-         title: "Best drama director award for The Two Leaders",
+         title: "Best drama director award for The Two Leaders 2020",
          titleAr: "جائزة سبتيموس افضل مخرج دراما عن مسلسل 2020 ( الزعيمان )",
          event: "Septimius Award 2020",
          eventAr: "سيبتيموس 2020",
          image: awardImageSeptymos,
       },
       {
-         title: "Best drama director award for Zankat Arreeh",
+         title: "Best drama director award for Zankat Arreeh 2019",
          titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج دراما 2019 ( زنقة الريح )",
          event: "Septimius Award 2019",
          eventAr: "سيبتيموس 2019",
          image: awardImageSeptymos,
       },
       {
-         title: "Bronze award for The Random",
+         title: "Bronze award for The Random 2016",
          titleAr:
             "الجائزة البرونزية لفيلم (العشوائي) عن فئة الأفلام القصيرة بمهرجان الفيلم العربي بمدينة قابس في تونس 2016.",
          event: "Arab Film Festival in Gabes, Tunisia 2016",
@@ -122,7 +122,7 @@ const Director = () => {
          image: awardImageArabFilmFestival,
       },
       {
-         title: "Special mention for The Random",
+         title: "Special mention for The Random 2016",
          titleAr:
             "تنويه خاص لفيلم (العشوائي) من لجنة التحكيم بمهرجان الفيلم المغاربي بوجدة في المغرب 2016.",
          event: "Maghrebi Film Festival in Oujda, Morocco, 2016",
@@ -130,7 +130,7 @@ const Director = () => {
          image: awardImageMaghrebiFilmFestival,
       },
       {
-         title: "Best African film award for Random",
+         title: "Best African film award for Random 2016",
          titleAr: "جائزة أفضل فيلم إفريقي لفيلم (العشوائي) من مهرجان ART City بالكاميرون 2016.",
          event: "ART City Festival in Cameroon 2016",
          eventAr: "مهرجان ART City بالكاميرون 2016",
@@ -138,21 +138,21 @@ const Director = () => {
       },
 
       {
-         title: "Best drama director award for Dragunov",
+         title: "Best drama director award for Dragunov 2015",
          titleAr: " جائزة سيبتيموس.جائزة أفضل مخرج دراما 2015 (دراجنوف)",
          event: "Septimius Award 2015",
          eventAr: "سيبتيموس 2015",
          image: awardImageSeptymos,
       },
       {
-         title: "Best drama director award",
+         title: "Best drama director award 2014",
          titleAr: "جائزة سيبتيموس جائزة افضل مخرج درامي 2014",
          event: "Septimius Award 2014",
          eventAr: "سيبتيموس 2014",
          image: awardImageSeptymos,
       },
       {
-         title: "Best drama director award for Phobia",
+         title: "Best drama director award for Phobia 2014",
          titleAr: "جائزة سيبتيموس.جائزة أفضل مخرج درامي 2014 (فوبيا)",
          event: "Septimius Award 2014",
          eventAr: "سيبتيموس 2014",
@@ -160,7 +160,7 @@ const Director = () => {
       },
 
       {
-         title: "Special Jury Award for Phobia",
+         title: "Special Jury Award for Phobia 2014",
          titleAr: "جائزة لجنة التحكيم الخاصة (فوبيا) مونديال القاهرة للإذاعة والتلفزيون2014.",
          event: "Cairo Radio and Television Festival 2014",
          eventAr: "مونديال القاهرة للإذاعة والتلفزيون 2014",
@@ -168,7 +168,7 @@ const Director = () => {
       },
 
       {
-         title: "Best program director award",
+         title: "Best program director award 2013",
          titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2013",
          event: "Youth magazine 2013",
          eventAr: "مجلة الشبابية 2013",
@@ -176,7 +176,7 @@ const Director = () => {
       },
 
       {
-         title: "Best program director award for Alamat Estifham",
+         title: "Best program director award for Alamat Estifham 2013",
          titleAr: "جائزة أفضل مخرج برامج 2013 (علامة استفهام)",
          event: "Alamat Estifham 2013",
          eventAr: "علامة استفهام 2013",
@@ -184,7 +184,7 @@ const Director = () => {
       },
 
       {
-         title: "Best program director award",
+         title: "Best program director award 2010",
          titleAr: "جائزة مجلة الشبابية جائزة افضل مخرج برامج 2010",
          event: "Youth magazine 2010",
          eventAr: "مجلة الشبابية 2010",
@@ -192,7 +192,7 @@ const Director = () => {
       },
 
       {
-         title: "Best documentary film director award",
+         title: "Best documentary film director award 2009",
          titleAr: "جائزة افضل مخرج لفيلم وثائقي 2009",
          event: "2009",
          eventAr: "2009",
