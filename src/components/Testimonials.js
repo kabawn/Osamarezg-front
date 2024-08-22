@@ -9,6 +9,10 @@ import './Testimonials.css';
 import image1 from '../assets/testimonials/Motassim Alnahar.jpg';
 import image2 from '../assets/testimonials/shokran.png';
 import image3 from '../assets/testimonials/byar.jpg';
+import image4 from '../assets/testimonials/rabiea.png';
+import image5 from '../assets/testimonials/mohamed.png';
+
+
 
 const Testimonials = () => {
   const { t, i18n } = useTranslation();
@@ -23,21 +27,35 @@ const Testimonials = () => {
       title: t('motassim'),
       text: t('sryinactor'),
       image: image1,
-      videoUrl: "https://www.youtube.com/embed/k-ZP46eBhWk",
+      videoUrl: "https://drive.google.com/file/d/1R2zHVotZGXaUlnQ8ToAabO3O3A4cuVlS/preview",
     },
     {
       id: 2,
       title: t('shoukran'),
       text: t('sryinactress'),
       image: image2,
-      videoUrl: "https://www.youtube.com/embed/Y5hkyFCbkW4",
+      videoUrl: "https://drive.google.com/file/d/15nOKAXrGLdm7-7-vfvbIPobS_7GLG9b8/preview",
     },
     {
       id: 3,
       title: t('pierre'),
       text: t('lebaniseactor'),
       image: image3,
-      videoUrl: "https://www.youtube.com/embed/D6qe8lHJVmM",
+      videoUrl: "https://drive.google.com/file/d/1PKRYHj97VF5JGoGLIwzN2-T528YJwI4U/preview",
+    },
+    {
+      id: 4,
+      title: t('rabie'),
+      text: t('morocoactor'),
+      image: image4,
+      videoUrl: "https://drive.google.com/file/d/1puOlUx93TzxtVqVJOuGiZcC4h8cxPCKE/preview",
+    },
+    {
+      id: 5,
+      title: t('mohamed'),
+      text: t('libyenactor'),
+      image: image5,
+      videoUrl: "https://drive.google.com/file/d/1ui6Gjix50UNNKLleXu5i8uPMTz2m0GSB/preview",
     },
   ];
 

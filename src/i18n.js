@@ -156,6 +156,10 @@ const resources = {
          bioText21:
             "As Art Production Company reached its tenth anniversary since its establishment, the company has become number one in Libya and the Maghreb, thanks to Osama Rezg's management and continuous work in development, diversification, and perseverance every year to produce Libyan-Maghrebi works. These productions are now watched regionally and across the Arab world for their professional content and high execution standards. Arab celebrities who participated in the series produced by the company have recognized its professionalism and the international standards it operates with under Osama Rezg's leadership. He has combined artistic vision as a director with wise management, strict leadership, and intelligent production to achieve the highest technical and creative levels with budgets more minor than those of Arab shows in the Gulf countries, Egypt, and the Middle East.",
          or: "Or you can contact us using the form",
+         rabie: "Rabie Kati",
+         morocoactor: "Moroccan actor",
+         mohamed: "Mohamed Othman",
+         libyenactor: "Libyen actor",
       },
    },
    ar: {
@@ -312,9 +316,12 @@ const resources = {
             "في سنة 2021 تم اختيار اسامة رزق من ضمن 40 اهم شخصية مؤثرة في ليبيا تحت عمر 40 سنة.",
          bioText21:
             "مع وصول شركة Art Productıon  الى عشرة سنوات من تاسيسها اصبحت الشركة رقم واحد في ليبيا و المغرب الكبير  بفضل ادارة اسامة رزق و عمله المستمر في التطوير و التنويع  و المثابرة في كل سنة لصناعة اعمال ليبية مغاربية اصبحت تشاهد عربيا و اقليميا لمستواها المحترف في المحتوى و التنفيذ بمهنية عالية شهد بها النجوم العرب الذين شاركو في المسلسلات التي انتجتهم الشركة و الذين صرحو بإحترافية الشركة و المستوى العالمي الذي تعمل  به بقيادة اسامة رزق الذي استطاع الجمع ما بين الرؤية الفنية كمخرج و الادارة الحكيمة و القيادة الصارمة و الذكاء في الانتاج للحصول على اعلى مستوى تقني و فني بميزانيات اقل من ميزانيات الانتاجات العربية في دول الخليج و مصر و الشرق الاوسط.",
-            or: "او يمكنكم التواصل عبر النموذج",
-
-         },
+         or: "او يمكنكم التواصل عبر النموذج",
+         rabie: "ربيع القاطي",
+         morocoactor: "ممثل مغربي",
+         mohamed: "محمد عثمان",
+         libyenactor: "ممثل ليبي",
+      },
    },
 };
 
