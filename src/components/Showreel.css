@@ -26,9 +26,10 @@
 }
 
 .showreel-video {
-  width: 100%;
+  width: 60%;
+  height: 100%;
+
   max-width: 1200px; /* Maximum width for larger screens */
-  height: 800px;
   border: 2px solid #fff; /* Optional border styling */
   border-radius: 10px; /* Optional border radius for aesthetics */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */

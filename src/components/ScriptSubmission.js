@@ -177,7 +177,6 @@ const ScriptSubmission = () => {
                   value={formData.email} 
                   onChange={handleInputChange} 
                   isInvalid={!!errors.email} 
-                  required 
                 />
                 <Form.Control.Feedback type="invalid">
                   {errors.email}

@@ -94,7 +94,7 @@
   font-size: 1.2rem;
   line-height: 1.8;
   color: #ddd;
-  text-align: justify;
+  text-align: center;
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
@@ -112,19 +112,11 @@
 }
 
 /* Specific Section Styles */
-.biography .bio-text {
-  font-size: 1.25rem;
-  padding: 20px;
-  line-height: 1.8;
-  background-color: #222;
-  border-radius: 10px;
-  margin-top: 20px;
-  color: #eee;
-}
+
 
 .bio-card {
   display: flex;
-  flex-direction: row; /* Align image and text side by side */
+  flex-direction: column; /* Align image and text side by side */
   align-items: center;
   background: #222;
   border-radius: 10px;
@@ -149,6 +141,8 @@
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 20px 50px;
+
 }
 
 .bio-image {
@@ -192,12 +186,15 @@
   line-height: 1.6;
 }
 
+/* Ensures all awards are uniform in size and appearance */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   animation: fadeInUp 2s ease-in-out;
   width: 100%;
+  max-width: 1200px; /* Ensure grid does not exceed max width */
+  margin: 0 auto; /* Center the grid container */
 }
 
 .grid-item {
@@ -206,6 +203,35 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Make sure all grid items have equal height */
+  max-width: 250px; /* Ensure all grid items have the same width */
+  margin: 0 auto; /* Center each grid item */
+}
+
+/* Ensure all award images are the same size */
+.award img {
+  width: 100%;
+  height: 150px; /* Fixed height for all award images */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Style for the text inside the award card */
+.award-info h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.award-info p {
+  font-size: 1rem;
+  color: #ccc;
 }
 
 .grid-item img {
@@ -220,6 +246,7 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 
@@ -306,10 +333,22 @@
     padding: 15px;
   }
 
+  .award img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 150px; /* Adjust this to your desired width */
+    max-height: 150px; /* Adjust this to your desired height */
+    display: block;
+    margin: 0 auto;
+}
+
   .poster-info h3,
   .award-info h3 {
     font-size: 1rem;
   }
+
+
 
   .poster-info p,
   .award-info p {
@@ -338,8 +377,26 @@
     font-size: 0.875rem;
   }
 
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .grid-item {
     padding: 10px;
+    max-width: 100%; /* Use full width for mobile */
+  }
+
+  .award img {
+    height: 100px; /* Smaller height for very small screens */
+  }
+
+  .award-info h3 {
+    font-size: 0.875rem;
+  }
+
+  .award-info p {
+    font-size: 0.75rem;
   }
 
   .poster-info h3,

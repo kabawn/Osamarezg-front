@@ -241,7 +241,6 @@ const CastingPage = () => {
                 as="select"
                 value={formData.nationality}
                 onChange={handleInputChange}
-                required
               >
                 <option value="">{t("nationality")}...</option>
                 {countries.map((country) => (
