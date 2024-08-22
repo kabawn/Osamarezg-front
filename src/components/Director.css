@@ -68,11 +68,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0; /* Initial opacity for fade-in effect */
-  transform: translateY(20px); /* Initial position for slide-up effect */
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-
 .director-section.fade-in {
   opacity: 1;
   transform: translateY(0);
@@ -82,35 +81,64 @@
   text-align: center;
   font-weight: 700;
   font-size: 2.5rem;
-  margin-top: 100px;
+  margin-top: 50px;
   text-transform: uppercase;
   border-bottom: 2px solid #fff;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: fit-content;
+}
+
+/* Text Sections */
+.director-section p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings inside the text sections */
+.director-section h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Specific Section Styles */
+.biography .bio-text {
+  font-size: 1.25rem;
+  padding: 20px;
+  line-height: 1.8;
+  background-color: #222;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #eee;
 }
 
 .bio-card {
   display: flex;
-  align-items: flex-start; /* Align items at the top */
-  justify-content: space-between;
+  flex-direction: row; /* Align image and text side by side */
+  align-items: center;
   background: #222;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeInUp 2s ease-in-out;
-  width: 100%;
-  max-width: 1200px;
   padding: 20px;
   margin-top: 30px;
-  min-height: 250px; /* Ensure a minimum height for consistency */
 }
+
 
 .bio-text {
   flex: 1;
-  margin-right: 20px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  height: 100%; /* Make sure the text container takes up the full height */
+  width: 100%; /* Ensure text takes full width */
+  margin-bottom: 20px; /* Add margin at the bottom for space between text and image */
+  padding: 20px 0;
 }
 
 .bio-text p {
@@ -119,12 +147,8 @@
   line-height: 1.8;
   text-align: justify;
   margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 15; /* Limit the number of lines to 6 */
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 100%; /* Make sure the text takes up the full container height */
 }
 
 .bio-image {
@@ -132,6 +156,26 @@
   max-width: 600px;
   height: auto;
   border-radius: 10px;
+  margin-top: 10px; /* Add margin above the image to separate from the text */
+  align-self: center; /* Center the image in the flexbox column */
+}
+
+.show-more-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px; /* Adds space above the button */
+  border-radius: 5px;
+  width: auto;
+  text-align: center; /* Centers the button text */
+  align-self: flex-start; /* Align the button to the start of the container */
+}
+
+.show-more-button:hover {
+  background-color: #0056b3;
 }
 
 .awards,
@@ -177,6 +221,8 @@
   font-size: 1rem;
   line-height: 1.6;
 }
+
+
 
 .poster-info h3,
 .award-info h3 {

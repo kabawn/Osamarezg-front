@@ -31,6 +31,7 @@ import poster13 from "../assets/posters/ayad.webp";
 import btsAlsaraya1 from "../assets/bts/alsraya/1.jpg";
 import btsAlsaraya2 from "../assets/bts/alsraya/2.jpg";
 import btsAlsaraya3 from "../assets/bts/alsraya/3.jpg";
+
 import btsAlsaraya4 from "../assets/bts/alsraya/4.jpg";
 import btsAlsaraya5 from "../assets/bts/alsraya/5.jpg";
 import btsAlsaraya6 from "../assets/bts/alsraya/6.jpg";
@@ -98,7 +99,6 @@ import btsdragnuf5 from "../assets/bts/dragnof/5.jpg";
 import btsdragnuf6 from "../assets/bts/dragnof/6.jpg";
 
 import btstherandom1 from "../assets/bts/therandom/1.jpg";
-import btstherandom2 from "../assets/bts/therandom/2.jpg";
 import btstherandom3 from "../assets/bts/therandom/3.jpg";
 import btstherandom4 from "../assets/bts/therandom/4.jpg";
 import btstherandom5 from "../assets/bts/therandom/5.jpg";
@@ -239,14 +239,7 @@ const works = [
       trailer: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview",
       fullShowLink:
          "https://www.toog.ly/ar/detail/alsaraya/174735?section-first=174738&section-second=174741",
-      btsImages: [
-         btsAlsaraya1,
-         btsAlsaraya2,
-         btsAlsaraya3,
-         btsAlsaraya4,
-         btsAlsaraya5,
-         btsAlsaraya6,
-      ],
+      btsImages: [btsAlsaraya1, btsAlsaraya2, btsAlsaraya3,btsAlsaraya4, btsAlsaraya5, btsAlsaraya6],
       awards: {
          en: [
             "Best Historical Series from the Arab States Broadcasting Union Festival - Riyadh (2022)",
@@ -317,10 +310,10 @@ const works = [
    {
       id: 5,
       poster: poster5,
-      title: { en: "Ghasak", ar: "مسلسل غسق" },
+      title: { en: "Ghassaq", ar: "مسلسل غسق" },
       year: 2021,
       description: {
-         en: 'Ghasak chronicles the epic battle of "Al-Bunyan Al-Marsous," where the Libyan army fought against ISIS to reclaim the city of Sirte. The series also depicts the conditions inside Sirte under ISIS control, as well as the situations in Misrata and Tripoli from September 2014 to December 2016.',
+         en: 'Ghassaq chronicles the epic battle of "Al-Bunyan Al-Marsous," where the Libyan army fought against ISIS to reclaim the city of Sirte. The series also depicts the conditions inside Sirte under ISIS control, as well as the situations in Misrata and Tripoli from September 2014 to December 2016.',
          ar: "ملخص المسلسل: يؤرخ مسلسل (غسق) لملحمة (البنيان المرصوص) وهي معركة قام بها الجيش الليبي ضد تنظيم الدولة (داعش) الذي سيطر على مدينة سرت الليبية، ويرصد المسلسل الأوضاع داخل مدينة سرت تحت سيطرة التنظيم، وكذلك الأوضاع في مدينتي مصراتة وطرابلس من سبتمبر 2014 حتى ديسمبر 2016 تاريخ سقوط آخر معاقل (داعش) في سرت، ويسرد نضال الشعب الليبي ضد التطرف والإرهاب.",
       },
       trailer: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview",
@@ -529,7 +522,6 @@ const works = [
       fullShowLink: "https://www.toog.ly/ar/detail/ashwaiee/175062",
       btsImages: [
          btstherandom1,
-         btstherandom2,
          btstherandom3,
          btstherandom4,
          btstherandom5,

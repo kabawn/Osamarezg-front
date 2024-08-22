@@ -124,7 +124,13 @@ function CenterMode() {
             <h2 style={{ fontFamily: isRtl ? "Tajawal, sans-serif" : "Raleway, sans-serif" }}>
                {t("recentWorks")}
             </h2>
-            <p style={{ fontFamily: isRtl ? "Tajawal, sans-serif" : "Raleway, sans-serif" }}>
+            <p
+               style={{
+                  fontFamily: isRtl ? "Tajawal, sans-serif" : "Raleway, sans-serif",
+                  direction: isRtl ? "rtl" : "ltr",
+                  textAlign: "center",
+               }}
+            >
                {t("recentWorksDescription")}
             </p>
          </div>

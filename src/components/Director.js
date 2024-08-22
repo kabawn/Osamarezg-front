@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "./Director.css";
 import directorImage from "../assets/herodirector.jpg";
 
 import awardImageSeptymos from "../assets/awards/septymos.jpg";
-import awardImageAsbu from "../assets/awards/asbu.png"; // Example image paths
+import awardImageAsbu from "../assets/awards/asbu.png";
 import awardImageYouthMagazine from "../assets/award.png";
 import awardImageArabFilmFestival from "../assets/awards/arab_film_festival.jpg";
 import awardImageMaghrebiFilmFestival from "../assets/awards/maghrebi_film_festival.jpeg";
@@ -31,13 +31,14 @@ import banatAlamPoster from "../assets/posters/bnat.webp";
 const Director = () => {
    const { t, i18n } = useTranslation();
    const navigate = useNavigate();
+   const [isExpanded, setIsExpanded] = useState(false);
 
    const filmography = [
       { id: 1, title: "Banat Alam", year: 2024, poster: banatAlamPoster },
       { id: 2, title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
       { id: 3, title: "Alsaraya - Part one", year: 2022, poster: alsarayaPoster },
       { id: 4, title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
-      { id: 5, title: "Ghasak", year: 2021, poster: ghasakPoster },
+      { id: 5, title: "Ghassaq", year: 2021, poster: ghasakPoster },
       { id: 11, title: "Albarony", year: 2020, poster: albaronyPoster },
       { id: 6, title: "Azzaiman", year: 2020, poster: azzaimanPoster },
       { id: 7, title: "Zankat Al-Reeh", year: 2019, poster: zankaAlReehPoster },
@@ -244,6 +245,12 @@ const Director = () => {
       navigate(`/works/${id}`);
    };
 
+   const toggleExpansion = () => {
+      setIsExpanded(!isExpanded);
+   };
+
+   const truncatedText = t("bioText").slice(0, 300); // Adjust this length as needed
+
    return (
       <div className={`director-container ${i18n.language === "ar" ? "rtl" : "ltr"}`}>
          <div className="director-hero">
@@ -257,11 +264,55 @@ const Director = () => {
             <section className="director-section biography">
                <h2>{t("biography")}</h2>
                <div className="bio-card">
-                  <div className="bio-text">
-                     <p>{t("bioText")}</p>
-                  </div>
                   <img src={directorImageosama} alt="Osama Rezg" className="bio-image" />
+                  <div className="bio-text">
+                     <p>
+                        {t("bioIntro", {
+                           defaultValue: "Osama Rezg is a renowned Libyan director known for his exceptional contributions to the Libyan drama scene. His works have earned him numerous awards and recognition across the Arab world.",
+                        })}
+                     </p>
+                  </div>
                </div>
+            </section>
+            <section className="director-section education">
+               <h2>{t("education")}</h2>
+               <p>{t("educationText")}</p>
+            </section>
+            <section className="director-section early-career">
+               <h2>{t("earlyCareer")}</h2>
+               <p>{t("earlyCareerText")}</p>
+            </section>
+            <section className="director-section documentary-work">
+               <h2>{t("documentaryWork")}</h2>
+               <p>{t("documentaryWorkText")}</p>
+            </section>
+            <section className="director-section first-dramatic-works">
+               <h2>{t("firstDramaticWorks")}</h2>
+               <p>{t("firstDramaticWorksText")}</p>
+            </section>
+            <section className="director-section founding-alsora">
+               <h2>{t("foundingAlsora")}</h2>
+               <p>{t("foundingAlsoraText")}</p>
+            </section>
+            <section className="director-section art-production">
+               <h2>{t("artProduction")}</h2>
+               <p>{t("artProductionText")}</p>
+            </section>
+            <section className="director-section award-winning-drama">
+               <h2>{t("awardWinningDrama")}</h2>
+               <p>{t("awardWinningDramaText")}</p>
+            </section>
+            <section className="director-section historical-epic-series">
+               <h2>{t("historicalEpicSeries")}</h2>
+               <p>{t("historicalEpicSeriesText")}</p>
+            </section>
+            <section className="director-section recent-works">
+               <h2>{t("recentWorks")}</h2>
+               <p>{t("recentWorksText")}</p>
+            </section>
+            <section className="director-section recognition">
+               <h2>{t("recognition")}</h2>
+               <p>{t("recognitionText")}</p>
             </section>
             <section className="director-section filmography">
                <h2>{t("filmography")}</h2>

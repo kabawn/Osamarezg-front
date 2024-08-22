@@ -9,17 +9,25 @@ const DirectorContact = () => {
 
   const isArabic = i18n.language === 'ar';
 
+  const isMobileDevice = () => {
+    return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+  };
+
   const openFacebookApp = () => {
-    const fbUrl = "fb://profile/osama.rezg"; // Replace with the actual Facebook profile ID if necessary
+    const fbAppUrl = "fb://profile/osama.rezg";
     const fallbackUrl = "https://www.facebook.com/osama.rezg";
 
-    window.location.href = fbUrl;
+    if (isMobileDevice()) {
+      window.location.href = fbAppUrl;
 
-    setTimeout(() => {
-      if (window.location.href === fbUrl) {
-        window.location.href = fallbackUrl;
-      }
-    }, 500);
+      setTimeout(() => {
+        if (window.location.href === fbAppUrl) {
+          window.location.href = fallbackUrl;
+        }
+      }, 500);
+    } else {
+      window.location.href = fallbackUrl;
+    }
   };
 
   return (

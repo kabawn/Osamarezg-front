@@ -34,17 +34,18 @@ const resources = {
          uploadVideo: "Upload Video",
          submit: "Submit",
          castingPageHeader: "Casting Call",
-         castingPageText: "Submit your details to be considered for our upcoming productions.",
+         castingPageText: "Potential Collaboration in Our Upcoming Projects.",
          casting: "Casting",
          male: "Male",
          female: "Female",
-         castingtextupform: "Please fill in all the details below to apply.",
+         castingtextupform:
+            "We invite you to submit your previous work or a new demo performance. Please send them here along with your contact details for casting consideration.",
          exploringTalents: "Exploring Talents:",
          shareExperience: "Share Your Artistic Experience with Us!",
          registerNow: "Register Now",
-         welcomeToMyUniverse: "Welcome to the universe of Osama Rezg",
+         welcomeToMyUniverse: "Welcome to the universe of Director Osama Rezg",
          heroText:
-            "Through the lens, the human spirit is captured, telling stories that are worthy of deep contemplation",
+            "Through the lens, the human spirit is captured, telling stories that are worthy of deep contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
          aboutDescription1:
             "Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded the media production companies Al-Sura for Media Production and ART Production. Rezg directed notable dramas such as (Phobia), (Zanqat Al-Reeh), and (Al-Za'imaan). His first feature film was (Al-Barouni) in 2021. He also directed the series (Banat Al-Am), which was streamed on the (Shahid) platform and achieved great success. In 2021, he was named one of the 40 most influential figures in Libya under the age of 40.",
@@ -71,7 +72,6 @@ const resources = {
          sendScript: "Send Script",
          scriptIntro:
             "If you have a script and would like to share it with us, please fill out the form below.",
-         journey: "A Journey Through Art",
          bioText: `Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded the media production companies Al-Sura for Media Production and ART Production. Rizk directed notable dramas such as (Phobia), (Zanqat Al-Reeh), and (Al-Za'imaan). His first feature film was (Al-Barouni) in 2021. He also directed the series (Banat Al-Am), which was streamed on the (Shahid) platform and achieved great success. In 2021, he was named one of the 40 most influential figures in Libya under the age of 40.`,
          keepInTouch: "KEEP IN TOUCH",
          email: "email@example.com",
@@ -105,18 +105,44 @@ const resources = {
             "If you would like to contact the director, you can do that through these social media platforms:",
          contactTitle: "Contact the Director",
          developedBy: "This site is developed by Modern Code Company",
-         workLink:"Previous works",
-         submissionSuccess:"Submission Successful",
-         thankYou:"Thank you for your submission. We will review it and contact you soon.",
-         submitting:"Submitting...",
-         workLinks:"Links of your previous works. ",
-         addAnotherLink:"Add Another Link",
-         remove:"Remove",
-         successMessage:"Thanks for submitting your script. We will contact you soon."
-
-
-
-
+         workLink: "Previous works",
+         submissionSuccess: "Submission Successful",
+         thankYou: "Thank you for your submission. We will review it and contact you soon.",
+         submitting: "Submitting...",
+         workLinks: "Links of your previous works. ",
+         addAnotherLink: "Add Another Link",
+         remove: "Remove",
+         successMessage: "Thanks for submitting your script. We will contact you soon.",
+         journey: "A Journey in Film and Drama",
+         education: "Education and Training",
+         educationText:
+            "In 2009, Osama Rezg received a prestigious scholarship from the British Cultural Center (Leader Culture Ship International) and obtained several diplomas in film directing and production from London and Scotland.",
+         earlyCareer: "Early Career",
+         earlyCareerText:
+            "He worked in Dubai for two years, directing several commercials and documentary films. In mid-2007, he returned to Libya and became one of the founders of the Allibiya Channel, where he directed several successful programs that won local awards.",
+         documentaryWork: "Documentary Work",
+         documentaryWorkText:
+            "In 2008, Rezg directed the significant documentary film 'Al-Nihum.. Sayed Alkalimat' (Master of Words), focusing on the Libyan philosopher Al-Sadiq Al-Nihum.",
+         firstDramaticWorks: "First Dramatic Works",
+         firstDramaticWorksText:
+            "His first dramatic work was the comedy series 'Ala Alhawaa' (On Air) in 2008, written by Saleh Abu Al-Sunun and produced by Allibiya Channel. In 2009, he co-directed the drama series 'Kul Yum Ehkaya' (Every Day is a Story), where three directors worked together on the same project for the first time in Libya.",
+         foundingAlsora: "Founding Alsora for Media Production",
+         foundingAlsoraText:
+            "In 2003, Osama Rezg established his company, Alsora for Media Production, through which he produced and directed several series, documentaries, and commercials.",
+         artProduction: "Collaboration with ART Production",
+         artProductionText:
+            "In 2013, he co-founded ART Production with producer Walid Ellafi, which became Libya's leading company for drama and cinema production. That same year, he directed the series 'Phobia,' written by Siraj Hweidi and produced by Walid Ellafi. The series won several Arab awards and caused controversy for its political critique.",
+         awardWinningDrama: "Award-Winning Drama Series",
+         awardWinningDramaText:
+            "In 2014, he directed the drama 'Dragunov,' which explored Libyan society before and during the revolution. The series garnered attention from international media and won multiple awards. In 2017, Rezg directed the short film 'Al Ashwai' (The Random), which participated in over 20 film festivals and won several awards, including the Bronze award from the Gabes Festival for Arab Film.",
+         historicalEpicSeries: "Historical and Epic Series",
+         historicalEpicSeriesText:
+            "In 2019, he directed the historical series 'Zankat Arreeh,' which depicted life in Tripoli during the British administration of Libya after World War II. The series won several awards at the Septimus Award in Libya. In 2020, he directed 'Al-Za'imain,' the most significant production in Libyan drama history, focusing on the Libyan struggle against Italian colonialism. In 2021, he directed the epic series 'Ghasaq,' portraying the battle of Bnniyan Almarsous against ISIS in Sirte.",
+         recentWorksText:
+            "In 2022, Rezg directed the historical series 'Alssaraya,' covering the period of the Karamanli family's reign in Libya. He also directed the second part of this series in 2023. In 2024, he directed the series 'Banat Al Amm,' the first Libyan series to be shown on the Shahid platform, achieving significant viewership in Libya.",
+         recognition: "Recognition and Leadership",
+         recognitionText:
+            "In 2021, Osama Rezg was recognized as one of the 40 most influential figures in Libya under the age of 40. Under his leadership, ART Production became the number one production company in Libya and the Maghreb, known for its professional content and high standards of execution. Rezg has been praised for combining artistic vision with strong management and smart production strategies, achieving high-quality results with budgets smaller than those of productions in the Gulf, Egypt, and the Middle East.",
       },
    },
    ar: {
@@ -153,23 +179,24 @@ const resources = {
          casting: "تجارب الأداء",
          male: "ذكر",
          female: "انثى",
-         castingtextupform: "شاركنا أعمالك السابقة أو أداءك  التجريبي الجديد، عبر إرسالها هنا مصحوبة ببيانات التواصل معك.",
+         castingtextupform:
+            "شاركنا أعمالك السابقة أو أداءك  التجريبي الجديد، عبر إرسالها هنا مصحوبة ببيانات التواصل معك.",
          exploringTalents: "استكشاف المواهب:",
          shareExperience: "شارك تجربتك الفنية معنا!",
          registerNow: "سجل الآن",
-         welcomeToMyUniverse: "مرحبًا بكم في عالم أسامة رزق",
-         heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص تستحق التأمل العميق.",
+         welcomeToMyUniverse: "مرحبًا بكم في عالم المخرج أسامة رزق",
+         heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص تستحق التأمل .",
          aboutOsama: "عن أسامة رزق",
          aboutDescription1:
             "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production. أخرج أعمالًا درامية مميزة منها (فوبيا) و(زنقة الريح) و(الزعيمان)، وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) الذي عُرض على منصة (شاهد) وحقق نجاحًا كبيرًا. في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.",
          recentWorks: "الأعمال الأخيرة",
          recentWorksDescription:
-            "اكتشف أعمالًا جديدة ومبتكرة. انطلق في رحلة سينمائية فريدة تنقلك إلى عوالم ساحرة وتحكي قصصًا مؤثرة. استكشف مجموعة متنوعة من المشاريع التي تمزج بين الفن والسرد القصصي. استعد لتكون متأثرًا ومستلهَمًا.",
+            "اكتشف أعمالًا جديدة ومبتكرة، انطلق في رحلة سينمائية فريدة تنقلك إلى عوالم ساحرة وتحكي قصصًا مؤثرة، استكشف مجموعة متنوعة من المشاريع التي تمزج بين الفن والسرد القصصي، استعد لتكون متأثراً ومستلهماً.",
          directorsWorks: "أعمال المخرج",
          showMore: "عرض المزيد",
          showLess: "عرض أقل",
          blogIntro:
-            "استكشف عالم السينما مع مدونتنا المتميزة. ابق على اطلاع بأحدث المقالات وأخبار الأفلام والنصائح القيمة ومراجعات الأعمال الرائعة. تعلم من تجارب المحترفين في الصناعة واكتشف التقنيات الإبداعية. انضم إلى مجتمعنا وشارك بأفكارك. تابعنا للحصول على آخر التحديثات والمقالات المثيرة في عالم السينما.",
+            "استكشف عالم السينما مع مدونتنا المتميزة، وابقَ على اطلاع بأحدث المقالات وأخبار الأفلام، والنصائح القيمة، ومراجعات الأعمال الرائعة. تعلم من تجارب المحترفين في الصناعة، واكتشف التقنيات الإبداعية. انضم إلى مجتمعنا وشارك بأفكارك، وتابعنا للحصول على آخر التحديثات والمقالات المثيرة في عالم السينما.",
          seeMore: "شاهد المزيد",
          testimonials: "الشهادات",
          testimonialVideo: "فيديو الشهادة",
@@ -185,8 +212,10 @@ const resources = {
          scriptIntro: "إذا كان لديك سيناريو وترغب في مشاركته معنا ، يرجى ملء النموذج أدناه.",
          filmography: "قائمة الاعمال",
          journey: "رحلة عبر الفن",
-         bioText: `أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا. أسس شركتي الصورة للإنتاج الإعلامي و ART Production. أخرج أعمالًا درامية مميزة منها (فوبيا) و(زنقة الريح) و(الزعيمان). وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) الذي عُرض على منصة (شاهد) وحقق نجاحًا كبيرًا. في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.`,
+         bioText:
+            "أسامة رزق هو مخرج معروف بمساهماته المميزة في المشهد الدرامي الليبي. في عام 2009 ، حصل على منحة مرموقة من المركز الثقافي البريطاني (Leader Culture Ship International ) وحصل على العديد من شهادات في الإخراج والإنتاج السينمائي من لندن واسكتلندا. ذهب للعمل في دبي لمدة سنتين و قام بإخراج عدة إعلانات تجارية و افلام وثائيقية عاد منتصف سنة 2007 إلى ليبيا و كان احد مؤسسي قناة ( الليبية الفضائية ) منذ انطلاقها و أخرج عدة برامج ناجحة متحصلة على جوائزة محلية. اخرج الفيلم الوثائقي المهم ( النيهوم ....سيد الكلمات ) الذي يتحدث عن الفيلسوف الليبي ( الصادق النيهوم ) 2008. كان أول عمل درامي له المسلسل الكوميدي ( على الهواء ) من تأليف الكاتب صالح ابو السنون و انتاج قناة الليبية سنة 2008 و هو عمل كوميدي ساخر في 15 حلقة. سنة 2009 قام بالمشاركة في إخراج المسلسل الدرامي ( كل يوم حكاية ) و هو تجربة لأول مرة في ليبيا ان يقوم ثلاثة مخرجين بإخراج نفس العمل و يتقاسمون إخراج الحلقات التي كانت عبارة عن قصص منفصلة. اسس شركته الخاصة ( الصورة للأنتاج الاعلامي ) سنة 2003 قام من خلالها بإنتاج مسلسل ( على الهواء ) و مسلسل ( كل يوم حكاية ) و عدة اعمال تسجيلية و اعلانات تجارية. في سنة 2013 شارك في تأسيس شركة ART Production مع المنتج وليد اللافي التي تعتبر الشركة الاهم و الاكثر انتاجاً في ليبيا للدراما و السينما وهي احدى شركات مجموعة AMG الاعلامية. في سنة 2013 اخرج مسلسل ( فوبيا ) للكاتب ( سراج هويدي ) المنتج وليد اللافي تحصل على جوائز عربية درع لجنة التحكيم الخاصة في مونديال القاهرة للإذاعة و التلفزيون. المسلسل اثار ضجة كبيرة عند عرضه بسبب انتقاده للسياسيين في ليبيا بعد الثورة. المسلسل تحصل على جائزة افضل مسلسل و افضل نص و افضل اخراج و افضل ممثل من جائزة سيبتموس التي تقام سنويا في ليبيا. سنة 2014 اخرج المسلسل الدرامي ( دراجنوف ) للكاتب سراج هويدي المنتج وليد اللافي و الذي يتحدث عن المجتمع الليبي و كيف تغيرت الأوضاع الأسرية و الحياتية في ليبيا قبل الثورة و اثنائها و اهتمت صحيفة ( www.liberation.fr) العريقة بالمسلسل و افردت مقالة مطولة على المسلسل بالاضافة الى الموقع الشهير ( Hollywood deadline.com) تحصل المسلسل على جائزة افضل مسلسل و افضل ممثل و افضل اخراج من جائزة سيبتموس التي تقام سنويا في ليبيا. سنة 2017 اخرج الفيلم القصير ( العشوائي ) تأليف الكاتب سراج هويدي المنتج وليد اللافي الذي شارك في اكثر من 20 مهرجان سينمائي فاز بالجائزة البرونزية من مهرجان قابس للفيلم العربي و جائزة افضل فيلم افريقي من مهرجان ارت بالكاميرون و تنويه خاص من لجنة التحكيم في مهرجان وجدة بالمغرب. سنة 2017 قام بإخراج مسلسل ( روبيك ) تأليف الكاتب سراج هويدي المنتج وليد اللافي من 15 حلقة تحصل على جائزة افضل مسلسل افضل ممثلة افضل اخراج من جائزة سيبتموس التي تقام سنويا في ليبيا. سنة 2019 قام بإخراج المسلسل التاريخي ( زنقة الريح ) تأليف الكاتب عبد الرحمن حقيق المنتج وليد اللافي يتحدث عن مدينة طرابلس سنة 1945 فترة الادارة البريطانية لليبيا بعد هزيمة ايطاليا في الحرب العالمية الثانية وكيف كانت جميع الاعراق والديانات تعيش معا في مدينة واحدة بإنسجام كامل قبل ان يقوم الاحتلال الانجليزي بصنع الفتن و المشاكل بين ابناء الوطن الواحد. تحصل على جائزة افضل إخراج افضل مسلسل افضل ممثل افضل ممثلة افضل وجه جديد من جائزة سيبتموس التي تقام سنويا في ليبيا. سنة 2020 قام بإخراج المسلسل التاريخي مسلسل ( الزعيمان ) 2020 المنتج وليد اللافي و هو اضخم انتاج في تاريخ الدراما الليبية يتحدث عن تاريخ الجهاد الليبي ضد الاستعمار الايطالي تحصل على جائزة افضل اخراج افضل مسلسل افضل ممثل افضل ممثلة افضل وجه جديد. فيلم ( الباروني ) 2021 انتاج وليد اللافي اول فيلم سينمائي طويل للمخرج اسامة رزق يتناول سيرة حياة المناضل الليبي سليمان الباروني و قصة حياته. سنة 2021 اخرج المسلسل الملحمي ( غسق ) تأليف سراج هويدي انتاج وليد اللافي يتحدث المسلسل عن ملحمة البنيان المرصوص التي قاتل فيها الليبيين تنظيم داعش الارهابي في مدينة سرت و تحريرها من الارهاب. سنة 2021 قام بمهمة المنتج المنفذ لمسلسل ( زنقة الريح – الجزء التاني ) تأليف عبد الرحمن حقيق اخراج عبد السلام رزق المنتج وليد اللافي. سنة 2022 اخرج المسلسل التاريخ ( السرايا ) الذي يتناول حقبة مهمة من تاريخ ليبيا و هي فترة حكم عائلة القرمانللي في الفترة من 1780 حتى 1795 و ما يتحتويه تلك الحقبة من صراعات دموية و اوبئة و مجاعة اقتتال داخلي بين ابناء الباشا علي باشا القرمانللي. سنة 2023 اخرج الجزء الثاني من مسلسل ( السرايا ). سنة 2024 اخرج مسلسل ( بنات العم ) و هو اول مسلسل ليبي يعرض على المنصة الشهيرة ( شاهد ) و حقق الترتيب التاني في الاعلى مشاهدة في منصة شاهد في ليبيا. في سنة 2021 تم اختيار اسامة رزق من ضمن 40 اهم شخصية مؤثرة في ليبيا تحت عمر 40 سنة. مع وصول شركة Art Production الى عشرة سنوات من تاسيسها اصبحت الشركة رقم واحد في ليبيا و المغرب الكبير بفضل ادارة اسامة رزق و عمله المستمر في التطوير و التنويع و المثابرة في كل سنة لصناعة اعمال ليبية مغاربية اصبحت تشاهد عربيا و اقليميا لمستواها المحترف في المحتوى و التنفيذ بمهنية عالية شهد بها النجوم العرب الذين شاركوا في المسلسلات التي انتجتهم الشركة و الذين صرحوا بإحترافية الشركة و المستوى العالمي الذي تعمل به بقيادة اسامة رزق الذي استطاع الجمع ما بين الرؤية الفنية كمخرج و الادارة الحكيمة و القيادة الصارمة و الذكاء في الانتاج للحصول على اعلى مستوى تقني و فني بميزانيات اقل من ميزانيات الانتاجات العربية في دول الخليج و مصر و الشرق الاوسط.",
          keepInTouch: "ابقى على تواصل",
+         bioText2: "و انتقل الى الحياة الاخرى",
          email: "البريد الالكتروني",
          haveQuestions: "هل لديك أي أسئلة؟",
          namePlaceholder: "الاسم",
@@ -212,24 +241,54 @@ const resources = {
          Latest: "مقالات من المخرج",
          readmore: "اقرا المزيد",
          shareYourScript: "شارك سيناريو",
-         inviteMessage: "ندعوك لمشاركة السيناريو معنا. اضغط على الزر أدناه لتقديم السيناريو الخاص بك.",
+         inviteMessage:
+            "ندعوك لمشاركة السيناريو معنا. اضغط على الزر أدناه لتقديم السيناريو الخاص بك.",
          submitScript: "تقديم السيناريو",
          contactDirector:
             "إذا كنت ترغب في الاتصال بنا ، يمكنك القيام بذلك من خلال هذه المنصات الاجتماعية:",
 
          contactTitle: "الاتصال بنا",
          developedBy: " تطوير  شركة البرمجة الحديثة",
-         workLinks:"روابط لأعمالك السابقة",
-         workLink:"روابط لأعمالك السابقة",
-
-         remove:"إزالة",
-         addAnotherLink:"إضافة رابط اخر",
+         workLinks: "روابط لأعمالك السابقة",
+         workLink: "روابط لأعمالك السابقة",
+         remove: "إزالة",
+         addAnotherLink: "إضافة رابط اخر",
          errorUploadVideo: "يرجى تحميل فيديو",
-         submissionSuccess:"تم الإرسال بنجاح",
-         thankYou:"شكرًا لتقديمك. سنقوم بمراجعته وسنتواصل معك قريبًا.",
-         submitting:"جاري الإرسال...",
+         submissionSuccess: "تم الإرسال بنجاح",
+         thankYou: "شكرًا لتقديمك. سنقوم بمراجعته وسنتواصل معك قريبًا.",
+         submitting: "جاري الإرسال...",
          successMessage: "شكرًا لتقديم السيناريو الخاص بك. سنتواصل معك قريبًا.",
-
+         bioIntro:"Osama Rezg is an acclaimed Libyan director known for his significant contributions to the Libyan drama scene. With a career spanning over two decades, he has directed numerous award-winning series and films that have earned recognition across the Arab world. His work is celebrated for its impactful storytelling and innovative approach, making him one of the most influential figures in Libyan cinema.",
+         education: "التعليم والتدريب",
+         bioIntro: "أسامة رزق هو مخرج ليبي مرموق، معروف بمساهماته الكبيرة في المشهد الدرامي الليبي. تمتد مسيرته المهنية لأكثر من عقدين من الزمن، أخرج خلالها العديد من المسلسلات والأفلام الحائزة على جوائز، والتي نالت اعترافاً واسعاً في العالم العربي. يُحتفى بأعماله لسردها القصصي المؤثر ونهجه الابتكاري، مما يجعله أحد أكثر الشخصيات تأثيراً في السينما الليبية.",
+         educationText:
+            "في عام 2009، حصل أسامة رزق على منحة مرموقة من المركز الثقافي البريطاني (Leader Culture Ship International) وحصل على عدة شهادات في الإخراج والإنتاج السينمائي من لندن واسكتلندا.",
+         earlyCareer: "البدايات المهنية",
+         earlyCareerText:
+            "عمل في دبي لمدة سنتين، حيث أخرج عدة إعلانات تجارية وأفلام وثائقية. في منتصف عام 2007، عاد إلى ليبيا وأصبح أحد مؤسسي قناة الليبية، حيث أخرج عدة برامج ناجحة حازت على جوائز محلية.",
+         documentaryWork: "الأعمال الوثائقية",
+         documentaryWorkText:
+            "في عام 2008، أخرج رزق الفيلم الوثائقي الهام 'النيهوم....سيد الكلمات' الذي يركز على الفيلسوف الليبي الصادق النيهوم.",
+         firstDramaticWorks: "الأعمال الدرامية الأولى",
+         firstDramaticWorksText:
+            "كان أول عمل درامي له هو المسلسل الكوميدي 'على الهواء' في عام 2008، من تأليف صالح أبو السنون وإنتاج قناة الليبية. في عام 2009، شارك في إخراج المسلسل الدرامي 'كل يوم حكاية'، حيث تعاون ثلاثة مخرجين على نفس المشروع لأول مرة في ليبيا.",
+         foundingAlsora: "تأسيس شركة الصورة للإنتاج الإعلامي",
+         foundingAlsoraText:
+            "في عام 2003، أسس أسامة رزق شركته الخاصة 'الصورة للإنتاج الإعلامي'، من خلالها أنتج وأخرج العديد من المسلسلات والأعمال الوثائقية والإعلانات التجارية.",
+         artProduction: "التعاون مع شركة ART Production",
+         artProductionText:
+            "في عام 2013، شارك في تأسيس شركة ART Production مع المنتج وليد اللافي، والتي أصبحت الشركة الرائدة في ليبيا لإنتاج الدراما والسينما. في نفس العام، أخرج مسلسل 'فوبيا'، الذي كتبه سراج هويدي وأنتجه وليد اللافي. حصل المسلسل على عدة جوائز عربية وأثار جدلاً بسبب انتقاده السياسيين.",
+         awardWinningDrama: "مسلسلات درامية حائزة على جوائز",
+         awardWinningDramaText:
+            "في عام 2014، أخرج مسلسل 'دراجنوف'، الذي استعرض المجتمع الليبي قبل وأثناء الثورة. حظي المسلسل باهتمام وسائل الإعلام الدولية وحصل على العديد من الجوائز. في عام 2017، أخرج رزق الفيلم القصير 'العشوائي'، الذي شارك في أكثر من 20 مهرجانًا سينمائيًا وفاز بعدة جوائز، بما في ذلك الجائزة البرونزية في مهرجان قابس للفيلم العربي.",
+         historicalEpicSeries: "مسلسلات تاريخية وملحمية",
+         historicalEpicSeriesText:
+            "في عام 2019، أخرج المسلسل التاريخي 'زنقة الريح'، الذي تناول الحياة في طرابلس خلال فترة الإدارة البريطانية لليبيا بعد الحرب العالمية الثانية. حصل المسلسل على عدة جوائز في جائزة سيبتموس في ليبيا. في عام 2020، أخرج 'الزعيمان'، الذي يعد أكبر إنتاج في تاريخ الدراما الليبية، وركز على الكفاح الليبي ضد الاستعمار الإيطالي. في عام 2021، أخرج المسلسل الملحمي 'غسق'، الذي يصور معركة البنيان المرصوص ضد تنظيم داعش في سرت.",
+         recentWorksText:
+            "في عام 2022، أخرج رزق المسلسل التاريخي 'السرايا'، الذي يغطي فترة حكم عائلة القرمانلي في ليبيا. كما أخرج الجزء الثاني من هذا المسلسل في عام 2023. في عام 2024، أخرج مسلسل 'بنات العم'، وهو أول مسلسل ليبي يعرض على منصة شاهد، وحقق نسبة مشاهدة عالية في ليبيا.",
+         recognition: "الاعتراف والقيادة",
+         recognitionText:
+            "في عام 2021، تم الاعتراف بأسامة رزق كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن الأربعين. تحت قيادته، أصبحت شركة ART Production الشركة رقم واحد في ليبيا والمغرب الكبير، بفضل المحتوى الاحترافي والمعايير العالية للتنفيذ. حصل رزق على إشادة واسعة لتجميعه بين الرؤية الفنية والإدارة القوية والاستراتيجيات الإنتاجية الذكية، محققًا نتائج عالية الجودة بميزانيات أقل من تلك الخاصة بالإنتاجات في الخليج ومصر والشرق الأوسط.",
       },
    },
 };

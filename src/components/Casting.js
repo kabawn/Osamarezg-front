@@ -10,13 +10,17 @@ const Casting = () => {
   const currentLang = i18n.language;
 
   const handleRegisterClick = () => {
-    navigate('/casting'); // Navigate to the /casting route
-    window.scrollTo(0, 0); // Scroll to the top
+    navigate('/casting');
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0); // Delay by 0 milliseconds to ensure it happens after navigation
   };
 
   const handleScriptSubmitClick = () => {
-    navigate('/submit-script'); // Navigate to the /casting route
-    window.scrollTo(0, 0); // Scroll to the top
+    navigate('/submit-script');
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   };
 
   return (

@@ -180,13 +180,13 @@ const CastingPage = () => {
     >
       <Row className="hero-image">
         <Col>
-          <h1 className="text-center hero-text">{t("castingPageHeader")}</h1>
+          <h5 className="text-center hero-text">{t("castingPageHeader")}</h5>
           <p className="text-center hero-text">{t("castingPageText")}</p>
         </Col>
       </Row>
       <Row className="justify-content-center mt-5">
         <Col md={6}>
-          <h1 className="text-center hero-text">{t("castingtextupform")}</h1>
+          <h5 className="text-center hero-text">{t("castingtextupform")}</h5>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="fullName">
               <Form.Label>{t("fullName")}</Form.Label>

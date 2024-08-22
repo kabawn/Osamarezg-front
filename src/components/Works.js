@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./Works.css";
@@ -63,22 +63,25 @@ const works = [
       videoUrl: "https://drive.google.com/file/d/1NIR01sPmEwPVq5KF0CnTYcfgwGl2Zt0O/preview",
    },
    {
-      poster: poster12,
-      videoUrl: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview",
-   },
-   {
       poster: poster13,
       videoUrl: "https://drive.google.com/file/d/1ZnjlzZ7fbfwkxSe3s71ZwJhL67M5hyX1/preview",
    },
+   {
+      poster: poster12,
+      videoUrl: "https://drive.google.com/file/d/1o1BsCXUHVOr9vLr4HjN8ClBJfIQYRxqd/preview",
+   },
+   
 ];
 
 const Works = () => {
    const { t, i18n } = useTranslation();
-   const currentLang = i18n.language;
-   const isRtl = currentLang === "ar";
-
+   const [isRtl, setIsRtl] = useState(i18n.language === "ar");
    const [showMore, setShowMore] = useState(false);
    const [selectedVideo, setSelectedVideo] = useState(null);
+
+   useEffect(() => {
+      setIsRtl(i18n.language === "ar");
+   }, [i18n.language]);
 
    const displayedWorks = showMore ? works : works.slice(0, 6);
 
@@ -100,7 +103,11 @@ const Works = () => {
             <h2 style={{ fontFamily: isRtl ? "Tajawal, sans-serif" : "Raleway, sans-serif" }}>
                {t("directorsWorks")}
             </h2>
-            <Row>
+            <Row
+               style={{
+                  flexDirection: isRtl ? "row-reverse" : "row",
+               }}
+            >
                {displayedWorks.map((work, index) => (
                   <Col md={4} sm={6} xs={12} key={index} className="poster-col">
                      <div className="poster-container">
