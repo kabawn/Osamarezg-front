@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import usaFlag from '../assets/flags/eng.jpg';
 import arFlag from '../assets/flags/libya_flag.png';
 
@@ -27,12 +29,6 @@ const LanguageButton = styled.button`
 
   &:hover {
     color: #ddd;
-  }
-
-  img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
   }
 `;
 
@@ -94,8 +90,7 @@ const LanguageSwitcher = ({ onLanguageChange }) => {
   return (
     <SwitcherContainer>
       <LanguageButton onClick={() => setShowDropdown(!showDropdown)}>
-        <img src={i18n.language === 'en' ? usaFlag : arFlag} alt="Selected Language" />
-        {i18n.language === 'en' ? 'English' : 'العربية'}
+        <FontAwesomeIcon icon={faGlobe} />
       </LanguageButton>
       <DropdownMenu $show={showDropdown}>
         <DropdownItem onClick={() => changeLanguage('en')}>

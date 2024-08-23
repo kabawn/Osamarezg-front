@@ -45,13 +45,13 @@ const resources = {
          registerNow: "Register Now",
          welcomeToMyUniverse: "Welcome to the universe of Director Osama Rezg",
          heroText:
-            "Through the lens, the human spirit is captured, telling stories that are worthy of  contemplation.",
+            "Through the lens, the human spirit is captured, telling stories and dreams that are worthy of contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
          aboutDescription1:
-            "Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded the media production companies Al-Sura for Media Production and ART Production. Rezg directed notable dramas such as (Phobia), (Zanqat Al-Reeh), and (Al-Za'imaan). His first feature film was (Al-Barouni) in 2021. He also directed the series (Banat Al-Am), which was streamed on the (Shahid) platform and achieved great success. In 2021, he was named one of the 40 most influential figures in Libya under the age of 40.",
+            "Osama Rezq is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years, achieving top viewership ratings.He has directed notable dramatic works such as Dragunov, Rubik, Zanqat Al-Reeh, Al-Za’iman, Ghasaq, and Al-Saraya. His first feature film was Al-Barouni in 2021. In 2024, he directed the series Banat Al-‘Am, which was aired on the most prominent platform in the Middle East, Shahid, and achieved great success.In 2021, he was selected as one of the 40 most influential figures in Libya under the age of 40.",
          recentWorks: "RECENT WORKS",
          recentWorksDescription:
-            "Discover new and innovative works. Embark on a unique cinematic journey that transports you to mesmerizing worlds and tells powerful stories. Explore a diverse collection of projects that blend artistry with storytelling. Prepare to be moved and inspired.",
+            "Discover new and innovative works. Embark on a unique cinematic and dramatic journey that transports you to mesmerizing worlds and tells powerful stories. Explore a diverse collection of projects that blend artistry with storytelling. Prepare to be moved and inspired.",
          directorsWorks: "DIRECTOR'S WORKS",
          showMore: "SHOW MORE",
          showLess: "SHOW LESS",
@@ -74,7 +74,7 @@ const resources = {
             "If you have a script and would like to share it with us, please fill out the form below.",
          bioText: `Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded the media production companies Al-Sura for Media Production and ART Production. Rizk directed notable dramas such as (Phobia), (Zanqat Al-Reeh), and (Al-Za'imaan). His first feature film was (Al-Barouni) in 2021. He also directed the series (Banat Al-Am), which was streamed on the (Shahid) platform and achieved great success. In 2021, he was named one of the 40 most influential figures in Libya under the age of 40.`,
          keepInTouch: "KEEP IN TOUCH",
-         email: "email@example.com",
+         email: "Email",
          haveQuestions: "HAVE ANY QUESTIONS?",
          namePlaceholder: "Name",
          emailPlaceholder: "Email",
@@ -160,7 +160,9 @@ const resources = {
          morocoactor: "Moroccan actor",
          mohamed: "Mohamed Othman",
          libyenactor: "Libyen actor",
-         directorosama:"Director Osama Rezg"
+         directorosama:"Director Osama Rezg",
+         country:"Country"
+
       },
    },
    ar: {
@@ -203,13 +205,13 @@ const resources = {
          shareExperience: "شارك تجربتك الفنية معنا!",
          registerNow: "سجل الآن",
          welcomeToMyUniverse: "مرحبًا بكم في عالم المخرج أسامة رزق",
-         heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص تستحق التأمل .",
+         heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص و أحلام تستحق التأمل .",
          aboutOsama: "عن أسامة رزق",
          aboutDescription1:
-            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production. أخرج أعمالًا درامية مميزة منها (فوبيا) و(زنقة الريح) و(الزعيمان)، وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) الذي عُرض على منصة (شاهد) وحقق نجاحًا كبيرًا. في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.",
+            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و  ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات و حققت اعمالها اعلى نسب مشاهدة .أخرج أعمالاً درامية مميزة منها ( دراجنوف ) ، ( روبيك ) ،(زنقة الريح) ، (الزعيمان) ، (غسق ) و ( السرايا )  وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) في 2024 الذي عُرض على المنصة الاهم في الشرق الاوسط منصة (شاهد) وحقق نجاحاً كبيراً.في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40",
          recentWorks: "الأعمال الأخيرة",
          recentWorksDescription:
-            "اكتشف أعمالًا جديدة ومبتكرة، انطلق في رحلة سينمائية فريدة تنقلك إلى عوالم ساحرة وتحكي قصصًا مؤثرة، استكشف مجموعة متنوعة من المشاريع التي تمزج بين الفن والسرد القصصي، استعد لتكون متأثراً ومستلهماً.",
+            "اكتشف أعمالًا جديدة ومبتكرة، انطلق في رحلة سينمائية و درامية فريدة تنقلك إلى عوالم ساحرة وتحكي قصصًا مؤثرة، استكشف مجموعة متنوعة من المشاريع التي تمزج بين الفن والسرد القصصي، استعد لتكون متأثراً ومستلهماً.",
          directorsWorks: "أعمال المخرج",
          showMore: "عرض المزيد",
          showLess: "عرض أقل",

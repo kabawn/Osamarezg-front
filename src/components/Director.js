@@ -34,19 +34,39 @@ const Director = () => {
    const [isExpanded, setIsExpanded] = useState(false);
 
    const filmography = [
-      { id: 1, title: "Banat Alam", year: 2024, poster: banatAlamPoster },
-      { id: 2, title: "Alsaraya - Part Two", year: 2023, poster: alsarayaPartTwoPoster },
-      { id: 3, title: "Alsaraya - Part one", year: 2022, poster: alsarayaPoster },
-      { id: 4, title: "Zankat Arreeh - Part Two", year: 2021, poster: zankatArreehPartTwoPoster },
-      { id: 5, title: "Ghassaq", year: 2021, poster: ghasakPoster },
-      { id: 11, title: "Albarony", year: 2020, poster: albaronyPoster },
-      { id: 6, title: "Azzaiman", year: 2020, poster: azzaimanPoster },
-      { id: 7, title: "Zankat Al-Reeh", year: 2019, poster: zankaAlReehPoster },
-      { id: 9, title: "Rubik", year: 2017, poster: rubikPoster },
-      { id: 13, title: "Ayad", year: 2015, poster: ayad },
-      { id: 8, title: "Dragunov", year: 2014, poster: dragunovPoster },
-      { id: 10, title: "The Random", year: 2013, poster: theRandomPoster },
-      { id: 12, title: "Fobya", year: 2012, poster: fobyaPoter },
+      { id: 1, title: { en: "Banat Alam", ar: "بنات عالم" }, year: 2024, poster: banatAlamPoster },
+      {
+         id: 2,
+         title: { en: "Alsaraya - Part Two", ar: "السرايا - الجزء الثاني" },
+         year: 2023,
+         poster: alsarayaPartTwoPoster,
+      },
+      {
+         id: 3,
+         title: { en: "Alsaraya - Part one", ar: "السرايا - الجزء الأول" },
+         year: 2022,
+         poster: alsarayaPoster,
+      },
+      {
+         id: 4,
+         title: { en: "Zankat Arreeh - Part Two", ar: "  زنقة الريح - الجزء الثاني" },
+         year: 2021,
+         poster: zankatArreehPartTwoPoster,
+      },
+      { id: 5, title: { en: "Ghassaq", ar: "غسق" }, year: 2021, poster: ghasakPoster },
+      { id: 11, title: { en: "Albarony", ar: "الباروني" }, year: 2020, poster: albaronyPoster },
+      { id: 6, title: { en: "Azzaiman", ar: "الزعيمان" }, year: 2020, poster: azzaimanPoster },
+      {
+         id: 7,
+         title: { en: "Zankat Al-Reeh - Part one", ar: "زنقة الريح - الجزء الاول " },
+         year: 2019,
+         poster: zankaAlReehPoster,
+      },
+      { id: 9, title: { en: "Rubik", ar: "روبيك" }, year: 2017, poster: rubikPoster },
+      { id: 13, title: { en: "Ayad", ar: "عياد" }, year: 2015, poster: ayad },
+      { id: 8, title: { en: "Dragunov", ar: "دراجنوف" }, year: 2014, poster: dragunovPoster },
+      { id: 10, title: { en: "The Random", ar: "العشوائي" }, year: 2013, poster: theRandomPoster },
+      { id: 12, title: { en: "Fobya", ar: "فوبيا" }, year: 2012, poster: fobyaPoter },
    ];
 
    const awards = [
@@ -295,21 +315,24 @@ const Director = () => {
                      <p>{t("bioText19")}</p>
                      <p>{t("bioText20")}</p>
                      <p>{t("bioText21")}</p>
-                     
                   </div>
                </div>
             </section>
-            
+
             <section className="director-section filmography">
                <h2>{t("filmography")}</h2>
                <div className="grid-container">
                   {filmography.map((item, index) => (
                      <div key={index} className="grid-item">
                         <div className="poster" onClick={() => handlePosterClick(item.id)}>
-                           <img data-src={item.poster} alt={item.title} className="lazy-load" />
+                           <img
+                              data-src={item.poster}
+                              alt={item.title[i18n.language]}
+                              className="lazy-load"
+                           />
                         </div>
                         <div className="poster-info">
-                           <h3>{item.title}</h3>
+                           <h3>{item.title[i18n.language]}</h3>
                            <p>{item.year}</p>
                         </div>
                      </div>

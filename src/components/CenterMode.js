@@ -111,7 +111,7 @@ function CenterMode() {
          title: { ar: "مسلسل السرايا (الجزء الثاني)", en: "Alsaraya (Part 2)" },
          description: {
             ar: "يسرد الجزء الثاني من مسلسل السرايا الفترة من سنة 1800 إلى 1811، مع التركيز على حكم يوسف باشا القرمانلي. كانت هذه الحقبة مليئة بالتحديات الداخلية والخارجية، بما في ذلك الأطماع الأجنبية ومؤامرات القناصل والصراعات الداخلية حول الخلافة. يبرز المسلسل تأسيس أول دولة حقيقية على التراب الليبي واستراتيجيات يوسف لموازنة هذه التحديات والأحداث التاريخية الرئيسية التي أعادت تشكيل المنطقة.",
-            en: "The second part of Alsaraya narrates the period from 1800 to 1811, focusing on the rule of Yusuf Pasha Qaramanli. This era was full of internal and external challenges, including foreign ambitions, consular conspiracies, and internal conflicts over succession. The series highlights the establishment of the first real state on Libyan soil and Yusuf's strategies to balance these challenges and the key historical events that reshaped the region.",
+            en: "The second part of Alsaraya narrates the period from 1800 to 1811, focusing on the rule of Yusuf Pasha Qaramanli. This era was full of internal and external challenges, including foreign ambitions, consular conspiracies, and internal conflicts over succession.",
          },
          year: 2023,
          link: "/works/2",

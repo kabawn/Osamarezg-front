@@ -34,7 +34,7 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.7;
-  animation: zoomIn 2s ease-in-out;
+  animation: zoomIn  ;
 }
 
 .director-info {
