@@ -75,6 +75,10 @@ const LanguageSwitcher = ({ onLanguageChange }) => {
     const savedLanguage = localStorage.getItem('language');
     if (savedLanguage) {
       i18n.changeLanguage(savedLanguage);
+    } else {
+      // Set the default language to Arabic for first-time users
+      i18n.changeLanguage('ar');
+      localStorage.setItem('language', 'ar');
     }
   }, [i18n]);
 
