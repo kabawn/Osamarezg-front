@@ -330,11 +330,11 @@ const resources = {
    },
 };
 
-const savedLanguage = localStorage.getItem("language") || "en";
+const savedLanguage = localStorage.getItem("language") || "ar"; // Default to Arabic if no language is set
 
 i18n.use(initReactI18next).init({
    resources,
-   lng: savedLanguage, // Use saved language from localStorage
+   lng: savedLanguage, // Use saved language from localStorage or default to Arabic
    keySeparator: false,
    interpolation: {
       escapeValue: false,
