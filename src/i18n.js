@@ -47,8 +47,11 @@ const resources = {
          heroText:
             "Through the lens, the human spirit is captured, telling stories and dreams that are worthy of contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
-         aboutDescription1:
-            "Osama Rezq is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years, achieving top viewership ratings.He has directed notable dramatic works such as Dragunov, Rubik, Zanqat Al-Reeh, Al-Za’iman, Ghasaq, and Al-Saraya. His first feature film was Al-Barouni in 2021. In 2024, he directed the series Banat Al-‘Am, which was aired on the most prominent platform in the Middle East, Shahid, and achieved great success.In 2021, he was selected as one of the 40 most influential figures in Libya under the age of 40.",
+         aboutDescription1:"Osama Rezg is a prominent Libyan director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years, achieving top viewership ratings.",
+         aboutDescription2:"He has directed notable dramatic works such as Dragunov, Rubik, Zanqat Al-Reeh, Al-Za’iman, Ghasaq, and Al-Saraya. His first feature film was Al-Barouni in 2021.",
+         aboutDescription3:"In 2024, he directed the series Banat Al-‘Am, which was aired on the most prominent platform in the Middle East, Shahid, and achieved great success.",
+         aboutDescription4:".In 2021, he was selected as one of the 40 most influential figures in Libya under the age of 40.",
+         
          recentWorks: "RECENT WORKS",
          recentWorksDescription:
             "Discover new and innovative works. Embark on a unique cinematic and dramatic journey that transports you to mesmerizing worlds and tells powerful stories. Explore a diverse collection of projects that blend artistry with storytelling. Prepare to be moved and inspired.",
@@ -207,9 +210,13 @@ const resources = {
          welcomeToMyUniverse: "مرحبًا بكم في عالم المخرج أسامة رزق",
          heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص و أحلام تستحق التأمل .",
          aboutOsama: "عن أسامة رزق",
-         aboutDescription1:
-            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و  ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات و حققت اعمالها اعلى نسب مشاهدة .أخرج أعمالاً درامية مميزة منها ( دراجنوف ) ، ( روبيك ) ،(زنقة الريح) ، (الزعيمان) ، (غسق ) و ( السرايا )  وأول فيلم طويل له كان (الباروني) في 2021. كما أخرج مسلسل (بنات العم) في 2024 الذي عُرض على المنصة الاهم في الشرق الاوسط منصة (شاهد) وحقق نجاحاً كبيراً.في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40",
-         recentWorks: "الأعمال الأخيرة",
+         aboutDescription1:"أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات و حققت اعمالها اعلى نسب مشاهدة .",
+         aboutDescription2:"أخرج أعمالاً درامية مميزة منها ( دراجنوف ) ، ( روبيك ) ،(زنقة الريح) ، (الزعيمان) ، (غسق ) و ( السرايا ) وأول فيلم طويل له كان (الباروني) في 2021.",
+         aboutDescription3:"كما أخرج مسلسل (بنات العم) في 2024 الذي عُرض على المنصة الاهم في الشرق الاوسط منصة (شاهد) وحقق نجاحاً كبيراً.",
+         aboutDescription4:"في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.",
+         
+         
+            recentWorks: "الأعمال الأخيرة",
          recentWorksDescription:
             "اكتشف أعمالًا جديدة ومبتكرة، انطلق في رحلة سينمائية و درامية فريدة تنقلك إلى عوالم ساحرة وتحكي قصصًا مؤثرة، استكشف مجموعة متنوعة من المشاريع التي تمزج بين الفن والسرد القصصي، استعد لتكون متأثراً ومستلهماً.",
          directorsWorks: "أعمال المخرج",
