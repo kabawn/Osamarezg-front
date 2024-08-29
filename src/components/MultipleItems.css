@@ -1,110 +1,151 @@
 .slider-wrapper {
-    position: relative;
-    padding: 0 25px;
-  }
-  
+  position: relative;
+  padding: 0 25px;
+  direction: ltr !important; /* Force LTR direction */
+}
+
+.card {
+  border: none;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 15px; /* Ensure cards have bottom margin */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.card-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+/* Custom styles for slick slider arrows */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important; /* Set arrow color to black */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  direction: ltr !important; /* Force LTR direction */
+  transform: none !important; /* Prevent flipping */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
   .card {
-    border: none;
-    transition: transform 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    margin-bottom: 15px; /* Ensure cards have bottom margin */
+    margin: 10px 0; /* Ensure cards have margin on mobile */
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .card-img-top {
-    height: 200px;
-    object-fit: cover;
+    height: 150px; /* Make the image height smaller */
   }
-  
+
   .card-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-size: 1rem; /* Make the title font size smaller */
   }
-  
+
   .card-text {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-size: 0.875rem; /* Make the text font size smaller */
   }
-  
-  /* Custom styles for slick slider arrows */
-  .slick-prev:before,
-  .slick-next:before {
-    color: black; /* Set arrow color to black */
-  }
-  
-  .slick-prev,
-  .slick-next {
-    z-index: 1;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 600px) {
-    .card {
-      margin: 10px 0; /* Ensure cards have margin on mobile */
-    }
-  
-    .card-img-top {
-      height: 150px; /* Make the image height smaller */
-    }
-  
-    .card-title {
-      font-size: 1rem; /* Make the title font size smaller */
-    }
-  
-    .card-text {
-      font-size: 0.875rem; /* Make the text font size smaller */
-    }
-  }
-  
-  /* Custom styles for slick slider arrows and dots */
-  .custom-arrow {
-    border-radius: 50%;
-    border: 1px solid #000;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 50px;
+}
 
+/* Custom styles for slick slider arrows and dots */
+.custom-arrow {
+  border-radius: 50%;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.custom-prev {
+  margin-right: 90px; /* Adjust this to change the space between the prev arrow and the dots */
+}
+
+.custom-next {
+  margin-left: 90px; /* Adjust this to change the space between the next arrow and the dots */
+}
+
+.custom-arrow i {
+  font-size: 20px; /* Control the size of the arrow */
+  color: #000;
+}
+
+.slick-dots.custom-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+.slick-dots.custom-dots li {
+  display: inline-block !important;
+  margin: 0 5px !important;
+}
+
+.slick-dots.custom-dots li button {
+  width: 20px !important; /* Adjust the size as needed */
+  height: 20px !important; /* Adjust the size as needed */
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  position: relative;
+  margin-top: 50px;
+}
+
+.slick-dots.custom-dots li button::before {
+  display: none !important; /* Hide the small dot */
+}
+
+.slick-dots.custom-dots li.slick-active button {
+  border-color: #000000 !important;
+  background-color: #000000 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .center-slider .slick-slide {
+    height: 800px;
   }
-  
+}
+
+@media (max-width: 600px) {
+  .center-slider .slick-slide {
+    height: 800px;
+  }
+
   .custom-prev {
-    margin-right: 90px; /* Adjust this to change the space between the prev arrow and the dots */
+    margin-right: 90px;
+    margin-top: 20px;
   }
-  
+
   .custom-next {
-    margin-left: 90px; /* Adjust this to change the space between the next arrow and the dots */
+    margin-left: 90px;
+    margin-top: 20px;
   }
-  
-  .custom-arrow i {
-    font-size: 20px; /* Control the size of the arrow */
-    color: #000;
-  }
-  
-  .slick-dots.custom-dots {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style-type: none !important;
 
-  }
-  
-  .slick-dots.custom-dots li {
-    display: inline-block !important;
-    margin: 0 5px !important;
-
-
-  }
-  
   .slick-dots.custom-dots li button {
     width: 20px !important; /* Adjust the size as needed */
     height: 20px !important; /* Adjust the size as needed */
@@ -113,50 +154,14 @@
     border-radius: 50% !important;
     cursor: pointer !important;
     position: relative;
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+}
 
-  }
-  
-  .slick-dots.custom-dots li button::before {
-    display: none !important; /* Hide the small dot */
-  }
-  
-  .slick-dots.custom-dots li.slick-active button {
-    border-color: #000000 !important;
-    background-color: #000000 !important;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 1024px) {
-    .center-slider .slick-slide {
-      height: 800px;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .center-slider .slick-slide {
-      height: 800px;
-    }
-  
-    .custom-prev {
-      margin-right: 90px;
-      margin-top: 20px;
-    }
-  
-    .custom-next {
-      margin-left: 90px;
-      margin-top: 20px;
-    }
-  
-    .slick-dots.custom-dots li button {
-      width: 20px !important; /* Adjust the size as needed */
-      height: 20px !important; /* Adjust the size as needed */
-      background-color: #ffffff !important;
-      border: 2px solid #000000 !important;
-      border-radius: 50% !important;
-      cursor: pointer !important;
-      position: relative;
-      margin-top: 20px;
-    }
-  }
-  
+/* Ensure custom arrows are not flipped in RTL mode */
+.custom-arrow,
+.slick-prev,
+.slick-next {
+  direction: ltr !important;
+  transform: none !important;
+}

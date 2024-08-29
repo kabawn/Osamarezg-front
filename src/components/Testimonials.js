@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { useTranslation } from 'react-i18next';
 import MultipleItems from './MultipleItems'; // Adjust the path if needed
@@ -12,14 +12,13 @@ import image3 from '../assets/testimonials/byar.jpg';
 import image4 from '../assets/testimonials/rabiea.png';
 import image5 from '../assets/testimonials/mohamed.png';
 
-
-
 const Testimonials = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const isRtl = currentLang === 'ar';
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
+  const sliderRef = useRef(null);
 
   const testimonials = [
     {
@@ -69,12 +68,22 @@ const Testimonials = () => {
     setVideoUrl('');
   };
 
+  useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.style.transition = 'scroll-left 4s ease-in-out';
+      sliderRef.current.scrollTo({
+        left: sliderRef.current.scrollWidth / 2 - sliderRef.current.clientWidth / 2,
+        behavior: 'smooth',
+      });
+    }
+  }, []);
+
   return (
     <div className="container my-5">
       <div className="text-center mb-5">
         <h1 style={{ fontFamily: isRtl ? 'Tajawal, sans-serif' : 'Raleway, sans-serif' }}>{t('testimonials')}</h1>
       </div>
-      <div className={`testimonials-content ${isRtl ? 'rtl' : 'ltr'}`}>
+      <div ref={sliderRef} className={`testimonials-content ${isRtl ? 'rtl' : 'ltr'}`}>
         <MultipleItems testimonials={testimonials} openModal={openModal} />
       </div>
 
