@@ -192,7 +192,7 @@ const works = [
          ar: 'ملخص المسلسل: يسرد الجزء الثاني من مسلسل "السرايا" الفترة من سنة 1800 إلى 1811، مع التركيز على حكم يوسف باشا القرمانلي. كانت هذه الحقبة مليئة بالتحديات الداخلية والخارجية، بما في ذلك الأطماع الأجنبية ومؤامرات القناصل والصراعات الداخلية حول الخلافة. يبرز المسلسل تأسيس أول دولة حقيقية على التراب الليبي واستراتيجيات يوسف لموازنة هذه التحديات والأحداث التاريخية الرئيسية التي أعادت تشكيل المنطقة.',
       },
       trailer: "https://drive.google.com/file/d/13XMRlIacqdeG2vOWvWIR4MyFR-4goBBs/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/alsaraya/174735",
+      fullShowLink: "https://shahid.mbc.net/ar/series/%D8%A7%D9%84%D8%B3%D8%B1%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-2/season-1032527-1032529",
       btsImages: [
          btsAlsaraya21,
          btsAlsaraya22,
@@ -238,8 +238,15 @@ const works = [
       },
       trailer: "https://drive.google.com/file/d/1-iUHLSsIo6rixbpUU6X1Egu9h2i7brqf/preview",
       fullShowLink:
-         "https://www.toog.ly/ar/detail/alsaraya/174735?section-first=174738&section-second=174741",
-      btsImages: [btsAlsaraya1, btsAlsaraya2, btsAlsaraya3,btsAlsaraya4, btsAlsaraya5, btsAlsaraya6],
+         "https://shahid.mbc.net/ar/series/%D8%A7%D9%84%D8%B3%D8%B1%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-1/season-1032527-1032528",
+      btsImages: [
+         btsAlsaraya1,
+         btsAlsaraya2,
+         btsAlsaraya3,
+         btsAlsaraya4,
+         btsAlsaraya5,
+         btsAlsaraya6,
+      ],
       awards: {
          en: [
             "Best Historical Series from the Arab States Broadcasting Union Festival - Riyadh (2022)",
@@ -271,7 +278,7 @@ const works = [
          ar: "ملخص المسلسل: دراما تاريخية اجتماعية، تدور أحداثها سنة 1945 بمدينة طرابلس في ليبيا، تُبرز معاناة الشعب الليبي في ظل حكم الإدارة البريطانية بعد الحرب العالمية الثانية وهزيمة إيطاليا. يُبرز المسلسل الحياة الاجتماعية، والعادات والتقاليد بين سكان طرابلس من جميع الأديان والأعراق.",
       },
       trailer: "https://drive.google.com/file/d/1dznZw2BELbMcG_YT_ul1ZxReYOZL2oND/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/zaget-alreeh/172116",
+      fullShowLink: "https://shahid.mbc.net/ar/series/%D8%B2%D9%86%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%AD-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-2/season-1032443-1032445",
       btsImages: [btszanget1, btszanget2, btszanget3, btszanget4, btszanget5, btszanget6],
       awards: {
          en: [
@@ -297,6 +304,7 @@ const works = [
          productionCompany: { en: "ART Production", ar: "ART Production" },
          productionYear: { en: "2021", ar: "2021" },
          producer: { en: "Walid Al-Lafi", ar: "وليد اللافي" },
+         producerLine: { en: "Osama rezg", ar: "أسامة رزق" },
          writer: { en: "Abdulrahman Haqiq", ar: "عبد الرحمان حقيق" },
          director: { en: "Abdelsalam Rezg", ar: "عبد السلام رزق" },
          artisticProducer: { en: "Osama Rezg", ar: "أسامة رزق" },
@@ -317,7 +325,7 @@ const works = [
          ar: "ملخص المسلسل: يؤرخ مسلسل (غسق) لملحمة (البنيان المرصوص) وهي معركة قام بها الجيش الليبي ضد تنظيم الدولة (داعش) الذي سيطر على مدينة سرت الليبية، ويرصد المسلسل الأوضاع داخل مدينة سرت تحت سيطرة التنظيم، وكذلك الأوضاع في مدينتي مصراتة وطرابلس من سبتمبر 2014 حتى ديسمبر 2016 تاريخ سقوط آخر معاقل (داعش) في سرت، ويسرد نضال الشعب الليبي ضد التطرف والإرهاب.",
       },
       trailer: "https://drive.google.com/file/d/1s4ch2V0maW3iMV7aI3amrt6h1M7dryvc/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/Ghasak/174516",
+      fullShowLink: "https://shahid.mbc.net/ar/series/%D8%BA%D8%B3%D9%82-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-1/season-1032271-1032272",
       btsImages: [
          btsqaseq1,
          btsqaseq2,
@@ -374,7 +382,7 @@ const works = [
          ar: "ملخص العمل: يتناول المسلسل قصة حياة المناضل الليبي (سليمان الباروني) والمناضل الليبي (بشير السعداوي) في الفترة من سنة 1887 حتى 1923 من خلال سرد درامي مختلف وجديد. يعتمد على سرد شخصية (زعيمة الباروني) ابنت المناضل (سليمان الباروني) لأهم الأحداث في تاريخ نضال الزعيمين مع باقي الزعماء الليبيين ممن قاوموا الاستعمار الإيطالي وأسهموا في جمع كلمة أبناء ليبيا لتوحيد الصفوف ضد الاستعمار ومن أجل الحصول على الاستقلال الكامل وتوحيد أقاليم ليبيا الثلاث برقة وفزان وطرابلس تحت راية واحدة.",
       },
       trailer: "https://drive.google.com/file/d/1C6wxji6XQZt2Xj_rpw_quWASzmgbMSLZ/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/alzayman/174492",
+      fullShowLink: "https://shahid.mbc.net/ar/series/%D8%A7%D9%84%D8%B2%D8%B9%D9%8A%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-1/season-1032303-1032305",
       btsImages: [
          btsalzaeman1,
          btsalzaeman2,
@@ -412,7 +420,7 @@ const works = [
       },
       trailer: "https://drive.google.com/file/d/14C1gL_-02t88i-NOTJR9yNZ0dFmpqEm9/preview",
       fullShowLink:
-         "https://www.toog.ly/ar/detail/zaget-alreeh/172116?section-first=172119&section-second=172128",
+         "https://shahid.mbc.net/ar/series/%D8%B2%D9%86%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%AD-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-1/season-1032443-1032444",
       btsImages: [btszanget1, btszanget2, btszanget3, btszanget4, btszanget5, btszanget6],
 
       awards: {
@@ -444,7 +452,7 @@ const works = [
          ar: "مسلسل دراجنوف مسلسل درامي ليبي يؤرخ لمرحلة ما قبل أحداث 2011 ومرحلة الأحداث وما بعدها من الناحية الاجتماعية وتأثرها بما حدث بعد سقوط نظام معمر القذافي وتداعياته بطرح جريء ومتوازن. يصور مسلسل دراجنوف قصص مجموعة من العائلات والشخصيات الليبية تختلف من ناحية المكانة الاجتماعية وقربها للسلطة في النظام السابق والفجوة التي تحدث في هذا الوسط الاجتماعي بعد أحداث 2011 وانقسام المجتمع الليبي نتيجة تداعيات ما حدث واستمرار هذا الانقسام ودخوله لمرحلة أخرى بعد موت القذافي حيث أصبحت الانقسامات أكثر وضوحاً وأكثر تأثيراً مع اختلاف مراكز القوى داخل المجتمع. والدراجنوف هي بندقية قنص روسية وتعتبر من أشهر بنادق القنص في العالم واختيار هذا الاسم للعمل راجع لعلاقته بالحبكة الدرامية داخل العمل نفسه والتي تظهر في عدة مشاهد مهمة ومحورية داخله.",
       },
       trailer: "https://drive.google.com/file/d/1WTIDzRKLSecQoHgnQU2VbMBLQhNjbI5u/preview",
-      fullShowLink: "https://www.toog.ly/ar/detail/draganof/172272",
+      fullShowLink: "https://shahid.mbc.net/ar/series/%D8%AF%D8%B1%D8%A7%D8%AC%D9%86%D9%88%D9%81-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-1/season-1032300-1032304",
       btsImages: [btsdragnuf1, btsdragnuf2, btsdragnuf3, btsdragnuf4, btsdragnuf5, btsdragnuf6],
       awards: {
          en: ["Best Director", "Best Action Sequence"],
@@ -765,6 +773,14 @@ const WorkDetail = () => {
                            </h4>
                            <p>{work.details.director[lang]}</p>
                         </div>
+                        {work.details.producerLine && (
+                           <div className="work-item">
+                              <h4>
+                                 <strong>{t("producerLine")}:</strong>
+                              </h4>
+                              <p>{work.details.producerLine[lang]}</p>
+                           </div>
+                        )}
                      </div>
                      <h4 className="cast">
                         <strong>{t("cast")}:</strong>

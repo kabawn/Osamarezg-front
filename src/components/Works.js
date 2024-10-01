@@ -12,7 +12,7 @@ import poster11 from "../assets/posters/albarony.webp";
 import poster6 from "../assets/posters/Poster Zaeman.webp";
 import poster7 from "../assets/posters/zangat alreh.webp";
 import poster8 from "../assets/posters/Poster dragnof.webp";
-import poster9 from "../assets/posters/Rubik.webp";
+import poster9 from "../assets/posters/Rubik1.webp";
 import poster10 from "../assets/posters/The Random.webp";
 import poster12 from "../assets/posters/fobya.webp";
 import poster13 from "../assets/posters/ayad.webp";

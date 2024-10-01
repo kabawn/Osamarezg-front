@@ -167,7 +167,12 @@
 
   .full-show-button {
       width: 100%;
-      font-size: 20px;
+      font-size: 50px;
+     
+
+  }
+  .title{
+    margin-bottom: 50px;
   }
 
   .videoitslef {
@@ -215,7 +220,11 @@
   .full-show-button {
       width: 100%;
       font-size: 18px;
+      margin-bottom: 50px;
+
   }
+
+  
 
   .videoitslef {
       width: 100%;

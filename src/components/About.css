@@ -1,9 +1,9 @@
-/* src/components/About.css */
+/* Your original styles */
 .about-section {
   padding-top: 50px;
   background-color: black;
   color: white;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
 .about-text h2 {
@@ -11,56 +11,85 @@
   font-weight: 600;
   padding: 50px;
   margin-bottom: 20px;
-
 }
 
 .about-text p {
   font-size: 18px;
   margin-top: 20px;
-  line-height: 1.6; /* Adjust line height for better text alignment */
-  text-align: justify; /* Justify the text for a more uniform appearance */
-  direction: ltr; /* Default direction for English text */
+  line-height: 1.6;
+  text-align: justify;
+  direction: ltr;
 }
 
 /* When the text is in Arabic */
 .about-text.rtl p {
-  direction: rtl; /* Set direction to RTL for Arabic */
+  direction: rtl;
 }
+
 .about-image {
-  margin-top: 220px;
-  width: 100%;
+  margin-top: 520px;
+  width: 120%;
   border-radius: 10px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Align button to the right for LTR languages */
+.button-right {
+  justify-content: flex-end;
+}
+
+/* Align button to the left for RTL languages */
+.button-left {
+  justify-content: flex-start;
+}
+
+/* Styling for the "Read More" button */
+.read-more-btn {  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-section {
-      padding: 0px 0;
+    padding: 0px 0;
   }
 
   .about-text h2 {
-      font-size: 28px;
-      margin-top: 25px;
+    font-size: 28px;
+    margin-top: 25px;
   }
 
- /* Responsive styles */
-@media (max-width: 768px) {
   .about-text p {
     font-size: 16px;
-    line-height: 1.6; /* Adjust line-height for mobile */
-    word-spacing: 0; /* Ensure consistent spacing between words */
+    line-height: 1.6;
+    word-spacing: 0;
   }
 
   .about-text.rtl p {
-    text-align: right; /* Align text to the right for Arabic on smaller screens */
-    line-height: 1.6; /* Adjust line-height for mobile */
-    word-spacing: 0; /* Ensure consistent spacing between words */
+    text-align: right;
+    line-height: 1.6;
+    word-spacing: 0;
   }
+
   .about-image {
     margin-top: 20px;
     width: 100%;
     border-radius: 10px;
   }
-
-}
 }

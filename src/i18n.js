@@ -48,13 +48,13 @@ const resources = {
             "Through the lens, the human spirit is captured, telling stories and dreams that are worthy of contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
          aboutDescription1:
-            "Osama Rezg is a prominent Libyan Director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years, achieving top viewership ratings.",
+            "Osama Rezg is a prominent Libyan Director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years.",
          aboutDescription2:
             "He has directed notable dramatic works such as Dragunov, Rubik, Zanqat Al-Reeh, Al-Za’iman, Ghasaq, and Al-Saraya. His first feature film was Al-Barouni in 2021.",
          aboutDescription3:
-            "In 2024, he directed the series Banat Al-‘Am, which was aired on the most prominent platform in the Middle East, Shahid.",
+            "He was able to market his work to several major Arab channels, and due to the success of the series Banat Al-Amm on the Shahid platform, as the first Libyan series to be shown on the platform in 2024, Shahid acquired the rights to all of his works. This led the platform to dedicate a special section for Libyan productions, contributing to the spread of Libyan drama to a broader Arab audience.",
          aboutDescription4:
-            ".In 2021, he was selected as one of the 40 most influential figures in Libya under the age of 40.",
+            "In 2021, he was selected as one of the 40 influential figures in Libya under the age of 40.",
 
          recentWorks: "RECENT WORKS",
          recentWorksDescription:
@@ -159,10 +159,11 @@ const resources = {
          bioText19:
             "In 2024, he directed the series (Banat Al Amm), which is the first Libyan series to be shown on the famous platform (Shahid) and achieved the second ranking in the highest viewers in the Shahid platform in Libya.",
          bioText20:
-            "In 2021, Osama Rezg was selected as one of the 40 most influential figures in Libya under 40.",
+            "In 2021, he was selected as one of the 40 influential figures in Libya under the age of 40.",
          bioText21:
             "As Art Production Company reached its tenth anniversary since its establishment, the company has become number one in Libya and the Maghreb, thanks to Osama Rezg's management and continuous work in development, diversification, and perseverance every year to produce Libyan-Maghrebi works. These productions are now watched regionally and across the Arab world for their professional content and high execution standards. Arab celebrities who participated in the series produced by the company have recognized its professionalism and the international standards it operates with under Osama Rezg's leadership. He has combined artistic vision as a director with wise management, strict leadership, and intelligent production to achieve the highest technical and creative levels with budgets more minor than those of Arab shows in the Gulf countries, Egypt, and the Middle East.",
-         or: "Or you can contact us using the form",
+            bioText22:"He was able to market his work to several major Arab channels, and due to the success of the series Banat Al-Amm on the Shahid platform, as the first Libyan series to be shown on the platform in 2024, Shahid acquired the rights to all of his works. This led the platform to dedicate a special section for Libyan productions, contributing to the spread of Libyan drama to a broader Arab audience.",
+            or: "Or you can contact us using the form",
          rabie: "Rabie Kati",
          morocoactor: "Moroccan actor",
          mohamed: "Mohamed Othman",
@@ -171,6 +172,9 @@ const resources = {
          country: "Country",
          emailSentMessage: "Your message has been sent successfully!",
          emailErrorMessage: "There was an error sending your message. Please try again later.",
+         producerLine: "Line Producer",
+         osama: "Osama Rezg",
+         readMore: "Read More",
       },
    },
    ar: {
@@ -216,12 +220,12 @@ const resources = {
          heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص و أحلام تستحق التأمل .",
          aboutOsama: "عن أسامة رزق",
          aboutDescription1:
-            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات و حققت اعمالها اعلى نسب مشاهدة .",
+            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات  .",
          aboutDescription2:
             "أخرج أعمالاً درامية مميزة منها ( دراجنوف ) ، ( روبيك ) ،(زنقة الريح) ، (الزعيمان) ، (غسق ) و ( السرايا ) وأول فيلم طويل له كان (الباروني) في 2021.",
          aboutDescription3:
-            "كما أخرج مسلسل (بنات العم) في 2024 الذي عُرض على المنصة الاهم في الشرق الاوسط منصة (شاهد)  .",
-         aboutDescription4: "في 2021، تم اختياره كواحد من أكثر 40 شخصية مؤثرة في ليبيا تحت سن 40.",
+            "استطاع تسويق اعماله لعدة قنوات عربية مهمة و بسبب نجاح عرض مسلسل  ( بنات العم ) في منصة شاهد كأول مسلسل ليبي يعرض في المنصة سنة 2024  قامت منصة شاهد بأخد حقوق عرض جميع اعماله مما جعل المنصة تخصص قسم خاص بالاعمال الليبية مما ساهم في انتشار الدراما الليبية الى جمهور عربي اوسع .",
+         aboutDescription4: "في 2021، تم اختياره من ضمن 40 شخصية مؤثرة في ليبيا تحت سن 40.",
 
          recentWorks: "الأعمال الأخيرة",
          recentWorksDescription:
@@ -332,7 +336,10 @@ const resources = {
             "في سنة 2021 تم اختيار اسامة رزق من ضمن 40 اهم شخصية مؤثرة في ليبيا تحت عمر 40 سنة.",
          bioText21:
             "مع وصول شركة Art Productıon  الى عشرة سنوات من تاسيسها اصبحت الشركة رقم واحد في ليبيا و المغرب الكبير  بفضل ادارة اسامة رزق و عمله المستمر في التطوير و التنويع  و المثابرة في كل سنة لصناعة اعمال ليبية مغاربية اصبحت تشاهد عربيا و اقليميا لمستواها المحترف في المحتوى و التنفيذ بمهنية عالية شهد بها النجوم العرب الذين شاركو في المسلسلات التي انتجتهم الشركة و الذين صرحو بإحترافية الشركة و المستوى العالمي الذي تعمل  به بقيادة اسامة رزق الذي استطاع الجمع ما بين الرؤية الفنية كمخرج و الادارة الحكيمة و القيادة الصارمة و الذكاء في الانتاج للحصول على اعلى مستوى تقني و فني بميزانيات اقل من ميزانيات الانتاجات العربية في دول الخليج و مصر و الشرق الاوسط.",
+         bioText22:
+            "استطاع تسويق اعماله لعدة قنوات عربية مهمة و بسبب نجاح عرض مسلسل  ( بنات العم ) في منصة شاهد كأول مسلسل ليبي يعرض في المنصة سنة 2024  قامت منصة شاهد بأخد حقوق عرض جميع اعماله مما جعل المنصة تخصص قسم خاص بالاعمال الليبية مما ساهم في انتشار الدراما الليبية الى جمهور عربي اوسع .",
          or: "او يمكنكم التواصل عبر النموذج",
+
          rabie: "ربيع القاطي",
          morocoactor: "ممثل مغربي",
          mohamed: "محمد عثمان",
@@ -340,6 +347,9 @@ const resources = {
          directorosama: "المخرج أسامة رزق",
          emailSentMessage: "تم إرسال رسالتك بنجاح!",
          emailErrorMessage: "حدث خطأ أثناء إرسال رسالتك. الرجاء المحاولة مرة أخرى لاحقًا.",
+         producerLine: "المنتج الفني",
+         osama: "أسامة رزق",
+         readMore: "إقراء المزيد",
       },
    },
 };

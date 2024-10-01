@@ -63,7 +63,7 @@ const Header = () => {
   return (
     <StyledNavbar expand="lg" className="header" lang={currentLang} expanded={expanded}>
       <Container>
-        <BrandLink to="/"></BrandLink>
+        <BrandLink to="/">{t('osama')}</BrandLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`ms-auto ${currentLang === 'ar' ? 'nav-ar' : 'nav-en'}`}>

@@ -18,7 +18,7 @@ import fobyaPoter from "../assets/posters/fobya.webp";
 import ayad from "../assets/posters/ayad.webp";
 import theRandomPoster from "../assets/posters/The Random.webp";
 import dragunovPoster from "../assets/posters/Poster dragnof.webp";
-import rubikPoster from "../assets/posters/Rubik.webp";
+import rubikPoster from "../assets/posters/Rubik1.webp";
 import zankaAlReehPoster from "../assets/posters/zangat alreh.webp";
 import azzaimanPoster from "../assets/posters/Poster Zaeman.webp";
 import albaronyPoster from "../assets/posters/albarony.webp";
@@ -313,6 +313,8 @@ const Director = () => {
                      <p>{t("bioText17")}</p>
                      <p>{t("bioText18")}</p>
                      <p>{t("bioText19")}</p>
+                     <p>{t("bioText22")}</p>
+
                      <p>{t("bioText20")}</p>
                      <p>{t("bioText21")}</p>
                   </div>
