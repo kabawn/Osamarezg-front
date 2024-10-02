@@ -1,49 +1,57 @@
 .blog-details-section {
-    padding: 60px 15px;
-    background-color: #060000;
-    color: #ffffff;
-  }
-  
-  .rtl {
-    direction: rtl;
-    font-family: 'Tajawal', sans-serif;
-  }
-  
-  .ltr {
-    direction: ltr;
-    font-family: 'Raleway', sans-serif;
-  }
-  
+  padding: 60px 15px;
+  background-color: #060000;
+  color: #ffffff;
+}
+
+.rtl {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.ltr {
+  direction: ltr;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subheader {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.blog-details-image {
+  width: 60%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;  /* Ensures it's treated as a block element */
+  margin-left: auto; /* Centers horizontally */
+  margin-right: auto; /* Centers horizontally */
+  margin-top: 90px;  /* Adds space above the image */
+}
+
+
+.blog-details-content {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
   .section-header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .section-subheader {
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-  }
-  
-  .blog-details-image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .blog-details-content {
-    font-size: 1.15rem;
-    line-height: 1.6;
-  }
-  
-  @media (max-width: 768px) {
-    .section-header {
       font-size: 2rem;
-    }
-  
-    .section-subheader {
-      font-size: 1rem;
-    }
   }
-  
+
+  .section-subheader {
+      font-size: 1rem;
+  }
+
+  .blog-details-image {
+      width: 80%; /* Make the image more responsive on smaller screens */
+  }
+}

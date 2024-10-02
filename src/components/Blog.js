@@ -8,6 +8,7 @@ import "./Blog.css";
 const Blog = () => {
    const { t, i18n } = useTranslation();
    const currentLang = i18n.language;
+   const isRtl = currentLang === "ar"; // Check if current language is RTL
    const [blogs, setBlogs] = useState([]);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
@@ -18,8 +19,13 @@ const Blog = () => {
       const fetchBlogs = async () => {
          try {
             const response = await axios.get("/blogs");
-            console.log(response.data); // Log the response data to verify
-            setBlogs(response.data);
+
+            // Sort blogs by the `createdAt` date in descending order
+            const sortedBlogs = response.data.sort(
+               (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+            );
+
+            setBlogs(sortedBlogs);
          } catch (err) {
             setError(t("Error fetching blogs."));
          } finally {
@@ -32,7 +38,7 @@ const Blog = () => {
 
    if (loading) {
       return (
-         <Container fluid className={`blog-section ${currentLang === "ar" ? "rtl" : "ltr"}`}>
+         <Container fluid className={`blog-section ${isRtl ? "rtl" : "ltr"}`}>
             <Row className="justify-content-center">
                <Col md={8} className="text-center">
                   <Spinner animation="border" role="status">
@@ -46,7 +52,7 @@ const Blog = () => {
 
    if (error) {
       return (
-         <Container fluid className={`blog-section ${currentLang === "ar" ? "rtl" : "ltr"}`}>
+         <Container fluid className={`blog-section ${isRtl ? "rtl" : "ltr"}`}>
             <Row className="justify-content-center">
                <Col md={8} className="text-center">
                   <Alert variant="danger">{error}</Alert>
@@ -57,7 +63,7 @@ const Blog = () => {
    }
 
    return (
-      <Container fluid className={`blog-section ${currentLang === "ar" ? "rtl" : "ltr"}`}>
+      <Container fluid className={`blog-section ${isRtl ? "rtl" : "ltr"}`}>
          <Row className="justify-content-center">
             <Col md={8} className="text-center">
                <h2 className="section-header">{t("DirectorBlog")}</h2>
@@ -65,9 +71,14 @@ const Blog = () => {
             </Col>
          </Row>
          <Row>
-            {blogs.map((blog) => (
-               <Col md={4} key={blog._id} className="mb-4">
-                  <Card className="blog-card">
+            {blogs.map((blog, index) => (
+               <Col
+                  md={4}
+                  key={blog._id}
+                  // Apply 'order-md-last' to the most recent post in RTL mode (index 0)
+                  className={`mb-4 ${isRtl && index === 1 ? "order-md-last" : ""}`}
+               >
+                  <Card className="blog-card h-100">
                      {blog.images.length > 0 && (
                         <Card.Img
                            variant="top"
@@ -76,10 +87,10 @@ const Blog = () => {
                         />
                      )}
                      <Card.Body>
-                        <Card.Title className={currentLang === "ar" ? "rtl" : "ltr"}>
+                        <Card.Title className={isRtl ? "rtl" : "ltr"}>
                            {blog.title}
                         </Card.Title>
-                        <Card.Text className={currentLang === "ar" ? "rtl" : "ltr"}>
+                        <Card.Text className={isRtl ? "rtl" : "ltr"}>
                            {blog.content.substring(0, 100)}...
                         </Card.Text>
                         <Button variant="primary" as={Link} to={`/blogs/${blog._id}`}>

@@ -8,7 +8,6 @@ import "./BlogDetails.css";
 const BlogDetails = () => {
    const { id } = useParams();
    const { t, i18n } = useTranslation();
-   const currentLang = i18n.language;
    const [blog, setBlog] = useState(null);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
@@ -30,12 +29,14 @@ const BlogDetails = () => {
       fetchBlog();
    }, [id, t]);
 
+   const isArabic = (text) => {
+      const arabicChar = /[\u0600-\u06FF]/;
+      return arabicChar.test(text);
+   };
+
    if (loading) {
       return (
-         <Container
-            fluid
-            className={`blog-details-section ${currentLang === "ar" ? "rtl" : "ltr"}`}
-         >
+         <Container fluid className="blog-details-section">
             <Row className="justify-content-center">
                <Col md={8} className="text-center">
                   <Spinner animation="border" role="status">
@@ -49,10 +50,7 @@ const BlogDetails = () => {
 
    if (error) {
       return (
-         <Container
-            fluid
-            className={`blog-details-section ${currentLang === "ar" ? "rtl" : "ltr"}`}
-         >
+         <Container fluid className="blog-details-section">
             <Row className="justify-content-center">
                <Col md={8} className="text-center">
                   <Alert variant="danger">{error}</Alert>
@@ -63,15 +61,10 @@ const BlogDetails = () => {
    }
 
    return (
-      <Container fluid className={`blog-details-section ${currentLang === "ar" ? "rtl" : "ltr"}`}>
+      <Container fluid className="blog-details-section">
          {blog && (
             <>
-               <Row className="justify-content-center">
-                  <Col md={8} className="text-center">
-                     <h2 className="section-header">{blog.title}</h2>
-                     <p className="section-subheader">{blog.author}</p>
-                  </Col>
-               </Row>
+               
                <Row className="justify-content-center">
                   <Col md={8}>
                      {blog.images.length > 0 && (
@@ -81,7 +74,24 @@ const BlogDetails = () => {
                            className="blog-details-image"
                         />
                      )}
-                     <div className="blog-details-content">{blog.content}</div>
+
+<Row className="justify-content-center">
+                  <Col md={8} className="text-center">
+                     <h2 className="section-header">{blog.title}</h2>
+                     <p className="section-subheader">{blog.author}</p>
+                  </Col>
+               </Row>
+                     <div className="blog-details-content">
+                        {blog.content.split('\n').map((paragraph, idx) => (
+                           <p
+                              key={idx}
+                              dir={isArabic(paragraph) ? "rtl" : "ltr"}
+                              className={isArabic(paragraph) ? "rtl" : "ltr"}
+                           >
+                              {paragraph}
+                           </p>
+                        ))}
+                     </div>
                   </Col>
                </Row>
             </>
