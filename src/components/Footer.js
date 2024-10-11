@@ -39,8 +39,8 @@ const Footer = () => {
                   <h5>{t("keepInTouch")}</h5>
                   <p>
                      {t("email")}:
-                     <a href="mailto:osama@osamarezg.com" className="text-white">
-                        osama@osamarezg.com
+                     <a href="mailto:info@osamarezg.com" className="text-white">
+                     info@osamarezg.com
                      </a>
                   </p>
                   <div className="social-icons">
@@ -140,13 +140,12 @@ const Footer = () => {
                </div>
             </div>
             <div className="text-center mt-5">
-               <p className="companyinfo">{t("developedBy")}</p>
-               <a href="https://www.moderncode.ly" target="_blank" rel="noopener noreferrer">
-                  {/* <img
-               src={logo}
-               alt="Modern Code Company Logo"
-               style={{ width: "100px", marginTop: "10px" }}
-            /> */}
+               <a
+                  href="https://www.facebook.com/osama.ahlasa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  <p className="companyinfo">{t("developedBy")}</p>
                </a>
             </div>
          </div>

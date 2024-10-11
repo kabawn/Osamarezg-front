@@ -48,7 +48,7 @@ const resources = {
             "Through the lens, the human spirit is captured, telling stories and dreams that are worthy of contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
          aboutDescription1:
-            "Osama Rezg is a prominent Libyan Director who earned degrees in directing and film production from the UK. He founded two media production companies, Al-Sura for Media Production and ART Production, which are considered leading companies in dramatic production, delivering some of the most significant and high-profile drama and film projects over the past ten years.",
+            "Osama Rezg  is a prominent Libyan director who holds degrees in directing and film production from the UK. He founded Al-Sura Media Production Company and contributed to the establishment of ART Production, which is considered the leading company in dramatic and cinematic production, delivering the most significant and major works in the last decade.",
          aboutDescription2:
             "He has directed notable dramatic works such as Dragunov, Rubik, Zanqat Al-Reeh, Al-Za’iman, Ghasaq, and Al-Saraya. His first feature film was Al-Barouni in 2021.",
          aboutDescription3:
@@ -116,7 +116,7 @@ const resources = {
          submissionSuccess: "Submission Successful",
          thankYou: "Thank you for your submission. We will review it and contact you soon.",
          submitting: "Submitting...",
-         workLinks: "Links of your previous works. ",
+         workLinks: "Links of your previous works (optional). ",
          addAnotherLink: "Add Another Link",
          remove: "Remove",
          successMessage: "Thanks for submitting your script. We will contact you soon.",
@@ -162,8 +162,9 @@ const resources = {
             "In 2021, he was selected as one of the 40 influential figures in Libya under the age of 40.",
          bioText21:
             "As Art Production Company reached its tenth anniversary since its establishment, the company has become number one in Libya and the Maghreb, thanks to Osama Rezg's management and continuous work in development, diversification, and perseverance every year to produce Libyan-Maghrebi works. These productions are now watched regionally and across the Arab world for their professional content and high execution standards. Arab celebrities who participated in the series produced by the company have recognized its professionalism and the international standards it operates with under Osama Rezg's leadership. He has combined artistic vision as a director with wise management, strict leadership, and intelligent production to achieve the highest technical and creative levels with budgets more minor than those of Arab shows in the Gulf countries, Egypt, and the Middle East.",
-            bioText22:"He was able to market his work to several major Arab channels, and due to the success of the series Banat Al-Amm on the Shahid platform, as the first Libyan series to be shown on the platform in 2024, Shahid acquired the rights to all of his works. This led the platform to dedicate a special section for Libyan productions, contributing to the spread of Libyan drama to a broader Arab audience.",
-            or: "Or you can contact us using the form",
+         bioText22:
+            "He was able to market his work to several major Arab channels, and due to the success of the series Banat Al-Amm on the Shahid platform, as the first Libyan series to be shown on the platform in 2024, Shahid acquired the rights to all of his works. This led the platform to dedicate a special section for Libyan productions, contributing to the spread of Libyan drama to a broader Arab audience.",
+         or: "Or you can contact us using the form",
          rabie: "Rabie Kati",
          morocoactor: "Moroccan actor",
          mohamed: "Mohamed Othman",
@@ -220,7 +221,7 @@ const resources = {
          heroText: "من خلال العدسة، يتم التقاط روح الإنسان، ورواية قصص و أحلام تستحق التأمل .",
          aboutOsama: "عن أسامة رزق",
          aboutDescription1:
-            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركتي الصورة للإنتاج الإعلامي و ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات  .",
+            "أسامة رزق هو مخرج ليبي بارز حصل على شهادات في الإخراج والإنتاج السينمائي من بريطانيا، وأسس شركة الصورة للإنتاج الإعلامي و ساهم في تأسيس شركة ART Production و التي تعتبر الشركة الرائدة في الانتاج الدرامي بأضخم و اهم الاعمال الدرامية و السينمائية اخر عشر سنوات  .",
          aboutDescription2:
             "أخرج أعمالاً درامية مميزة منها ( دراجنوف ) ، ( روبيك ) ،(زنقة الريح) ، (الزعيمان) ، (غسق ) و ( السرايا ) وأول فيلم طويل له كان (الباروني) في 2021.",
          aboutDescription3:
@@ -277,7 +278,7 @@ const resources = {
          DirectorBlog: "مدونة المخرج",
          Latest: "مقالات من المخرج",
          readmore: "اقرا المزيد",
-         shareYourScript: "شارك سيناريو",
+         shareYourScript: "شارك السيناريو",
          inviteMessage:
             "ندعوك لمشاركة السيناريو معنا. اضغط على الزر أدناه لتقديم السيناريو الخاص بك.",
          submitScript: "تقديم السيناريو",
@@ -286,7 +287,7 @@ const resources = {
 
          contactTitle: "الاتصال بنا",
          developedBy: " تطوير  شركة البرمجة الحديثة",
-         workLinks: "روابط لأعمالك السابقة",
+         workLinks: "       روابط لاعمال سابقة        -  (إختياري)    ",
          workLink: "روابط لأعمالك السابقة",
          remove: "إزالة",
          addAnotherLink: "إضافة رابط اخر",
