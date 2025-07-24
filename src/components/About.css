@@ -1,6 +1,6 @@
 /* Your original styles */
 .about-section {
-  padding-top: 50px;
+  padding-top: 10px;
   background-color: black;
   color: white;
   text-align: center;
@@ -67,7 +67,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-section {
-    padding: 0px 0;
+    padding: 100px 0;
   }
 
   .about-text h2 {

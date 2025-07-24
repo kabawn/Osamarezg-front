@@ -13,7 +13,7 @@ import awardImageArtCityFestival from "../assets/award.png";
 import awardMondal from "../assets/awards/mondal cario.jpg";
 import awardInternational from "../assets/awards/International Cinema.jpg";
 
-import directorImageosama from "../assets/osamaoknoback.png";
+import directorImageosama from "../assets/osama2025.jpg";
 import fobyaPoter from "../assets/posters/fobya.webp";
 import ayad from "../assets/posters/ayad.webp";
 import theRandomPoster from "../assets/posters/The Random.webp";

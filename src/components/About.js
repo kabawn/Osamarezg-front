@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-import aboutImage from "../assets/osamaoknoback.png"; // Replace with your actual image path
+import aboutImage from "../assets/osama2025.jpg"; // Replace with your actual image path
 import "./About.css";
 
 const About = () => {
