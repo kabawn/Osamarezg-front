@@ -198,7 +198,7 @@ const resources = {
          about: "عن المخرج",
          credits: "الأعمال",
          blog: "مدونة", // Removed duplicate key
-         contact: "تواصل",
+         contact: "تواصل معنا",
          trailer: "فيديو الاعلان ",
          fullName: "الاسم الثلاثي",
          age: "العمر",
