@@ -7,7 +7,7 @@ import "./BlogDetails.css";
 
 const BlogDetails = () => {
    const { id } = useParams();
-   const { t, i18n } = useTranslation();
+   const { t } = useTranslation();
    const [blog, setBlog] = useState(null);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
@@ -64,7 +64,6 @@ const BlogDetails = () => {
       <Container fluid className="blog-details-section">
          {blog && (
             <>
-               
                <Row className="justify-content-center">
                   <Col md={8}>
                      {blog.images.length > 0 && (
@@ -75,14 +74,14 @@ const BlogDetails = () => {
                         />
                      )}
 
-<Row className="justify-content-center">
-                  <Col md={8} className="text-center">
-                     <h2 className="section-header">{blog.title}</h2>
-                     <p className="section-subheader">{blog.author}</p>
-                  </Col>
-               </Row>
+                     <Row className="justify-content-center">
+                        <Col md={8} className="text-center">
+                           <h2 className="section-header">{blog.title}</h2>
+                           <p className="section-subheader">{blog.author}</p>
+                        </Col>
+                     </Row>
                      <div className="blog-details-content">
-                        {blog.content.split('\n').map((paragraph, idx) => (
+                        {blog.content.split("\n").map((paragraph, idx) => (
                            <p
                               key={idx}
                               dir={isArabic(paragraph) ? "rtl" : "ltr"}

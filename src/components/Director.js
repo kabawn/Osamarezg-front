@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "./Director.css";
@@ -31,7 +31,6 @@ import banatAlamPoster from "../assets/posters/bnat.webp";
 const Director = () => {
    const { t, i18n } = useTranslation();
    const navigate = useNavigate();
-   const [isExpanded, setIsExpanded] = useState(false);
 
    const filmography = [
       { id: 1, title: { en: "Banat Alam", ar: "بنات عالم" }, year: 2024, poster: banatAlamPoster },
@@ -234,7 +233,7 @@ const Director = () => {
          },
          {
             threshold: 0.1,
-         }
+         },
       );
 
       sections.forEach((section) => {
@@ -256,7 +255,7 @@ const Director = () => {
          },
          {
             threshold: 0.1,
-         }
+         },
       );
 
       images.forEach((img) => {
@@ -272,12 +271,6 @@ const Director = () => {
    const handlePosterClick = (id) => {
       navigate(`/works/${id}`);
    };
-
-   const toggleExpansion = () => {
-      setIsExpanded(!isExpanded);
-   };
-
-   const truncatedText = t("bioText").slice(0, 300); // Adjust this length as needed
 
    return (
       <div className={`director-container ${i18n.language === "ar" ? "rtl" : "ltr"}`}>
