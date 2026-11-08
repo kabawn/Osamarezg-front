@@ -355,7 +355,7 @@ const resources = {
    },
 };
 
-const savedLanguage = localStorage.getItem("language") || "ar"; // Default to Arabic if no language is set
+const savedLanguage = localStorage.getItem("language") || "en"; // Default to Arabic if no language is set
 
 i18n.use(initReactI18next).init({
    resources,
