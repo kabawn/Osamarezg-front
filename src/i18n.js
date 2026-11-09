@@ -43,7 +43,7 @@ const resources = {
          exploringTalents: "Exploring Talents:",
          shareExperience: "Share Your Artistic Experience with Us!",
          registerNow: "Register Now",
-         welcomeToMyUniverse: "Welcome to the space of Director Osama Rezg",
+         welcomeToMyUniverse: "Welcome to the Universe of Director Osama Rezg",
          heroText:
             "Through the lens, the human spirit is captured, telling stories and dreams that are worthy of contemplation.",
          aboutOsama: "ABOUT OSAMA REZG",
